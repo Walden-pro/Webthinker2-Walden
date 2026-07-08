@@ -4,7 +4,7 @@ function setup(){
 }
 
 function draw(){
-    fill(color , #a93434);
+    fill(255, 0, 0);
     ellipse(300,200,200,200);
     fill(255, 0, 0);
     ellipse(300,200,200,250);
