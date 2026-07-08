@@ -1,7 +1,8 @@
 function setup(){
     createCanvas(600, 400);
     background(220);
-    let x 
+    let x =5;
+    let y =10;
 }
 
 function draw(){
