@@ -2,8 +2,8 @@ function setup(){
     createCanvas(600, 400);
     background(220);
     let x = 5;
-    let y =10;
-    let total = x + y
+    let y = 10;
+    let total = x + y;
 }
 
 function draw(){
