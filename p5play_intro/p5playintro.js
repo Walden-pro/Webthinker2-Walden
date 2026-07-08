@@ -13,7 +13,7 @@ function setup() {
   
   circle(400,200,100);
   rect(350,250,100,100);
-  triangle()
+  triangle(50,50,)
   // End Basic shape testing
 
    // Create a bouncing ball sprite
