@@ -11,7 +11,8 @@ function setup() {
   stroke("#000000a8")
   strokeWeight(10)
   
-  circle()
+  circle(400,200,100)
+  
   // End Basic shape testing
 
    // Create a bouncing ball sprite
