@@ -9,7 +9,7 @@ function setup() {
   // write your codes here
   fill("#0eb89ba8");
   stroke("#000000a8");
-  strokeWeight(10);
+  strokeWeight(5);
   
   circle(400,200,100);
   rect(350,250,100,100);
