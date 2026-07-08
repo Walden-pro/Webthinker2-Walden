@@ -8,7 +8,7 @@ function setup() {
   // Basic shape testing
   // write your codes here
   fill("#0eb89ba8")
-  stroke("#0eb89ba8")
+  stroke("#0a362fa8")
   strokeWeight(10)
   // End Basic shape testing
 
