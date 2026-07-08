@@ -7,7 +7,7 @@ function setup() {
 
   // Basic shape testing
   // write your codes here
-  fill("#1fb80ea8");
+  fill("#24ff0ca8");
   stroke("#000000a8");
   strokeWeight(2);
   
@@ -16,6 +16,8 @@ function setup() {
 
   // fill("#b8330ea8");
   // triangle(50,50,400,200,50,350)
+
+  quad()
   // End Basic shape testing
 
    // Create a bouncing ball sprite
