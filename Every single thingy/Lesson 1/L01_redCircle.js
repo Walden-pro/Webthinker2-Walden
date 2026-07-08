@@ -8,7 +8,7 @@ function setup(){
 }
 
 function draw(){
-    // fill("color: ");
+    // fill(" #fff ");
     // ellipse(300,200,50,50);
     // fill(216, 219, 0);
     // ellipse(300,250,50,50);
