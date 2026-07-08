@@ -17,7 +17,7 @@ function setup() {
   // fill("#b8330ea8");
   // triangle(50,50,400,200,50,350)
 
-  quad()
+  quad(400,50,)
   // End Basic shape testing
 
    // Create a bouncing ball sprite
