@@ -8,9 +8,9 @@ function setup(){
 }
 
 function draw(){
-    // fill("#e41818 ");
+    // fill("#e41818");
     // ellipse(300,200,50,50);
-    // fill(216, 219, 0);
+    // fill("#e41818");
     // ellipse(300,250,50,50);
     // fill(44, 219, 76);
     // ellipse(300,300,50,50);
