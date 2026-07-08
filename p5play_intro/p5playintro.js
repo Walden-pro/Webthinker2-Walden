@@ -2,7 +2,7 @@ function setup() {
   // Set up the canvas
   new Canvas(800, 400);
   background(250); //background color
-  fill(" color: #00ccff;#00000 ")
+  fill(" color: #00ccff; ")
   ball = new Sprite(50,50,50,50);
   ball.x = 0;
   ball.y = 0;
