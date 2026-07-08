@@ -13,6 +13,7 @@ function setup() {
   
   circle(400,200,100);
   rect(350,250,100,100);
+  fill("#b8330ea8");
   triangle(50,50,400,200,50,350)
   // End Basic shape testing
 
