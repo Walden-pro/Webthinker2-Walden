@@ -3,7 +3,8 @@ function setup() {
   new Canvas(800, 400);
   background(250); //background color
   ball = new Sprite();
-  ball.x
+  ball.x = 0
+  ball.y = 0
   // Basic shape testing
   // write your codes here
  
