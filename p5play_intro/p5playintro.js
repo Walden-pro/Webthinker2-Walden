@@ -22,7 +22,8 @@ function setup() {
 
    // Create a bouncing ball sprite
    // write your codes here
-  ball = new Sprite(50,50,50,50);
+
+  ball = new Sprite(400,200,50,50);
 
 }
 
