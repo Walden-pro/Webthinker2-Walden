@@ -7,9 +7,9 @@ function setup() {
 
   // Basic shape testing
   // write your codes here
-  fill("#24ff0ca8");
-  stroke("#000000a8");
-  strokeWeight(2);
+  // fill("#24ff0ca8");
+  // stroke("#000000a8");
+  // strokeWeight(2);
   
   // circle(400,200,100);
   // rect(350,250,100,100);
