@@ -33,4 +33,5 @@ function setup() {
 function draw() {
   // write your codes here
   background(250)
+  ball.x +=1
 }
