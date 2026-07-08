@@ -5,8 +5,10 @@ function setup(){
     let y = 10;
     let total = x + y;
     for (let i = 0; i <5; i++){
-        console.log
+        console.log(i)
     }
+    console.log("sum: "+ total)
+
 }
 
 function draw(){
