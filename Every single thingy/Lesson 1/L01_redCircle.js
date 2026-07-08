@@ -14,7 +14,7 @@ function draw(){
     ellipse(300,250,50,50);
     fill("#5ce418");
     ellipse(300,300,50,50);
-    total
+    total += 1
     console.log("sum: "+ total)
 }
 
