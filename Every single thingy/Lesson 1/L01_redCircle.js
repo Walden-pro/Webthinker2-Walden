@@ -4,10 +4,10 @@ function setup(){
 }
 
 function draw(){
-    fill(255, 0, 0);
+    fill(color , #a93434);
     ellipse(300,200,200,200);
     fill(255, 0, 0);
-    ellipse(300,200,200,200);
+    ellipse(300,200,200,250);
     fill(255, 0, 0);
-    ellipse(300,200,200,200);
+    ellipse(300,200,200,300);
 }
