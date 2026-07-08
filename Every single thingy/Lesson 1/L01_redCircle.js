@@ -4,7 +4,7 @@ function setup(){
     let x = 5;
     let y = 10;
     let total = x + y;
-    
+    for (let i = 0; i <5; i++)
 }
 
 function draw(){
