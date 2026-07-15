@@ -16,7 +16,7 @@ function setup() {
   // write your codes here
   let base = 10;
   let height = 5;
-  let area = 
+  let area = 0.5 * height * base
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
