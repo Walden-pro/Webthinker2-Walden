@@ -44,6 +44,8 @@ function setup() {
   if (age <= 9){
 
 
+  } else if (age <= 12){
+    
   }
 
 
