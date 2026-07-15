@@ -36,8 +36,8 @@ function setup() {
 
     sum += 1;
     
-    
   }
+  text(sum,500,200);
   // --- Exercise: Age category classification ---
   // write your codes here
 
