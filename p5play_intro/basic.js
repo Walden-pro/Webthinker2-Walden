@@ -74,6 +74,7 @@ function setup() {
   // write your codes here
   let groceries = ["apple", "bread","milk"]
   groceries.push("orange");
+  groceries.push("butter");
   
 
 
