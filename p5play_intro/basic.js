@@ -21,7 +21,7 @@ function setup() {
   textSize(24);
    
   fill( "#000000");
-  text(area);
+  text(area,400,200);
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
