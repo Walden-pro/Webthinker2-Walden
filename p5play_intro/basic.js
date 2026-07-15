@@ -11,9 +11,10 @@ function setup() {
   let b = 2;
   let sum = a + b;
   console.log("Sum : " + sum );
-  
+
   // --- Exercise: Area of Triangle ---
   // write your codes here
+  let base = 10
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
