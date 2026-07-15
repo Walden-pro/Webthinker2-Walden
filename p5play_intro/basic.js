@@ -78,6 +78,7 @@ function setup() {
   console.log(groceries);
   console.log(groceries[1]);
   groceries.shift()
+  groceries.pop()
 
 
 
