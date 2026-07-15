@@ -33,6 +33,7 @@ function setup() {
     fill( "#000000");
     text(i,textpos,200);
     sum += 1
+    text(sum)
     
   }
   // --- Exercise: Age category classification ---
