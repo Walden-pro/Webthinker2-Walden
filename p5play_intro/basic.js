@@ -77,8 +77,8 @@ function setup() {
   groceries.push("butter");
   console.log(groceries);
   console.log(groceries[1]);
-  groceries.shift()
-  groceries.pop()
+  // groceries.shift()
+  // groceries.pop()
   groceries.splice(1,0)
   console.log(groceries);
 
