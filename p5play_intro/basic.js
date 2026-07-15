@@ -79,7 +79,7 @@ function setup() {
   console.log(groceries[1]);
   // groceries.shift()
   // groceries.pop()
-  groceries.splice(1,0, "kaya")
+  groceries.splice(0,1, "kaya")
   console.log(groceries);
 
 
