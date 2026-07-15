@@ -79,7 +79,7 @@ function setup() {
   console.log(groceries[1]);
   groceries.shift()
   groceries.pop()
-  groceries.splice(1,)
+  groceries.splice(1,0)
 
 
 
