@@ -31,7 +31,7 @@ function setup() {
     console.log(i);
     textpos += 20;
     fill( "#000000");
-    textSize(10)
+    textSize(24)
     text(i,textpos,200);
 
     sum += 1;
