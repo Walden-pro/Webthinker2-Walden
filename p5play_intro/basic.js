@@ -16,8 +16,8 @@ function setup() {
   // write your codes here
   let base = 10;
   let height = 5;
-  let area = 0.5 * height * base;
-  console.log(area)
+  let area = 0.5 * base * base;
+  console.log("Area: " + area)
   textSize(4)
   text(area)
 
