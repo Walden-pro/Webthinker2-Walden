@@ -48,7 +48,7 @@ function setup() {
     console.log("upper primary")
   } else if (age <= 16){
     console.log("Secondary school")
-  } else {
+  } else if (age <= 30){
     console.log("old man")
   }
 
