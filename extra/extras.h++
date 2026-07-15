@@ -29,4 +29,4 @@
 
 //   groceries.push("butter");  add stuff to the list
 //   console.log(groceries);    print all items in list 
-//   console.log(groceries[1]); 
+//   console.log(groceries[1]); print the specific item in list
