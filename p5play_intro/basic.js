@@ -1,4 +1,11 @@
 function setup() {
+  // Set up the canvas
+  new Canvas(800, 400);
+  background(250); //background color
+
+}
+
+function setup() {
   // write your codes here
 
   // --- Exercise: Area of Triangle ---
