@@ -33,10 +33,9 @@ function setup() {
     fill( "#000000");
     textSize(24)
     text(i,textpos,200);
-
     sum += i;
-    
   }
+  
   text(sum,500,200);
   // --- Exercise: Age category classification ---
   // write your codes here
