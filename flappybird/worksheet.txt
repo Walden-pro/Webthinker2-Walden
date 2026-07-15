@@ -6,8 +6,11 @@ For each one, write down:
 Beat the ender dragon
 • How do you interact/ control it?
 Left click to hit it
-Right click to
+Right click to shoot a bow and arrow
 • What happens when you win or lose?
+
+
+
 
 2. 
 • What is the goal of the game?
