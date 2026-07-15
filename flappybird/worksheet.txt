@@ -32,6 +32,8 @@ If you lose, you die and lose your winstreak
 3. Grow a garden 2
 • What is the goal of the game?
 to grow crops and sell them and get money
+
 • How do you interact/ control it?
-lef
+left click to plant, e to interact and pick up fruits of steal fruits.
+
 • What happens when you win or lose?
