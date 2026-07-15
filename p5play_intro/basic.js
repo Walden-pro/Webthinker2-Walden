@@ -41,32 +41,29 @@ function setup() {
   // --- Exercise: Age category classification ---
   // write your codes here
 
-  let age = 999999999999999999999999999999999999
-  if (age <= 9){
-    console.log("lower primary")
-  } else if (age <= 12){
-    console.log("upper primary")
-  } else if (age <= 16){
-    console.log("Secondary school")
-  } else if (age <= 30){
-    console.log("adult")
-  } else if (age <= 50){
-    console.log("Getting old adult")
-  } else if (age <= 80){
-    console.log("Senior")
-  } else if (age <= 100){
-    console.log("old man")
-  } else {
-    console.log("you died")
-  }
-
-
-
+  // let age = 999999999999999999999999999999999999
+  // if (age <= 9){
+  //   console.log("lower primary")
+  // } else if (age <= 12){
+  //   console.log("upper primary")
+  // } else if (age <= 16){
+  //   console.log("Secondary school")
+  // } else if (age <= 30){
+  //   console.log("adult")
+  // } else if (age <= 50){
+  //   console.log("Getting old adult")
+  // } else if (age <= 80){
+  //   console.log("Senior")
+  // } else if (age <= 100){
+  //   console.log("old man")
+  // } else {
+  //   console.log("you died")
+  // }
 
 
   // --- Exercise: Display odd numbers backward using while loop ---
   // write your codes here
-
+  
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
