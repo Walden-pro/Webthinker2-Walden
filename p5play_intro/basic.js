@@ -69,8 +69,13 @@ function setup() {
   //   number -= 2;
   //   console.log(number);
   // }
-  
+
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
+  
+
+
+
+
 }
 
