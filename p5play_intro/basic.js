@@ -72,15 +72,15 @@ function setup() {
 
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
-  let groceries = ["apple", "bread","milk"]
-  groceries.push("orange");
-  groceries.push("butter");
-  console.log(groceries);
-  console.log(groceries[1]);
+  // let groceries = ["apple", "bread","milk"]
+  // groceries.push("orange");
+  // groceries.push("butter");
+  // console.log(groceries);
+  // console.log(groceries[1]);
   // groceries.shift()
   // groceries.pop()
-  groceries.splice(3,0, "kaya", "balls", "eznuts")
-  console.log(groceries);
+  // groceries.splice(3,0, "kaya", "balls", "eznuts")
+  // console.log(groceries);
 
 
 
