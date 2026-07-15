@@ -33,3 +33,4 @@
 //   groceries.shift() remove fisrt
 //   groceries.pop() remove last
 //   groceries.splice(1,0) replace, remove
+//   remove 
