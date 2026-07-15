@@ -38,3 +38,32 @@ left click to plant, e to interact and pick up fruits of steal fruits.
 
 • What happens when you win or lose?
 theres no winning or losing
+
+
+
+
+
+
+
+
+
+
+
+
+Flappy Bird Analysis Worksheet
+4b Deconstructing Flappy Bird
+
+What are the
+objects?
+
+What are the
+player’s
+
+actions?
+What is the
+goal?
+What causes
+game over?
+How is
+progress
+shown?
