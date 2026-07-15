@@ -8,14 +8,14 @@ For each one, write down:
 
 • What happens when you win or lose?
 
-1. 
+2. 
 • What is the goal of the game?
 
 • How do you interact/ control it?
 
 • What happens when you win or lose?
 
-1. 
+3. 
 • What is the goal of the game?
 
 • How do you interact/ control it?
