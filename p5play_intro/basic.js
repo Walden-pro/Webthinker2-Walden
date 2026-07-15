@@ -28,8 +28,8 @@ function setup() {
   let textpos;
   let sum;
   for (let i = 0 ; i <= 20 ; i += 2){
-    console.log(i)
-    textpos += 100
+    console.log(i);
+    textpos += 100;
     fill( "#000000");
     text(i,textpos,200);
     sum += 1
