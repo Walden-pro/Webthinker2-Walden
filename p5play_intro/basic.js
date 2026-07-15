@@ -3,6 +3,9 @@ function setup() {
   new Canvas(800, 400);
   background(250); //background color
 
+
+  console.log("hello bro")
+
 }
 
 function setup() {
