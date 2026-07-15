@@ -49,7 +49,7 @@ function setup() {
   } else if (age <= 16){
     console.log("Secondary school")
   } else if (age <= 30){
-    console.log("old man")
+    console.log("adult")
   }
 
 
