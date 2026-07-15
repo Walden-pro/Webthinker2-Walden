@@ -40,6 +40,7 @@ function setup() {
 
   // --- Exercise: Age category classification ---
   // write your codes here
+  
   let age = 0
   if (age <= 9){
     console.log("lower primary")
