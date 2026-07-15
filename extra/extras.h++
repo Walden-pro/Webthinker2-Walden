@@ -10,7 +10,7 @@
 
 
 
-// this is the for loop in 
+// this is the for loop in javascript
 //  for (let i = 0; i <5; i++){
 //         console.log(i)
 //     }
