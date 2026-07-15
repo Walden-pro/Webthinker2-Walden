@@ -22,7 +22,8 @@ left click to shoot.
 right click to use special abilities or scope
 press r to reload
 • What happens when you win or lose?
-if you win, you get +1 winstreak and 
+if you win, you get +1 winstreak and rank up
+
 3. 
 • What is the goal of the game?
 
