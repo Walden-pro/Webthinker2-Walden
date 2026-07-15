@@ -35,7 +35,7 @@ function setup() {
     text(i,textpos,200);
 
     sum += 1;
-    text(sum);
+    text(sum,500);
     
   }
   // --- Exercise: Age category classification ---
