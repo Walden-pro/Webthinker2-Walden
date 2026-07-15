@@ -57,10 +57,8 @@ What are the objects?
 
 What are the player’sactions?
 
-What is the
-goal?
-What causes
-game over?
-How is
-progress
+What is the goal?
+
+What causes game over?
+How isprogress
 shown?
