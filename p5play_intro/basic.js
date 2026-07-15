@@ -45,8 +45,8 @@ function setup() {
 
 
   } else if (age <= 12){
-    
-  }
+
+  } else
 
 
 
