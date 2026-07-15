@@ -34,7 +34,7 @@ function setup() {
     textSize(24)
     text(i,textpos,200);
 
-    sum += 1;
+    sum += 2;
     
   }
   text(sum,500,200);
