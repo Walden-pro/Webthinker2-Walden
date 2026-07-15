@@ -54,9 +54,9 @@ Flappy Bird Analysis Worksheet
 4b Deconstructing Flappy Bird
 
 What are the objects?
-
-What are the player’sactions?
-
+pipes
+What are the player’s actions?
+fly
 What is the goal?
 
 What causes game over?
