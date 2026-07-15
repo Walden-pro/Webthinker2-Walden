@@ -80,6 +80,8 @@ function setup() {
   groceries.shift()
   groceries.pop()
   groceries.splice(1,0)
+    console.log(groceries);
+
 
 
 
