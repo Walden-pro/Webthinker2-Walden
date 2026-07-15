@@ -23,3 +23,10 @@
 // triangle(50,50,400,200,50,350)
 //       x1,y2,  x2, y2,  x3, y3,  x4, y4
 // quad(400,50, 700,350, 400,100, 100,350)
+
+
+
+
+//   groceries.push("butter");  add 
+//   console.log(groceries);
+//   console.log(groceries[1]);
