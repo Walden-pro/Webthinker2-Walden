@@ -31,5 +31,5 @@
 //   console.log(groceries);    print all items in list 
 //   console.log(groceries[1]); print the specific item in list
 //   groceries.shift() remove fisrt
-//   groceries.pop()
-//   groceries.splice(1,0)
+//   groceries.pop() remove last
+//   groceries.splice(1,0) replace, remove
