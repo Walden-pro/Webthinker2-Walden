@@ -28,7 +28,8 @@ press r to reload
 if you win, you get +1 winstreak and rank up
 If you lose, you die and lose your winstreak
 
-3. 
+
+3. Grow a garden 2
 • What is the goal of the game?
 
 • How do you interact/ control it?
