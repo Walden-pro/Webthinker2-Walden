@@ -1,17 +1,11 @@
-function setup() {
-  // Set up the canvas
-  new Canvas(800, 400);
-  background(250); //background color
 
-
-  console.log("hello bro")
-
-}
 
 function setup() {
   // write your codes here
   new Canvas(800, 400);
   background(250); //background color
+
+  console.log("hello bro")
   // --- Exercise: Area of Triangle ---
   // write your codes here
 
