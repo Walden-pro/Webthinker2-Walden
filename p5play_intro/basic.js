@@ -27,9 +27,9 @@ function setup() {
   // write your codes here
   let textpos = 0
   let sum = 0
-  for (let i = 0 ; i <= 20 ; i += 2){
+  for (let i = 2 ; i <= 20 ; i += 2){
     console.log(i);
-    textpos += 20;
+    textpos += 30;
     fill( "#000000");
     textSize(24)
     text(i,textpos,200);
