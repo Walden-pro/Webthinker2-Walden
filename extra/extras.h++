@@ -27,6 +27,6 @@
 
 
 
-//   groceries.push("butter");  add 
-//   console.log(groceries);
+//   groceries.push("butter");  add stuff to the list
+//   console.log(groceries);    print 
 //   console.log(groceries[1]);
