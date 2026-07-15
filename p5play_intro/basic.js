@@ -29,8 +29,9 @@ function setup() {
   let sum;
   for (let i = 0 ; i <= 20 ; i += 2){
     console.log(i)
+    textpos += 100
     fill( "#000000");
-    text(i,400,200);
+    text(i,textpos,200);
     sum += 1
     
   }
