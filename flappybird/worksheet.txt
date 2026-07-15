@@ -5,6 +5,7 @@ For each one, write down:
 • What is the goal of the game?
 Beat the ender dragon
 • How do you interact/ control it?
+Right click to hit it
 
 • What happens when you win or lose?
 
