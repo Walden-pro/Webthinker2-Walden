@@ -63,3 +63,4 @@ What causes game over?
 crash into pipes
 How is progress shown?
 number of pipes past
+
