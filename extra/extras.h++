@@ -33,4 +33,4 @@
 //   groceries.shift() remove fisrt
 //   groceries.pop() remove last
 //   groceries.splice(1,0, "kaya") replace, remove
-//   (index, amt of items,"replace by ")
+//   (index, amt of items,"replace by what")
