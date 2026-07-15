@@ -50,8 +50,8 @@ function setup() {
     console.log("Secondary school")
   } else if (age <= 30){
     console.log("adult")
-  } else if (age <= 30){
-    console.log("adult")
+  } else if (age <= 50){
+    console.log("")
   } else if (age <= 30){
     console.log("adult")
   } else if (age <= 30){
