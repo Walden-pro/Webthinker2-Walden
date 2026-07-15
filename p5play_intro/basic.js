@@ -67,8 +67,6 @@ function setup() {
   while (number != 1) {
     console.log(number);
     number -= 2;
-    
-
   }
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
