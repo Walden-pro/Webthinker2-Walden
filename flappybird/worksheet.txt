@@ -72,3 +72,4 @@ Draw the above into a Mindmap. For each phase:
 • Any constraints that we need to add in.
 
 
+1. background and character setup
