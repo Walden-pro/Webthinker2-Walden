@@ -32,5 +32,5 @@
 //   console.log(groceries[1]); print the specific item in list
 //   groceries.shift() remove fisrt
 //   groceries.pop() remove last
-//   groceries.splice(1,0) replace, remove
-//   (index, amt of items)
+//   groceries.splice(1,0, "kaya") replace, remove
+//   (index, amt of items,"replace by ")
