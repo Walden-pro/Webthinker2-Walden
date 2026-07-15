@@ -14,21 +14,21 @@ function setup() {
 
   // --- Exercise: Area of Triangle ---
   // write your codes here
-  let base = 10;
-  let height = 5;
-  let area = 0.5 * base * height;
-  console.log("Area: " + area);
-  textSize(24);
+  // let base = 10;
+  // let height = 5;
+  // let area = 0.5 * base * height;
+  // console.log("Area: " + area);
+  // textSize(24);
    
-  fill( "#000000");
-  text(area,400,200);
+  // fill( "#000000");
+  // text(area,400,200);
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
   for (let i = 0 ; i <= 20 ; i += 2){
     console.log(i)
     fill( "#000000");
-    text(area,400,200);
+    text(i,400,200);
     
   }
   // --- Exercise: Age category classification ---
