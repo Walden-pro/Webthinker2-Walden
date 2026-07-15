@@ -53,8 +53,8 @@ function setup() {
   } else if (age <= 50){
     console.log("Getting old adult")
   } else if (age <= 80){
-    console.log("adult")
-  } else if (age <= 30){
+    console.log("Senior")
+  } else if (age <= 100){
     console.log("adult")
   }
 
