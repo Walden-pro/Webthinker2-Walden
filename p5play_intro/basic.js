@@ -27,7 +27,9 @@ function setup() {
   // write your codes here
   for (let i = 0 ; i <= 20 ; i += 2){
     console.log(i)
-    text
+    fill( "#000000");
+    text(area,400,200);
+    
   }
   // --- Exercise: Age category classification ---
   // write your codes here
