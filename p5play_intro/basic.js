@@ -63,11 +63,13 @@ function setup() {
 
   // --- Exercise: Display odd numbers backward using while loop ---
   // write your codes here
-  let number = 19 + 2;
-  while (number != 1) {
-    number -= 2;
-    console.log(number);
-  }
+
+  // let number = 19 + 2;
+  // while (number != 1) {
+  //   number -= 2;
+  //   console.log(number);
+  // }
+  
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
 }
