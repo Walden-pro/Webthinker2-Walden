@@ -17,11 +17,11 @@ function setup() {
   let base = 10;
   let height = 5;
   let area = 0.5 * base * height;
-  console.log("Area: " + area)
-  textSize(24)
+  console.log("Area: " + area);
+  textSize(24);
    
-  fill()
-  text(area)
+  fill( "#000000");
+  text(area);
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
