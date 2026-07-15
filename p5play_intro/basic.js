@@ -55,6 +55,8 @@ function setup() {
   } else if (age <= 80){
     console.log("Senior")
   } else if (age <= 100){
+    console.log("old man")
+  } else if (age <= 999){
     console.log("adult")
   }
 
