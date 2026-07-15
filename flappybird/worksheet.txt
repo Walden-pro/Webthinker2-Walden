@@ -4,9 +4,11 @@ For each one, write down:
 1. Minecraft
 • What is the goal of the game?
 Beat the ender dragon
+
 • How do you interact/ control it?
 Left click to hit it
 Right click to shoot a bow and arrow
+
 • What happens when you win or lose?
 If you win, you beat the game and can beat it again
 If you lose, you die
@@ -21,6 +23,7 @@ To level up your ranking and shoot other players
 left click to shoot.
 right click to use special abilities or scope
 press r to reload
+
 • What happens when you win or lose?
 if you win, you get +1 winstreak and rank up
 If you lose, you die and lose your winstreak
