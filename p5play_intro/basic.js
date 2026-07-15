@@ -5,12 +5,12 @@ function setup() {
   new Canvas(800, 400);
   background(250); //background color
 
-  console.log("hello.");
+  // console.log("hello.");
 
-  let a = 1;
-  let b = 2;
-  let sum = a + b;
-  console.log("Sum : " + sum );
+  // let a = 1;
+  // let b = 2;
+  // let sum = a + b;
+  // console.log("Sum : " + sum );
 
   // --- Exercise: Area of Triangle ---
   // write your codes here
