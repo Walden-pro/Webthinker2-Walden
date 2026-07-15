@@ -53,13 +53,10 @@ theres no winning or losing
 Flappy Bird Analysis Worksheet
 4b Deconstructing Flappy Bird
 
-What are the
-objects?
+What are the objects?
 
-What are the
-player’s
+What are the player’sactions?
 
-actions?
 What is the
 goal?
 What causes
