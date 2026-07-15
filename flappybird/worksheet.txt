@@ -60,5 +60,5 @@ What are the player’sactions?
 What is the goal?
 
 What causes game over?
-How isprogress
-shown?
+
+How is progress shown?
