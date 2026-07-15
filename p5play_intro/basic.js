@@ -63,9 +63,10 @@ function setup() {
 
   // --- Exercise: Display odd numbers backward using while loop ---
   // write your codes here
-  number = 19
-  while (number !== 19) {
+  let number = 19
+  while (number != 19) {
     
+
   }
   // --- Exercise: Array operations (groceries) ---
   // write your codes here
