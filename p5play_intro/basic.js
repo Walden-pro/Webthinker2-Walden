@@ -6,6 +6,8 @@ function setup() {
   background(250); //background color
 
   console.log("hello bro.");
+
+  let a 
   // --- Exercise: Area of Triangle ---
   // write your codes here
 
