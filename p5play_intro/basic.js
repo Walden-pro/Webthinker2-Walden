@@ -30,6 +30,7 @@ function setup() {
     console.log(i)
     fill( "#000000");
     text(i,400,200);
+    sum += 1
     
   }
   // --- Exercise: Age category classification ---
