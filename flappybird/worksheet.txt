@@ -9,6 +9,7 @@ Left click to hit it
 Right click to shoot a bow and arrow
 • What happens when you win or lose?
 If you win, you beat the game and can beat it again
+If you lose, you die
 
 
 
