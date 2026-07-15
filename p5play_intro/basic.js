@@ -25,18 +25,19 @@ function setup() {
 
   // --- Exercise: Sum of first 10 even numbers ---
   // write your codes here
-  let textpos = 0
-  let sum = 0
-  for (let i = 2 ; i <= 20 ; i += 2){
-    console.log(i);
-    textpos += 30;
-    fill( "#000000");
-    textSize(24)
-    text(i,textpos,200);
-    sum += i;
-  }
 
-  text("Sum: " + sum,500,200);
+  // let textpos = 0
+  // let sum = 0
+  // for (let i = 2 ; i <= 20 ; i += 2){
+  //   console.log(i);
+  //   textpos += 30;
+  //   fill( "#000000");
+  //   textSize(24)
+  //   text(i,textpos,200);
+  //   sum += i;
+  // }
+  // text("Sum: " + sum,500,200);
+
   // --- Exercise: Age category classification ---
   // write your codes here
 
