@@ -11,12 +11,13 @@ base = loadImage("assets/base.png");
 
 }
 function setup() {
-  //gravity
-  world.gravity.y = 10;
+  
   new Canvas(400, 600);
 
 // debug text
-
+  fill("blue")
+  textSize(14)
+  text("vel.y " + bird.vel.y)
 
 
 // make bird
