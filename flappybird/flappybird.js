@@ -6,15 +6,15 @@ let base;
 
 function preload(){
 birdMidImg = loadImage("flappybird/assets/yellowbird-midflap.png");
-background = loadImage("flappybird/assets/background-day.png")
-base = loadImage("flappybird/assets/base.png")
-
+background = loadImage("flappybird/assets/background-day.png");
+base = loadImage("flappybird/assets/base.png");
+;
 }
 function setup() {
   new Canvas(400, 600);
   background(250);
   bird = new Sprite();
-  bird.img = bird
+  bird.img = birdMidImg;
 }
 function draw() {
 
