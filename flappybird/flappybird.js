@@ -1,13 +1,13 @@
 let bird;
 let floor;
-let birdMidImg = loadImage("flappybird/assets/yellowbird-midflap.png");
-let background 
-let base = 
+let birdMidImg;
+let background;
+let base;
 
 function preload(){
-let birdMidImg = loadImage("flappybird/assets/yellowbird-midflap.png");
-let background = loadImage("flappybird/assets/background-day.png")
-let base = loadImage("flappybird/assets/base.png")
+birdMidImg = loadImage("flappybird/assets/yellowbird-midflap.png");
+background = loadImage("flappybird/assets/background-day.png")
+base = loadImage("flappybird/assets/base.png")
 
 }
 function setup() {
