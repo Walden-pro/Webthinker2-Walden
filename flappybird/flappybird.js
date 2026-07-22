@@ -38,8 +38,9 @@ function setup() {
 function draw() {
   image(background,0,0,width,height);
   if(kb.presses ("space") || mouse.presses("left")){
+    bird.sleeping = false;/
     bird.vel.y = -5; //Up velocity
-    bird.sleeping = false;
+    
   }
 
 
