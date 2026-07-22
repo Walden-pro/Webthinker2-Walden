@@ -88,7 +88,8 @@ camera move slowly to the right
 pipes move to the left
 background and floor looping and moving
 
-5. sprite collio
+5. sprite collision and game over
+
 
 
 
