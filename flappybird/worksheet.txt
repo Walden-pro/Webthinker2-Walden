@@ -90,7 +90,9 @@ background and floor looping and moving
 
 5. sprite collision and game over
 bird can collide with the pipes and the floor
+game ends when bird collides
 
+6. score tracking
 
 
 
