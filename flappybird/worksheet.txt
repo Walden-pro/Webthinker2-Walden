@@ -75,3 +75,6 @@ Draw the above into a Mindmap. For each phase:
 1. background and character setup
 background moves to the left
 character is in the middle 
+
+2. player movement and gravity
+
