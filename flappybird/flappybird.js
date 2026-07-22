@@ -6,8 +6,8 @@ let base;
 
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
-background = loadImage("flappybird/assets/background-day.png");
-base = loadImage("flappybird/assets/base.png");
+background = loadImage("assets/background-day.png");
+base = loadImage("assets/base.png");
 
 }
 function setup() {
