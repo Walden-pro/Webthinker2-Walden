@@ -79,7 +79,8 @@ character is in the middle
 2. player movement and gravity
 bird always move down because of gravity
 
-3.
+3.pipes or other obstacles
+the pipes are fixed 
 
 
 
