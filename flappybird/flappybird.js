@@ -17,6 +17,7 @@ function setup() {
   bird.img = birdMidImg;
   bird.width = 30;
   bird.height = 30;
+  
 }
 function draw() {
 
