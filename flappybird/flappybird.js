@@ -14,6 +14,9 @@ function setup() {
   
   new Canvas(400, 600);
 
+//gravity
+  world.gravity.y = 10;
+  
 // debug text
   fill("blue")
   textSize(14)
