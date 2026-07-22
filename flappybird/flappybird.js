@@ -5,7 +5,7 @@ let background;
 let base;
 
 function preload(){
-birdMidImg = loadImage("flappybird/assets/yellowbird-midflap.png");
+birdMidImg = loadImage("assets/yellowbird-midflap.png");
 background = loadImage("flappybird/assets/background-day.png");
 base = loadImage("flappybird/assets/base.png");
 
