@@ -14,6 +14,11 @@ function setup() {
   //gravity
   world.gravity.y = 10;
   new Canvas(400, 600);
+
+// debug text
+
+
+
 // make bird
   bird = new Sprite();
   bird.img = birdMidImg;
