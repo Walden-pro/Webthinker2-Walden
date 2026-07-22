@@ -24,7 +24,8 @@ function setup() {
   bird.collider = "dynamic";
 
 
-  floor = new Sprite
+  floor = new Sprite();
+  
 
 
 }
