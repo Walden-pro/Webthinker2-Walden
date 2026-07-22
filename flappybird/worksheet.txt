@@ -86,7 +86,9 @@ the bird touch the pipe and game over
 4. scrolling and camera
 camera move slowly to the right 
 pipes move to the left
+background and floor looping and moving
 
+5. sprite collio
 
 
 
