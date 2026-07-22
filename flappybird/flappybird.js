@@ -1,5 +1,6 @@
 let bird;
 let floor;
+let birdMid;
 
 function preload(){
 
