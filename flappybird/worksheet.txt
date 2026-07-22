@@ -80,7 +80,7 @@ character is in the middle
 bird always move down because of gravity
 
 3.pipes or other obstacles
-the pipes are fixed 
+the pipes are fixed at positions
 
 
 
