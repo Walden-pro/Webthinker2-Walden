@@ -1,10 +1,9 @@
+let bird;
+
 function preload(){
 
-  
+
 }
-
-
-
 
 function setup() {
   new Canvas(800, 400);
