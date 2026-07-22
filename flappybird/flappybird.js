@@ -19,9 +19,9 @@ function setup() {
   bird.img = birdMidImg;
   bird.width = 30;
   bird.height = 30;
-  bird.mass = 2;//heavy
+  bird.mass = 2;//heavyness
   bird.bounciness = 0.5;//higher is bouncier
-  bird.drag = 0.02;
+  bird.drag = 0.02;//air resistance
   bird.collider = "dynamic";//default
 
 //make floor
