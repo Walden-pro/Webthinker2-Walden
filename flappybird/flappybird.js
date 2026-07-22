@@ -20,8 +20,6 @@ function setup() {
 // debug text
   fill("#fcba03")
   textSize(14)
-  
-
 
 // make bird
   bird = new Sprite();
