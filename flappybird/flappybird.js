@@ -22,7 +22,7 @@ function setup() {
   bird.mass = 2;//heavyness
   bird.bounciness = 0.5;//higher is bouncier
   bird.drag = 0.02;//air resistance
-  bird.collider = "dynamic";//collidable, movable
+  bird.collider = "dynamic";//collidable, movable and affected by physics
 
 //make floor
   floor = new Sprite();
