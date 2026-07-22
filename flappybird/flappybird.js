@@ -13,7 +13,7 @@ base = loadImage("flappybird/assets/base.png");
 function setup() {
   new Canvas(400, 600);
   background(250);
-  
+
   bird = new Sprite();
   bird.img = birdMidImg;
   bird.width = 30;
@@ -21,7 +21,7 @@ function setup() {
 
 }
 function draw() {
-
+  image(background)
 
 
 }
