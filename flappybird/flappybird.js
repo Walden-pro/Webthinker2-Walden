@@ -42,7 +42,8 @@ function draw() {
     bird.vel.y = -5; //Up velocity
   }
   fill("blue")
-  textSize
+  textSize(14)
+  text()
 
 
 }
