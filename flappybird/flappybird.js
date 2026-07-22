@@ -1,12 +1,11 @@
 let bird;
 let floor;
-let birdMid;
+let birdMidImg
 
 function preload(){
 
 
 }
-
 function setup() {
   new Canvas(800, 400);
   background(250);
