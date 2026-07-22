@@ -1,6 +1,6 @@
 let bird;
 let floor;
-let birdMidImg = loadImage("assets/")
+let birdMidImg = loadImage("flappybird/assets/yellowbird-midflap.png")
 
 function preload(){
 
