@@ -11,6 +11,7 @@ base = loadImage("assets/base.png");
 
 }
 function setup() {
+    world.gravity.y = 10;
   new Canvas(400, 600);
 
   bird = new Sprite();
@@ -22,7 +23,7 @@ function setup() {
   bird.drag = 0.02;
   bird.collider = "dynamic";
 
-  world.gravity.y = 10;
+
   floor = new Sprite
 
 
