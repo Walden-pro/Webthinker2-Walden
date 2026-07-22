@@ -81,6 +81,8 @@ bird always move down because of gravity
 
 3.pipes or other obstacles
 the pipes are fixed at positions
+the bird touch the pipe and game over
+
 
 
 
