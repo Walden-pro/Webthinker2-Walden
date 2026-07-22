@@ -50,6 +50,6 @@ function draw() {
   }
 
   text("vel.y " + bird.vel.y.toFixed(2),10,20); // (text,x,y)
-  text("")
+  text("isMoving:" + )
 
 }
