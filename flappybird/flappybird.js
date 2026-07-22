@@ -41,9 +41,7 @@ function draw() {
     bird.sleeping = false;// make sure no sprite is not idle
     bird.vel.y = -5; //Up velocity
   }
-  fill("blue")
-  textSize(14)
-  text("vel.y " + bird.vel.y)
+
 
 
 }
