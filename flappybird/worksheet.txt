@@ -94,7 +94,8 @@ game ends when bird collides
 
 6. score tracking and sounds
 
-score increase as 
+score increase as bird go through pipes
+
 
 
 
