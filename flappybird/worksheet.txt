@@ -95,7 +95,7 @@ game ends when bird collides
 6. score tracking and sounds
 score increase as bird go through pipes
 bird die when knock into pipes
-
+bird dies when knocked into pipes and ground
 
 
 
