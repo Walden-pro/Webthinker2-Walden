@@ -20,7 +20,7 @@ function setup() {
 // debug text
   fill("#fcba03")
   textSize(14)
-  text("vel.y " + bird.vel.y)
+  
 
 
 // make bird
@@ -51,6 +51,6 @@ function draw() {
     bird.vel.y = -5; //Up velocity
   }
 
-
+text("vel.y " + bird.vel.y)
 
 }
