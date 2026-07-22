@@ -19,10 +19,10 @@ function setup() {
   bird.img = birdMidImg;
   bird.width = 30;
   bird.height = 30;
-  bird.mass = 2;
-  bird.bounciness = 0.5;
+  bird.mass = 2;//heavy
+  bird.bounciness = 0.5;//higher is bouncier
   bird.drag = 0.02;
-  bird.collider = "dynamic";
+  bird.collider = "dynamic";//default
 
 //make floor
   floor = new Sprite();
