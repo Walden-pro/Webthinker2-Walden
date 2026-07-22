@@ -25,7 +25,8 @@ function setup() {
 
 
   floor = new Sprite();
-  floor.img = 
+  floor.img = base;
+  
 
 
 }
