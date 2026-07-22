@@ -24,7 +24,7 @@ function setup() {
   bird.drag = 0.02;
   bird.collider = "dynamic";
 
-
+//make floor
   floor = new Sprite();
   floor.img = base;
   floor.width = width;
