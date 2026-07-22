@@ -93,7 +93,6 @@ bird can collide with the pipes and the floor
 game ends when bird collides
 
 6. score tracking and sounds
-
 score increase as bird go through pipes
 
 
