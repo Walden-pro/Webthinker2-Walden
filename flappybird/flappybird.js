@@ -1,6 +1,6 @@
 let bird;
 let floor;
-let birdMidImg = loadImage("")
+let birdMidImg = loadImage("assets/")
 
 function preload(){
 
