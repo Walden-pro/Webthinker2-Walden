@@ -80,3 +80,7 @@ character is in the middle
 bird always move down because of gravity
 
 3.
+
+
+
+
