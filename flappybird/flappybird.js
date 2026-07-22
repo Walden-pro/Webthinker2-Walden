@@ -11,7 +11,7 @@ base = loadImage("assets/base.png");
 
 }
 function setup() {
-    world.gravity.y = 10;
+  world.gravity.y = 10;
   new Canvas(400, 600);
 
   bird = new Sprite();
