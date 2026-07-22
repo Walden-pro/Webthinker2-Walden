@@ -18,7 +18,7 @@ function setup() {
   world.gravity.y = 10;
 
 // debug text
-  fill("#fcba03")
+  fill("#fc0303")
   textSize(14)
 
 // make bird
