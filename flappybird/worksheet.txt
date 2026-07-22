@@ -89,7 +89,7 @@ pipes move to the left
 background and floor looping and moving
 
 5. sprite collision and game over
-
+bird can collide 
 
 
 
