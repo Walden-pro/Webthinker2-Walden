@@ -8,8 +8,8 @@ function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
 background = loadImage("assets/background-day.png");
 base = loadImage("assets/base.png");
-birdDownImg = loadImage("/assets/yellowbird-downflap.png");
-birdUpImg = loadImage("/assets/yellowbird-upflap.png");
+birdDownImg = loadImage("assets/yellowbird-downflap.png");
+birdUpImg = loadImage("assets/yellowbird-upflap.png");
 
 }
 function setup() {
@@ -68,5 +68,5 @@ function draw() {
     bird.img = birdMidImg;
     bird.rotation = 0;
   }
-  
+
 }
