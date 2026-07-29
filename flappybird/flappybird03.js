@@ -76,8 +76,8 @@ function draw() {
   if (frameCount === 1){
     spawnPipePair();
   }
-  bird.x += 3;
-  camera.x = bird.x;//
+  bird.x += 3;//
+  camera.x = bird.x;//lock the camera to the bird postion
   floor.x = bird.x;//lock the bird in the position
 }
 function spawnPipePair(){
