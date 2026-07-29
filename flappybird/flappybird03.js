@@ -10,6 +10,7 @@ let topPipe;
 let gameOverImg;
 let gameOverLabel;
 let startScreenLabel;
+let startScreenImg;
 
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
