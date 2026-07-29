@@ -7,7 +7,7 @@ let pipeGroup;
 let pipe;
 let bottomPipe;
 let topPipe;
-let gameOver;
+let gameO
 
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
