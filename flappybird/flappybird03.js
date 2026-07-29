@@ -54,7 +54,7 @@ function setup() {
   floor.collider = "static";//collidable but will not move
 
   pipeGroup = new Group();
-  startScreenLabel = new Sprite(width)
+  startScreenLabel = new Sprite(width/2, height/2, )
 }
 function draw() {
   image(background,0,0,width,height);
