@@ -106,7 +106,7 @@ function draw() {
   }
   if(kb.presses ("space") || mouse.presses("left")){
     startGame= true;
-    startScreenLabel.visible
+    startScreenLabel.visible = false;
   }
   
 
