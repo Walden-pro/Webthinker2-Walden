@@ -105,7 +105,8 @@ function draw() {
     noLoop();
   }
   if(kb.presses ("space") || mouse.presses("left")){
-    startGame
+    startGame= true;
+    
   }
   
 
