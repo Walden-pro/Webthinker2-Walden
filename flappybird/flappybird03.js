@@ -94,7 +94,7 @@ function draw() {
     gameOverLabel = new Sprite(width/2,height / 2, 192,42,'none');
     gameOverLabel.img = gameOverImg;
     gameOverLabel.layer = 100;
-    gameOver
+    gameOverLabel = 
     noLoop();
   }
   
