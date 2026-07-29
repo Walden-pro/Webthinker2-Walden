@@ -87,7 +87,8 @@ bottomPipe.img = pipe;
 pipeGroup.add(bottomPipe);
 pipeGroup.layer = 0;
 
-topPipe = new Sprite (400, midY - gap / 2 - 200,52,320, ' static')
+topPipe = new Sprite (400, midY - gap / 2 - 200,52,320, ' static');
+topPipe.
 }
 
 
