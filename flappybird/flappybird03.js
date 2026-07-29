@@ -81,7 +81,7 @@ function draw() {
   floor.x = bird.x;//lock the bird in the position
 
   if (frameCount % 90 === 0){
-    
+    spawnPipePair();
   }
 }
 function spawnPipePair(){
