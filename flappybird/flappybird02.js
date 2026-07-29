@@ -77,6 +77,7 @@ function draw() {
   }
 }
 function spawnPipePair(){
+let gap = 50
 
 }
 
