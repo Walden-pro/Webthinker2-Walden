@@ -11,7 +11,7 @@ let gameOverImg;
 let gameOverLabel;
 let startScreenLabel;
 let startScreenImg;
-
+let start
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
 background = loadImage("assets/background-day.png");
