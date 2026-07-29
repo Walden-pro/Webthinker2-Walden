@@ -108,6 +108,9 @@ function draw() {
     startGame= true;
     startScreenLabel.visible = false;
   }
+  if (startGame){
+    
+  }
   
 
 
