@@ -69,7 +69,7 @@ function draw() {
     bird.img = birdMidImg;
     bird.rotation = 0;
   }
-  if (framecount === 1){
+  if (frameCount === 1){
     spawnPipePair();
   }
 }
