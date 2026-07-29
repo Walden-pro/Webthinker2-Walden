@@ -73,4 +73,6 @@ function draw() {
     spawnPipePair();
   }
 }
-function spawnPipePair()
+function spawnPipePair(){
+  
+}
