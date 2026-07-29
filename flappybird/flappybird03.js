@@ -90,7 +90,7 @@ function draw() {
       pipe.remove();
     }
   }
-  if (bird.collides(pipeGroup)|| bird.collides(floor)){
+  if (bird.collides(pipeGroup)|| bird.collides(floor)|| bird.y){
     gameOverLabel = new Sprite(width/2,height / 2, 192,42,'none');
     gameOverLabel.img = gameOverImg;
     gameOverLabel.layer = 100;
