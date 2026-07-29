@@ -7,7 +7,8 @@ let pipeGroup;
 let pipe;
 let bottomPipe;
 let topPipe;
-let gameOver
+let gameOver;
+
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
 background = loadImage("assets/background-day.png");
