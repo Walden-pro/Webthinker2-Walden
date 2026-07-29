@@ -80,7 +80,7 @@ function draw() {
   camera.x = bird.x;//lock the camera to the bird postion
   floor.x = bird.x;//lock the bird in the position
 
-  if (frameCount % 90 === 0){//
+  if (frameCount % 90 === 0){//change the pipe to spawn slower. 60 frames 
     spawnPipePair();
   }
   for (let pipe of pipeGroup){
