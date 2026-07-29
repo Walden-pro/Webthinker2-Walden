@@ -16,7 +16,7 @@ base = loadImage("assets/base.png");
 birdDownImg = loadImage("assets/yellowbird-downflap.png");
 birdUpImg = loadImage("assets/yellowbird-upflap.png");
 pipe = loadImage("assets/pipe-green.png");
-
+game
 }
 function setup() {
   
