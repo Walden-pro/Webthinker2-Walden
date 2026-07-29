@@ -43,7 +43,7 @@ function setup() {
   floor.y = height - 20;
   floor.collider = "static";//collidable but will not move
 
-  pipe
+  pipeGroup = newGroup
 }
 function draw() {
   image(background,0,0,width,height);
