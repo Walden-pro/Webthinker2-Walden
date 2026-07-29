@@ -7,7 +7,7 @@ let pipeGroup;
 let pipe;
 let bottomPipe;
 let topPipe;
-
+let gameOver
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
 background = loadImage("assets/background-day.png");
@@ -91,7 +91,7 @@ function draw() {
   if (bird.collides(pipeGroup)|| bird.collides(floor)){
     noLoop();
   }
-  
+
 }
 function spawnPipePair(){
 let gap = 50;
