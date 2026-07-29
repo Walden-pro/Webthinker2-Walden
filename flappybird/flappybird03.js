@@ -83,6 +83,9 @@ function draw() {
   if (frameCount % 90 === 0){
     spawnPipePair();
   }
+  for (let pipe of pipeGroup){
+    
+  }
 }
 function spawnPipePair(){
 let gap = 50;
