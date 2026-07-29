@@ -65,6 +65,6 @@ function draw() {
   }
   else {
     bird.img = birdMidImg;
-    bird.rotation =
+    bird.rotation = 0;
   }
 }
