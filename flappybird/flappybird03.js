@@ -57,10 +57,10 @@ function setup() {
   pipeGroup = new Group();
   startScreenLabel = new Sprite(width/2, height/2, 50, 50,'none');
   startScreenLabel.img = startScreenImg;
+  bird.visible = false;
 }
 function draw() {
   image(background,0,0,width,height);
-  bird.visible = false;
   if(kb.presses ("space") || mouse.presses("left")){
     bird.visible = true;
     startGame= true;
