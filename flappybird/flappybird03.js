@@ -92,8 +92,8 @@ function draw() {
   if (bird.collides(pipeGroup)|| bird.collides(floor)){
     noLoop();
   }
-  let gameOverLabel;
-  
+  let gameOverLabel = new Sprite(width)
+
 }
 function spawnPipePair(){
 let gap = 50;
