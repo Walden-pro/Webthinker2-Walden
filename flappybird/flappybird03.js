@@ -93,7 +93,7 @@ function draw() {
   if (bird.collides(pipeGroup)|| bird.collides(floor)){
     gameOverLabel = new Sprite(width/2,height / 2, 192,42,'none');
     gameOverLabel.img = gameOverImg;
-    gameOverLabel = 
+    gameOverLabel
     noLoop();
   }
   
