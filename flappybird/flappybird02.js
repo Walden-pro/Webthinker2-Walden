@@ -13,7 +13,7 @@ background = loadImage("assets/background-day.png");
 base = loadImage("assets/base.png");
 birdDownImg = loadImage("assets/yellowbird-downflap.png");
 birdUpImg = loadImage("assets/yellowbird-upflap.png");
-
+pipe = loadImage("")
 }
 function setup() {
   
