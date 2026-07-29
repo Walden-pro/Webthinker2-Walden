@@ -104,7 +104,8 @@ function draw() {
     gameOverLabel.x = camera.x;
     noLoop();
   }
-    if(kb.presses ("space") || mouse.presses("left")){
+  if(kb.presses ("space") || mouse.presses("left")){
+    startGame
   }
   
 
