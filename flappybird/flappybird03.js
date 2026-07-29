@@ -79,6 +79,10 @@ function draw() {
   bird.x += 3;//make birds move forwards
   camera.x = bird.x;//lock the camera to the bird postion
   floor.x = bird.x;//lock the bird in the position
+
+  if (frameCount % 90 === 0){
+    
+  }
 }
 function spawnPipePair(){
 let gap = 50;
