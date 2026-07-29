@@ -93,7 +93,7 @@ function draw() {
     noLoop();
   }
   let gameOverLabel = new Sprite(width/2,height / 2, 100,100,'none');
-  game
+  gameOverImg = gameOverLabel;
 
 }
 function spawnPipePair(){
