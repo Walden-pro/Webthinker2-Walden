@@ -54,6 +54,7 @@ function setup() {
   floor.collider = "static";//collidable but will not move
 
   pipeGroup = new Group();
+  start
 }
 function draw() {
   image(background,0,0,width,height);
