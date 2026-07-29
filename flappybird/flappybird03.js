@@ -76,7 +76,9 @@ function draw() {
   if (frameCount === 1){
     spawnPipePair();
   }
-  bird.x += 3camera.x;
+  bird.x += 3;
+  camera.x = bird.x;
+  
 }
 function spawnPipePair(){
 let gap = 50;
