@@ -62,6 +62,12 @@ function draw() {
   image(background,0,0,width,height);
 
   if(kb.presses ("space") || mouse.presses("left")){
+    startGame= true;
+    startScreenLabel.visible = false;
+  }
+  if (startGame){
+      
+  if(kb.presses ("space") || mouse.presses("left")){
     bird.sleeping = false;// make sure no sprite is not idle
     bird.vel.y = -5; //Up velocity
   }
@@ -104,12 +110,6 @@ function draw() {
     gameOverLabel.x = camera.x;
     noLoop();
   }
-  if(kb.presses ("space") || mouse.presses("left")){
-    startGame= true;
-    startScreenLabel.visible = false;
-  }
-  if (startGame){
-    
   }
   
 
