@@ -3,7 +3,8 @@ let floor;
 let birdMidImg;
 let background;
 let base;
-let pipeG
+let pipeGroup;
+
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
 background = loadImage("assets/background-day.png");
