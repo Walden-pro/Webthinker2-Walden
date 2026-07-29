@@ -20,7 +20,8 @@ birdDownImg = loadImage("assets/yellowbird-downflap.png");
 birdUpImg = loadImage("assets/yellowbird-upflap.png");
 pipe = loadImage("assets/pipe-green.png");
 gameOverImg = loadImage("assets/gameover.png");
-startScreenImg = loadImage("assets/message.png")
+startScreenImg = loadImage("assets/message.png");
+
 }
 function setup() {
   
