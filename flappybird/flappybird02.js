@@ -60,6 +60,6 @@ function draw() {
     bird.rotation = -30;
   }
   else if (bird.vel.y > 1){
-    
+    bird.img = 
   }
 }
