@@ -29,7 +29,7 @@ function setup() {
   new Canvas(400, 600);
 
 //gravity
-  world.gravity.y = 12.5;
+  world.gravity.y = 13;
 
 // debug text
   fill("#fc0303")
