@@ -5,6 +5,7 @@ let background;
 let base;
 let pipeGroup;
 let pipe;
+let bottomPipe;
 
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
