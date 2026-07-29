@@ -8,6 +8,7 @@ let pipe;
 let bottomPipe;
 let topPipe;
 let gameOverImg;
+let gameOverLabel;
 
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
