@@ -92,6 +92,7 @@ function draw() {
   if (bird.collides(pipeGroup)|| bird.collides(floor)){
     noLoop();
   }
+  let gameOverLabel;
   
 }
 function spawnPipePair(){
