@@ -64,6 +64,7 @@ function setup() {
   startScreenLabel.img = startScreenImg;
   bird.visible = false;
   scoreDigits = new Group();
+  scoreDigits.collider
   
   
 }
