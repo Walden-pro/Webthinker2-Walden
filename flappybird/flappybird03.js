@@ -63,7 +63,9 @@ function setup() {
   startScreenLabel = new Sprite(width/2, height/2, 50, 50,'none');
   startScreenLabel.img = startScreenImg;
   bird.visible = false;
-  scoreDigits = new Group
+  scoreDigits = new Group();
+  
+  
 }
 function draw() {
   image(background,0,0,width,height);
