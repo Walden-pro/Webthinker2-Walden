@@ -17,14 +17,14 @@ let numberImages = [];
 let scoreDigits;
 
 function preload(){
-birdMidImg = loadImage("assets/yellowbird-midflap.png");
-background = loadImage("assets/background-day.png");
-base = loadImage("assets/base.png");
-birdDownImg = loadImage("assets/yellowbird-downflap.png");
-birdUpImg = loadImage("assets/yellowbird-upflap.png");
-pipe = loadImage("assets/pipe-green.png");
-gameOverImg = loadImage("assets/gameover.png");
-startScreenImg = loadImage("assets/message.png");
+  birdMidImg = loadImage("assets/yellowbird-midflap.png");
+  background = loadImage("assets/background-day.png");
+  base = loadImage("assets/base.png");
+  birdDownImg = loadImage("assets/yellowbird-downflap.png");
+  birdUpImg = loadImage("assets/yellowbird-upflap.png");
+  pipe = loadImage("assets/pipe-green.png");
+  gameOverImg = loadImage("assets/gameover.png");
+  startScreenImg = loadImage("assets/message.png");
   
 }
 function setup() {
