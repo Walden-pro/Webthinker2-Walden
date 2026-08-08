@@ -126,7 +126,7 @@ function draw() {
     noLoop();
   }
   }
-  
+  drawScore()
 
 
 }
