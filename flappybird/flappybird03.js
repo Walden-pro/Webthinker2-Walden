@@ -150,7 +150,8 @@ pipeGroup.add(topPipe);
 function drawScore(x,y,score,digitWit=dth, digitHeight){
   scoreDigits.removeAll();
   let scoreStr = str(score);
-  let totalWidth = scoreStr.length * digit
+  let totalWidth = scoreStr.length * digitWidth;
+  let s
 }
 
 
