@@ -127,6 +127,7 @@ function draw() {
   }
   for (let pipe of pipeGroup){
     let pipeRightEdge = pipe.x + pipe.w /2;
+    let bird
   }
   }
   drawScore(width/2,20,score,24,36)
