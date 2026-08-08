@@ -12,7 +12,8 @@ let gameOverLabel;
 let startScreenLabel;
 let startScreenImg;
 let startGame = false;
-
+let score = 0;
+let numberImages
 
 function preload(){
 birdMidImg = loadImage("assets/yellowbird-midflap.png");
