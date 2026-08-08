@@ -12,7 +12,7 @@ let gameOverLabel;
 let startScreenLabel;
 let startScreenImg;
 let startGame = false;
-let score = ;
+let score = 9;
 let numberImages = [];
 let scoreDigits;
 
