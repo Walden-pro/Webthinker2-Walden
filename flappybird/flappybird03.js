@@ -147,7 +147,7 @@ topPipe.rotation = 180;
 pipeGroup.add(topPipe);
 
 }
-function drawScore(x,y,score,digitWit=dth, digitHeight){
+function drawScore(x,y,score,digitWidth, digitHeight){
   scoreDigits.removeAll();
   let scoreStr = str(score);
   let totalWidth = scoreStr.length * digitWidth;
