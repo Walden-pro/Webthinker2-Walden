@@ -126,7 +126,7 @@ function draw() {
     noLoop();
   }
   for (let pipe of pipeGroup){
-    
+    let pipeRightEdge = pipe.x
   }
   }
   drawScore(width/2,20,score,24,36)
