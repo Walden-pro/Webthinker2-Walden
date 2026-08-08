@@ -145,7 +145,7 @@ topPipe.img = pipe;
 topPipe.rotation = 180;
 
 pipeGroup.add(topPipe);
-topPipe.passed
+topPipe.passed = false;
 
 }
 function drawScore(x,y,score,digitWidth, digitHeight){
