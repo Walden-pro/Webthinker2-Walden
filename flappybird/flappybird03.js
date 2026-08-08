@@ -65,7 +65,7 @@ function setup() {
   bird.visible = false;
   scoreDigits = new Group();
   scoreDigits.collider = 'none';
-  scoreDigit
+  scoreDigits.layer = 1000;
   
   
 }
