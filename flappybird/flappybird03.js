@@ -147,5 +147,8 @@ topPipe.rotation = 180;
 pipeGroup.add(topPipe);
 
 }
+function drawScore(x,y,score,digitWit=dth, digitHeight){
+  
+}
 
 
