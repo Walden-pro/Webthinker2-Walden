@@ -161,7 +161,7 @@ function drawScore(x,y,score,digitWidth, digitHeight){
   moveGroup(scoreDigits,camera.x,24);
 }
 function moveGroup(group,tagetX,spacing){
-  let totalWidth = (group)
+  let totalWidth = (group.length -1) * spacing;
 }
 
 
