@@ -140,12 +140,12 @@ bottomPipe.img = pipe;
 pipeGroup.add(bottomPipe);
 pipeGroup.layer = 0;
 
-topPipe = new Sprite (bird.x + 400, midY - gap / 2 - 200,52,320, 'static');
-topPipe.img = pipe;
-topPipe.rotation = 180;
+  topPipe = new Sprite (bird.x + 400, midY - gap / 2 - 200,52,320, 'static');
+  topPipe.img = pipe;
+  topPipe.rotation = 180;
 
-pipeGroup.add(topPipe);
-topPipe.passed = false;
+  pipeGroup.add(topPipe);
+  topPipe.passed = false;
 
 }
 function drawScore(x,y,score,digitWidth, digitHeight){
