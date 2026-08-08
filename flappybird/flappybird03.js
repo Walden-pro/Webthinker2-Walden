@@ -149,7 +149,7 @@ pipeGroup.add(topPipe);
 }
 function drawScore(x,y,score,digitWit=dth, digitHeight){
   scoreDigits.removeAll();
-  let 
+  let scoreStr = str(score)
 }
 
 
