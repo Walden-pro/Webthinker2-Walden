@@ -43,8 +43,8 @@ function setup() {
   world.gravity.y = 13;
 
 // debug text
-  fill("#fc0303")
-  textSize(14)
+  fill("#fc0303");
+  textSize(14);
 
 // make bird
   bird = new Sprite();
