@@ -145,7 +145,7 @@ function draw() {
       bird.y = 200;
       gameOverLabel.remove();
       startScreenLabel.visible = true;
-      startScreenLabel.x
+      startScreenLabel.x = bird.x;
       
 
     },3000)
