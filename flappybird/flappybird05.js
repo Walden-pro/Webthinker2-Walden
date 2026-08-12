@@ -135,8 +135,9 @@ function draw() {
     gameOverLabel.x = camera.x;
     noLoop();
     setTimeout(() => {
-      score = 0;
+      
       startGame = false;
+      score = 0;
       pipeGroup.removeAll();
       bird.vel.x = 0;
       bird.vel.y = 0;
