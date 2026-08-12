@@ -134,7 +134,11 @@ function draw() {
     gameOverLabel.layer = 100;
     gameOverLabel.x = camera.x;
     noLoop();
-    
+    setTimeout(() => {
+      score = 0;
+      startGame = false;
+      
+    })
 
   }
 
