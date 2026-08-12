@@ -31,7 +31,7 @@ function preload(){
   for (let i = 0; i <10;i++){
     numberImages[i] = loadImage('assets/' + i + '.png');
   }
-  flapSound = createAudio("")
+  flapSound = createAudio("assets/sfx_die.mp3")
 }
 function setup() {
   
