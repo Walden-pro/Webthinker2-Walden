@@ -32,6 +32,8 @@ function preload(){
     numberImages[i] = loadImage('assets/' + i + '.png');
   }
   flapSound = createAudio("assets/sfx_die.mp3")
+  pointSound = createAudio("assets/sfx_die.mp3")
+  wingSound = createAudio("assets/sfx_die.mp3")
 }
 function setup() {
   
