@@ -17,6 +17,7 @@ let numberImages = [];
 let scoreDigits;
 let flapSound;
 let pointSound;
+let failSound;
 
 function preload(){
   birdMidImg = loadImage("assets/yellowbird-midflap.png");
