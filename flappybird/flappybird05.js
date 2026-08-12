@@ -126,6 +126,7 @@ function draw() {
       pipe.remove();
     }
   }
+
   if (bird.collides(pipeGroup)|| bird.collides(floor)|| bird.y < -30){
     failSound.play();
     gameOverLabel = new Sprite(width/2,height / 2, 192,42,'none');
@@ -133,8 +134,8 @@ function draw() {
     gameOverLabel.layer = 100;
     gameOverLabel.x = camera.x;
     noLoop();
-
     
+
   }
 
   for (let pipe of pipeGroup){
