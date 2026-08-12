@@ -142,6 +142,7 @@ function draw() {
       bird.vel.y = 0;
       bird.rotation = 0;
       
+
     },3000)
 
   }
