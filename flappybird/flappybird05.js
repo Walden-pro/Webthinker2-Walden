@@ -127,6 +127,7 @@ function draw() {
     }
   }
   if (bird.collides(pipeGroup)|| bird.collides(floor)|| bird.y < -30){
+    failSound.play
     gameOverLabel = new Sprite(width/2,height / 2, 192,42,'none');
     gameOverLabel.img = gameOverImg;
     gameOverLabel.layer = 100;
