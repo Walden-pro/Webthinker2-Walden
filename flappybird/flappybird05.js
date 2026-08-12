@@ -137,7 +137,7 @@ function draw() {
     setTimeout(() => {
       score = 0;
       startGame = false;
-      
+      pipes.
     },3000)
 
   }
