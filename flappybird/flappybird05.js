@@ -138,7 +138,8 @@ function draw() {
       score = 0;
       startGame = false;
       
-    })
+
+    },3000)
 
   }
 
