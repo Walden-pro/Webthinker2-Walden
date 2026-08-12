@@ -147,7 +147,7 @@ function draw() {
       startScreenLabel.visible = true;
       startScreenLabel.x = bird.x;
       startScreenLabel.y = height/2-50;
-      l
+      loop();
       
 
     },3000)
