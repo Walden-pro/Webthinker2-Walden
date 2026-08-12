@@ -144,7 +144,7 @@ function draw() {
       bird.collider = 'static';
       bird.y = 200;
       gameOverLabel.remove();
-      startMessageLabel = 
+      startMessageLabel.visible;
       
 
     },3000)
