@@ -33,7 +33,7 @@ function preload(){
   }
   flapSound = createAudio("assets/sfx_die.mp3")
   pointSound = createAudio("assets/sfx_die.mp3")
-  wingSound = createAudio("assets/sfx_die.mp3")
+  failSound = createAudio("assets/sfx_die.mp3")
 }
 function setup() {
   
