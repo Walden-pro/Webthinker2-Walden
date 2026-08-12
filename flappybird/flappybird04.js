@@ -15,7 +15,9 @@ let startGame = false;
 let score = 0;
 let numberImages = [];
 let scoreDigits;
-let flapSound
+let flapSound;
+let pointSound;
+
 function preload(){
   birdMidImg = loadImage("assets/yellowbird-midflap.png");
   background = loadImage("assets/background-day.png");
