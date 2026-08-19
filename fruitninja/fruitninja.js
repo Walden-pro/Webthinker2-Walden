@@ -25,8 +25,8 @@ function setup(){
     peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 
-    //Water
-    peach = new Sprite();
+    //Watermelon
+    watermelon = new Sprite();
     peach.img = peachWhole;
     peach.width = 100;
     peach.height = 100;
