@@ -43,7 +43,7 @@ function spawnPeach(){
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 }
 function spawnWatermelon(){
-    watermelon = new peachGroup.Sprite();
+    watermelon = new watermelonGroup.Sprite();
     watermelon.img = watermelonWhole;
     watermelon.width = 150;
     watermelon.height = 150;
