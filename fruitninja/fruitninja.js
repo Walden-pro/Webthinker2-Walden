@@ -38,13 +38,13 @@ function spawnPeach(){
     peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 }
-function spawnWatermelon(){
-    watermelon = new watermelonGroup.Sprite();
-    watermelon.img = watermelonWhole;
-    watermelon.width = 150;
-    watermelon.height = 150;
-    watermelon.scale = watermelon.width / watermelonWhole.width;
-    watermelon.mass = 2;//How heavy
-    watermelon.drag = 0.02;//Air resistance
-    watermelon.collider = "dynamic";//Collidable,movable,affected by physics
-}
+// function spawnWatermelon(){
+//     watermelon = new watermelonGroup.Sprite();
+//     watermelon.img = watermelonWhole;
+//     watermelon.width = 150;
+//     watermelon.height = 150;
+//     watermelon.scale = watermelon.width / watermelonWhole.width;
+//     watermelon.mass = 2;//How heavy
+//     watermelon.drag = 0.02;//Air resistance
+//     watermelon.collider = "dynamic";//Collidable,movable,affected by physics
+// }
