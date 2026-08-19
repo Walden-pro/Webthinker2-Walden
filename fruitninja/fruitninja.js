@@ -14,12 +14,12 @@ function setup(){
     new Canvas(800, 600);
     world.gravity.y = 10;
     peach = new Sprite();
-    bird.img = birdMidImg;
-    bird.width = 30;
-    bird.height = 30;
-    bird.mass = 2;
-    bird.bounciness = 0.5;
-    bird.drag = 0.02;
+    peach.img = birdMidImg;
+    peach.width = 30;
+    peach.height = 30;
+    peach.mass = 2;
+    peach.bounciness = 0.5;
+    peach.drag = 0.02;
     peach.collider = "dynamic";
 
 }
