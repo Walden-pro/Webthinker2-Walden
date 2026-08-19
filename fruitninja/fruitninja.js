@@ -24,8 +24,8 @@ function setup(){
     peach.mass = 2;
     peach.bounciness = 0.5;
     peach.drag = 0.02;
-    peach.collider = "dynamic";
-    
+    peach.collider = "dynamic";//Collidable,
+
 
 }
 function draw(){
