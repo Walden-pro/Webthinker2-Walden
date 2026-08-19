@@ -31,6 +31,7 @@ function setup(){
     watermelon.img = watermelonWhole;
     watermelon.width = 100;
     watermelon.height = 100;
+    watermelon.scale = 2;
     watermelon.mass = 2;//How heavy
     watermelon.drag = 0.02;//Air resistance
     watermelon.collider = "dynamic";//Collidable,movable,affected by physics
