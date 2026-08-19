@@ -30,10 +30,10 @@ function draw(){
     textSize(50);
     text("framecount:" + frameCount,10,40);
     if (frameCount){
-        
+        spawnPeach();
+        spawnWatermelon();
     }
-    spawnPeach();
-    spawnWatermelon();
+
 }
 function spawnPeach(){
     peach = new peachGroup.Sprite();
