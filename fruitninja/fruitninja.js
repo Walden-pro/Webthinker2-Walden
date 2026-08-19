@@ -15,9 +15,7 @@ function preload(){
     peachWhole = loadImage("assets/peachwhole.png");
 }
 function setup(){
-    fill("#ba0000");
-    textSize(50);
-    text("framecount:" + frameCount,10,40);
+
     new Canvas(800, 600);
     world.gravity.y = 10;
 
@@ -28,7 +26,9 @@ function setup(){
 }
 function draw(){
     image(background,0,0,width,height);
-   
+       fill("#ba0000");
+    textSize(50);
+    text("framecount:" + frameCount,10,40);
     spawnPeach();
     spawnWatermelon();
 }
