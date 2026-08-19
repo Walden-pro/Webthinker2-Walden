@@ -1,10 +1,10 @@
 let background;
-let watermelon;
-let peach;
+let watermelonwhole;
+let peachwhole;
 function preload(){
     background = loadImage("assets/dojobackground.png");
-    watermelon = loadImage("assets/watermelonwhole.png")
-    peach = loadImage("assets/peachwhole.png")
+    watermelonwhole = loadImage("assets/watermelonwhole.png")
+    peachwhole = loadImage("assets/peachwhole.png")
 }
 function setup(){
   new Canvas(800, 600);
