@@ -37,9 +37,11 @@ function setup(){
     watermelon.mass = 2;//How heavy
     watermelon.drag = 0.02;//Air resistance
     watermelon.collider = "dynamic";//Collidable,movable,affected by physics
+
+    
 }
 function draw(){
     image(background,0,0,width,height);
-    setInterval(1);
+   
 
 }
