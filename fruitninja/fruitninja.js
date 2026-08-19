@@ -13,8 +13,8 @@ function preload(){
 function setup(){
     new Canvas(800, 600);
     world.gravity.y = 10;
-    peach = newsprite
-    
+    peach = new Sprite
+
 }
 function draw(){
     image(background,0,0,width,height);
