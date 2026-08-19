@@ -17,6 +17,7 @@ function preload(){
 function setup(){
     fill("#ba0000");
     textSize(50);
+    
     new Canvas(800, 600);
     world.gravity.y = 10;
 
