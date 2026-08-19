@@ -19,8 +19,8 @@ function setup(){
     //Peach
     peach = new Sprite();
     peach.img = peachWhole;
-    peach.width = 135;
-    peach.height = 135;
+    peach.width = 150;
+    peach.height = 150;
     peach.scale = peach.width / peachWhole.width;
     peach.mass = 2;//How heavy
     peach.drag = 0.02;//Air resistance
