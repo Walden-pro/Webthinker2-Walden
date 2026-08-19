@@ -27,7 +27,7 @@ function draw(){
     image(background,0,0,width,height);
    
     spawnPeach()
-    spawnPeach()
+    spawnWatermelon()
 }
 function spawnPeach(){
     peach = new peachGroup.Sprite();
