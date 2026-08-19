@@ -15,7 +15,8 @@ function preload(){
     peachWhole = loadImage("assets/peachwhole.png")
 }
 function setup(){
-    fill("#fc")
+    fill("#ba0000")
+    
     new Canvas(800, 600);
     world.gravity.y = 10;
 
