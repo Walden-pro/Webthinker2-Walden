@@ -15,7 +15,8 @@ function preload(){
 function setup(){
     new Canvas(800, 600);
     world.gravity.y = 10;
-    
+
+    //Peach
     peach = new Sprite();
     peach.img = peachWhole;
     peach.width = 100;
@@ -24,6 +25,7 @@ function setup(){
     peach.bounciness = 0.5;
     peach.drag = 0.02;
     peach.collider = "dynamic";
+    
 
 }
 function draw(){
