@@ -11,12 +11,12 @@ let peachWhole;
 
 function preload(){
     background = loadImage("assets/dojobackground.png");
-    watermelonWhole = loadImage("assets/watermelonwhole.png")
-    peachWhole = loadImage("assets/peachwhole.png")
+    watermelonWhole = loadImage("assets/watermelonwhole.png");
+    peachWhole = loadImage("assets/peachwhole.png");
 }
 function setup(){
-    fill("#ba0000")
-    
+    fill("#ba0000");
+    textSize(50);
     new Canvas(800, 600);
     world.gravity.y = 10;
 
