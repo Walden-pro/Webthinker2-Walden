@@ -40,6 +40,6 @@ function setup(){
 }
 function draw(){
     image(background,0,0,width,height);
-    set(1);
+    setInterval(1);
 
 }
