@@ -14,7 +14,7 @@ function setup(){
     new Canvas(800, 600);
     world.gravity.y = 10;
     peach = new Sprite();
-    peach.img = birdMidImg;
+    peach.img = peachWhole;
     peach.width = 30;
     peach.height = 30;
     peach.mass = 2;
