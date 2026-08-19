@@ -15,8 +15,8 @@ function setup(){
     world.gravity.y = 10;
     peach = new Sprite();
     peach.img = peachWhole;
-    peach.width = 30;
-    peach.height = 30;
+    peach.width = 100;
+    peach.height = 100;
     peach.mass = 2;
     peach.bounciness = 0.5;
     peach.drag = 0.02;
