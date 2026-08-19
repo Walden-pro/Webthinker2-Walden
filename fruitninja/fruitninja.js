@@ -38,7 +38,8 @@ function setup(){
     watermelon.drag = 0.02;//Air resistance
     watermelon.collider = "dynamic";//Collidable,movable,affected by physics
 
-    
+    //Groups
+    peach
 }
 function draw(){
     image(background,0,0,width,height);
