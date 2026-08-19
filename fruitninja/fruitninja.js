@@ -40,7 +40,7 @@ function draw(){
 }
 function spawnPeach(){
     let p = new peachGroup.Sprite();
-        //Peach
+    //Peach
     peach = new Sprite();
     peach.img = peachWhole;
     peach.width = 150;
