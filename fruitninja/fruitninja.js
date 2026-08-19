@@ -1,7 +1,8 @@
+
 let watermelon;
 let peach;
 
-
+//Preload variables
 let background;
 let watermelonWhole;
 let peachWhole;
