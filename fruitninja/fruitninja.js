@@ -19,12 +19,8 @@ function setup(){
     world.gravity.y = 10;
 
 
-
-    //Watermelon
-    watermelon = new Sprite();
-
-
     //Groups
+    peachGroup = new Group();
     peachGroup = new Group();
 }
 function draw(){
