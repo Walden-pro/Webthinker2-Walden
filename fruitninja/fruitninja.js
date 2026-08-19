@@ -23,7 +23,7 @@ function setup(){
     peach.height = 100;
     peach.mass = 2;
     peach.bounciness = 0.5;
-    peach.drag = 0.02;//
+    peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 
 
