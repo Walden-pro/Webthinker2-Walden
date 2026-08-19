@@ -27,10 +27,10 @@ function setup(){
 
     //Watermelon
     watermelon = new Sprite();
-    peach.img = peachWhole;
-    peach.width = 100;
-    peach.height = 100;
-    peach.mass = 2;//How heavy
+    watermelon.img = peachWhole;
+    watermelon.width = 100;
+    watermelon.height = 100;
+    watermelon.mass = 2;//How heavy
     peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 }
