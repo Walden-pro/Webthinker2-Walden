@@ -1,4 +1,5 @@
-let watermelon;4
+let watermelon;
+let peach;
 
 
 let background;
