@@ -17,7 +17,7 @@ function preload(){
 function setup(){
     fill("#ba0000");
     textSize(50);
-    text("framecount:" + )
+    text("framecount:" + frameCount,10,40);
     new Canvas(800, 600);
     world.gravity.y = 10;
 
