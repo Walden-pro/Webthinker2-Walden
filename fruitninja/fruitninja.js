@@ -48,3 +48,13 @@ function spawnPeach(){
     peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 }
+function spawnPeach(){
+    peach = new peachGroup.Sprite();
+    peach.img = peachWhole;
+    peach.width = 150;
+    peach.height = 150;
+    peach.scale = peach.width / peachWhole.width;
+    peach.mass = 2;//How heavy
+    peach.drag = 0.02;//Air resistance
+    peach.collider = "dynamic";//Collidable,movable,affected by physics
+}
