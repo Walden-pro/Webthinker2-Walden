@@ -1,9 +1,9 @@
 let background;
-let watermelonwhole;
-let peachwhole;
+let watermelonWhole;
+let peachWhole;
 function preload(){
     background = loadImage("assets/dojobackground.png");
-    watermelonwhole = loadImage("assets/watermelonwhole.png")
+    watermelonWhole = loadImage("assets/watermelonwhole.png")
     peachwhole = loadImage("assets/peachwhole.png")
 }
 function setup(){
