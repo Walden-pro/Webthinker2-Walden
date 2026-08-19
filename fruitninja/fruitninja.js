@@ -1,3 +1,4 @@
+let background;
 
 
 function preload(){
