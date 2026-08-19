@@ -21,6 +21,7 @@ function setup(){
     peach.img = peachWhole;
     peach.width = 100;
     peach.height = 100;
+    peach.scale
     peach.mass = 2;//How heavy
     peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
