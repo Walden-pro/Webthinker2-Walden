@@ -29,7 +29,7 @@ function draw(){
     fill("#ba0000");
     textSize(50);
     text("framecount:" + frameCount,10,40);
-    if (frameCount){
+    if (frameCount / 60 == 0){
         spawnPeach();
         spawnWatermelon();
     }
