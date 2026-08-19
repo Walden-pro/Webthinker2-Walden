@@ -13,7 +13,8 @@ function preload(){
 function setup(){
     new Canvas(800, 600);
     world.gravity.y = 10;
-    peach = new Sprite
+    peach = new Sprite();
+    
 
 }
 function draw(){
