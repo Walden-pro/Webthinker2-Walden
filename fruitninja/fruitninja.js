@@ -48,7 +48,7 @@ function spawnPeach(){
     peach.drag = 0.02;//Air resistance
     peach.collider = "dynamic";//Collidable,movable,affected by physics
 }
-function spawnPeach(){
+function spawnWatermelon(){
     peach = new peachGroup.Sprite();
     peach.img = peachWhole;
     peach.width = 150;
