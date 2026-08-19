@@ -1,5 +1,5 @@
 let background;
-
+let watermelonwhole;
 
 function preload(){
     background = loadImage("assets/dojobackground.png");
@@ -8,7 +8,7 @@ function preload(){
 function setup(){
   new Canvas(800, 600);
   world.gravity.y = 20;
-  
+
 }
 function draw(){
     image(background,0,0,width,height);
