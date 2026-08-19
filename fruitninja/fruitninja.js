@@ -22,13 +22,7 @@ function setup(){
 
     //Watermelon
     watermelon = new Sprite();
-    watermelon.img = watermelonWhole;
-    watermelon.width = 150;
-    watermelon.height = 150;
-    watermelon.scale = watermelon.width / watermelonWhole.width;
-    watermelon.mass = 2;//How heavy
-    watermelon.drag = 0.02;//Air resistance
-    watermelon.collider = "dynamic";//Collidable,movable,affected by physics
+
 
     //Groups
     peachGroup = new Group();
@@ -50,11 +44,11 @@ function spawnPeach(){
 }
 function spawnWatermelon(){
     watermelon = new peachGroup.Sprite();
-    watermelon.img = peachWhole;
+    watermelon.img = watermelonWhole;
     watermelon.width = 150;
     watermelon.height = 150;
-    peach.scale = peach.width / peachWhole.width;
-    peach.mass = 2;//How heavy
-    peach.drag = 0.02;//Air resistance
-    peach.collider = "dynamic";//Collidable,movable,affected by physics
+    watermelon.scale = watermelon.width / watermelonWhole.width;
+    watermelon.mass = 2;//How heavy
+    watermelon.drag = 0.02;//Air resistance
+    watermelon.collider = "dynamic";//Collidable,movable,affected by physics
 }
