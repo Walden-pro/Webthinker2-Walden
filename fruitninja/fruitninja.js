@@ -47,5 +47,5 @@ function draw(){
 
 }
 function spawnPeach(){
-    
+    let p = new peachGroup.Sprite()
 }
