@@ -1,8 +1,7 @@
 
 
 //Variables
-let watermelon;
-let peach;
+
 
 //Preload variables
 let background;
