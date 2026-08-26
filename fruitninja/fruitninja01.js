@@ -35,8 +35,8 @@ function draw(){
     text("framecount:" + frameCount,10,40);
 
     if (frameCount % 120 == 0){
-        spawnPeach();
-        spawnWatermelon();
+        spawnFruit();
+        
     }
 
 }
