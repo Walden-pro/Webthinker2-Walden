@@ -7,7 +7,7 @@ let peach;
 //Preload variables
 let background;
 let fruitGroup;
-let fruittypes = [];
+let fruitTypes = [];
 
 function preload(){
     background = loadImage("assets/dojobackground.png");
