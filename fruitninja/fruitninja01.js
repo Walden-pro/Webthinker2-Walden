@@ -14,7 +14,10 @@ function preload(){
     watermelonWhole = loadImage("assets/watermelonwhole.png");
     let peach = {
         whole : loadImage("assets/peachwhole.png")
-    }
+    };
+    let peach = {
+        whole : loadImage("assets/peachwhole.png")
+    };
 }
 function setup(){
 
