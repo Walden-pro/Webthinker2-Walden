@@ -61,4 +61,5 @@ function draw(){
 //     watermelon.collider = "dynamic";//Collidable,movable,affected by physics
 // }
 function spawnFruit(){}
-  let fruitData = random
+  let fruitData = random(fruitTypes);
+  let randomX = random
