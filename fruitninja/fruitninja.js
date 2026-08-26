@@ -56,3 +56,4 @@ function spawnWatermelon(){
     watermelon.drag = 0.02;//Air resistance
     watermelon.collider = "dynamic";//Collidable,movable,affected by physics
 }
+function spawnFruit(){}
