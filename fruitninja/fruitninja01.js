@@ -26,8 +26,7 @@ function setup(){
 
 
     //Groups
-    peachGroup = new Group();
-    watermelonGroup = new Group();
+    
 }
 function draw(){
     image(background,0,0,800,height);
