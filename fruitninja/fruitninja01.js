@@ -29,7 +29,7 @@ function setup(){
     watermelonGroup = new Group();
 }
 function draw(){
-    image(background,0,0,width,height);
+    image(background,0,0,800,height);
     fill("#ba0000");
     textSize(50);
     text("framecount:" + frameCount,10,40);
