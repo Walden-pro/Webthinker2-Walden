@@ -12,7 +12,7 @@ let fruitTypes = [];
 function preload(){
     background = loadImage("assets/dojobackground.png");
     watermelonWhole = loadImage("assets/watermelonwhole.png");
-    peachWhole = loadImage("assets/peachwhole.png");
+    let peach = loadImage("assets/peachwhole.png");
 }
 function setup(){
 
