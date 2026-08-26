@@ -10,8 +10,6 @@ let fruitGroup;
 let fruitTypes = [];
 
 function preload(){
-    background = loadImage("assets/dojobackground.png");
-    watermelonWhole = loadImage("assets/watermelonwhole.png");
     let peach = {
         whole : loadImage("assets/peachwhole.png")
     };
