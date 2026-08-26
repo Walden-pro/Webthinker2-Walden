@@ -6,8 +6,7 @@ let peach;
 
 //Preload variables
 let background;
-let watermelonWhole;
-let peachWhole;
+let fruitGroup;
 let fruittypes = [];
 
 function preload(){
