@@ -8,7 +8,7 @@ let peach;
 let background;
 let watermelonWhole;
 let peachWhole;
-
+let fruittypes
 
 function preload(){
     background = loadImage("assets/dojobackground.png");
