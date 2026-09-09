@@ -7,6 +7,7 @@ let fruitTypes = [];
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
+    //fruits
     let peach = { 
         whole : loadImage("assets/peachwhole.png"),
         half1: loadImage("assets/peachhalf.png"),
@@ -19,7 +20,55 @@ function preload(){
         half2: loadImage("assets/watermelonhalf.png"),
 
     };
-    fruitTypes =[peach,watermelon];
+    let tomato = {
+        whole : loadImage("assets/tomato1.png"),
+        half1: loadImage("assets/tomato2.png"),
+        half2: loadImage("assets/tomato2.png"),
+    }
+    let dragonfruit = {
+        whole : loadImage("assets/dragonfruit1.png"),
+        half1: loadImage("assets/dragonfruit2.png"),
+        half2: loadImage("assets/dragonfruit2.png"),
+    }
+    let strawberry = {
+        whole : loadImage("assets/strawberry1.png"),
+        half1: loadImage("assets/strawberry3.png"),
+        half2: loadImage("assets/strawberry3.png"),
+    }
+    let onion = {
+        whole : loadImage("assets/red_onion2.png"),
+        half1: loadImage("assets/red_onion3.png"),
+        half2: loadImage("assets/red_onion3.png"),
+    }
+    let kiwi = {
+        whole : loadImage("assets/kiwi1.png"),
+        half1: loadImage("assets/kiwi3.png"),
+        half2: loadImage("assets/kiwi4.png"),
+    }
+    let garlic = {
+        whole : loadImage("assets/garlic1.png"),
+        half1: loadImage("assets/garlic2.png"),
+        half2: loadImage("assets/garlic2.png"),
+    }
+    let papaya = {
+        whole : loadImage("assets/papaya1.png"),
+        half1: loadImage("assets/papaya2.png"),
+        half2: loadImage("assets/papaya3.png"),
+    }
+    let potato = {
+        whole : loadImage("assets/potato1.png"),
+        half1: loadImage("assets/potato2.png"),
+        half2: loadImage("assets/potato2.png"),
+    }
+    let starfruit = {
+        whole : loadImage("assets/starfruit1.png"),
+        half1: loadImage("assets/starfruit2.png"),
+        half2: loadImage("assets/starfruit2.png"),
+    }
+    //added into fruits
+    fruitTypes =[peach,watermelon,tomato,
+        dragonfruit,strawberry,onion,kiwi,
+        papaya,garlic,potato,starfruit];
 
 }
 
@@ -28,6 +77,8 @@ function setup(){
     world.gravity.y = 10;
     fruitGroup = new Group();
     fruitHalves = new Group();
+    // fruitGroup.w = 30;
+    // fruitGroup.h = 30;
 }
 function draw(){
     image(background,0,0,width,height);
@@ -54,6 +105,8 @@ function spawnsFruit(){
   fruit.vel.y = random(-10, -14);
   fruit.vel.x = random(-2,2);
   fruit.friction = 0;
+  fruit.overlaps(allSprites);
+  fruit.layer = 2;
 }
 function sliceFruit(){
     for (let fruit of fruitGroup){
@@ -78,15 +131,23 @@ function splitFruit(x,y,fruitData){
     left.vel.x = -3;
     left.vel.y = random(-5 , -2);
     left.rotationSpeed = -5;
-    left.life = 30;
+    left.life = 60;
+    left.collider = 'dynamic';
+    left.overlaps(allSprites);
+    left.layer = 1;
 
     let right = new fruitHalves.Sprite(x + 10, y, 40, 40);
     right.img = fruitData.half2;
     right.vel.x = 3;
     right.vel.y = random(-5 , -2);
     right.rotationSpeed = -5;
-    right.life = 30;
-    
-    
+    right.life = 60;
+    right.collider = 'dynamic';
+    right.overlaps(allSprites);
+    left.layer = 1;
 
+    
+    
 }
+
+
