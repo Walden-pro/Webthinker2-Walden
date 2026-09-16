@@ -146,9 +146,9 @@ function preload(){
         scaleMod:2.5,
     }
     let orange = {
-        whole : loadImage("assets/orange.png"),
-        half1: loadImage("assets/coconutold4.png"),
-        half2: loadImage("assets/coconutold4.png"),
+        whole : loadImage("assets/orange1.png"),
+        half1: loadImage("assets/orange2.png"),
+        half2: loadImage("assets/orange2.png"),
         scaleMod:2.5,
     }
     //added into fruits
