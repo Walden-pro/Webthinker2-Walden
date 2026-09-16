@@ -177,6 +177,7 @@ function draw(){
         if(kb.presses(" ")||mouse.presses()){
             gameState = "playing";
         }
+    
 
         return;
     }else if (gameState === "playing"){
