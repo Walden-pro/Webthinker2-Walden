@@ -113,9 +113,9 @@ function draw(){
     if (gameState === "start") {
         // start menu
 
-        
+
         return;
-    }else if (gamestate === "playing"){
+    }else if (gameState === "playing"){
         // Gameplay
 
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
