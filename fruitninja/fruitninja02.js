@@ -6,7 +6,7 @@ let fruitHalves;
 let fruitTypes = [];
 let score = 0;
 let missed = 0;
-let gameState = 'playing';//start,playing , gameover
+let gameState = 'start';//start,playing , gameover
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
