@@ -107,7 +107,9 @@ function setup(){
     // fruitGroup.h = 30;
 }
 function draw(){
+    clear();
     image(background,0,0,width,height);
+    
     fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
     textSize(30);
     // text("framecount:" + frameCount,10,10);
