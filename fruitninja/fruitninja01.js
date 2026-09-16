@@ -81,13 +81,13 @@ function preload(){
         whole : loadImage("assets/coconut1.png"),
         half1: loadImage("assets/coconut3.png"),
         half2: loadImage("assets/coconut3.png"),
-        scaleMod:2.5,
+        scaleMod:2.25,
     }
     let coconutold = {
         whole : loadImage("assets/coconutold3.png"),
         half1: loadImage("assets/coconutold4.png"),
         half2: loadImage("assets/coconutold4.png"),
-        scaleMod:2.5,
+        scaleMod:2.25,
     }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,
