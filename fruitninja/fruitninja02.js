@@ -130,7 +130,7 @@ function preload(){
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,
         dragonfruit,strawberry,onion,kiwi,
-        papaya,garlic,potato,starfruit,coconut,coconutold];
+        papaya,garlic,potato,starfruit,coconut,coconutold,fig,pumpkin,tomat];
 
 }
 
