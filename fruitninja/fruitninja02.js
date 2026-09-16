@@ -139,7 +139,7 @@ function preload(){
         half2: loadImage("assets/paprikagreen3.png"),
         scaleMod:2.5,
     }
-    let coconutold = {
+    let paprika = {
         whole : loadImage("assets/coconutold3.png"),
         half1: loadImage("assets/coconutold4.png"),
         half2: loadImage("assets/coconutold4.png"),
