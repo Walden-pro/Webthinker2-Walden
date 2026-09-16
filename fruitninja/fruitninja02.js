@@ -190,7 +190,7 @@ function draw(){
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
         // text("framecount:" + frameCount,10,10);
-        text("Score:" + score,10,40);
+        text("Score:" + score,40,40);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,10,100);
 
