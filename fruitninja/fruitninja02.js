@@ -174,6 +174,8 @@ function draw(){
     image(background,0,0,width,height);
     if (gameState === "start") {
         // start menu
+        fill("rgba(60, 240, 24, 0.99)");
+        textSize(100)
         if(kb.presses(" ")||mouse.presses()){
             gameState = "playing";
         }
