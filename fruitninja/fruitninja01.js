@@ -112,9 +112,9 @@ function draw(){
     if (gameState === "start") {
         return;
     }else if (gamestate === "playing"){
-        
+        return;
     }else if (gamestate === "gameOver"){
-
+        return;
     }
 
     fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
