@@ -192,7 +192,7 @@ function draw(){
         // text("framecount:" + frameCount,10,10);
         text("Score:" + score,55,40);
         fill("rgba(209, 221, 206, 0.99)");
-        text("Missed:" + missed,55,100);
+        text("Missed:" + missed,63,100);
 
         if (frameCount % 120 == 0){
             spawnsFruit();                                              // this is where the framecount is
