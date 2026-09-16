@@ -117,7 +117,7 @@ function draw(){
         return;
     }else if (gameState === "playing"){
         // Gameplay
-        
+        console.log(gameState);
 
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
