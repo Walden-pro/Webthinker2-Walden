@@ -12,59 +12,69 @@ function preload(){
         whole : loadImage("assets/peachwhole.png"),
         half1: loadImage("assets/peachhalf.png"),
         half2: loadImage("assets/peachhalf2.png"),
+        scaleMod:2,
 
     };
     let watermelon = { 
         whole : loadImage("assets/watermelonwhole.png"),
         half1: loadImage("assets/watermelonhalf.png"),
         half2: loadImage("assets/watermelonhalf.png"),
+        scaleMod:2,
 
     };
     let tomato = {
         whole : loadImage("assets/tomato1.png"),
         half1: loadImage("assets/tomato2.png"),
         half2: loadImage("assets/tomato2.png"),
+        scaleMod:2,
     }
     let dragonfruit = {
         whole : loadImage("assets/dragonfruit1.png"),
         half1: loadImage("assets/dragonfruit2.png"),
         half2: loadImage("assets/dragonfruit2.png"),
+        scaleMod: 2,
     }
     let strawberry = {
         whole : loadImage("assets/strawberry1.png"),
         half1: loadImage("assets/strawberry3.png"),
         half2: loadImage("assets/strawberry3.png"),
+        scaleMod: 2,
     }
     let onion = {
         whole : loadImage("assets/red_onion2.png"),
         half1: loadImage("assets/red_onion3.png"),
         half2: loadImage("assets/red_onion3.png"),
+        scaleMod: 2,
     }
     let kiwi = {
         whole : loadImage("assets/kiwi1.png"),
         half1: loadImage("assets/kiwi3.png"),
         half2: loadImage("assets/kiwi4.png"),
+        scaleMod: 2,
     }
     let garlic = {
         whole : loadImage("assets/garlic1.png"),
         half1: loadImage("assets/garlic2.png"),
         half2: loadImage("assets/garlic2.png"),
+        scaleMod: 2,
     }
     let papaya = {
         whole : loadImage("assets/papaya1.png"),
         half1: loadImage("assets/papaya2.png"),
         half2: loadImage("assets/papaya3.png"),
+        scaleMod: 2,
     }
     let potato = {
         whole : loadImage("assets/potato1.png"),
         half1: loadImage("assets/potato2.png"),
         half2: loadImage("assets/potato2.png"),
+        scaleMod:2,
     }
     let starfruit = {
         whole : loadImage("assets/starfruit1.png"),
         half1: loadImage("assets/starfruit2.png"),
         half2: loadImage("assets/starfruit2.png"),
-        
+        scaleMod:2,
     }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,
