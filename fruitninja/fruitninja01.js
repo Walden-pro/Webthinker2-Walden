@@ -106,7 +106,7 @@ function setup(){
 }
 function draw(){
     image(background,0,0,width,height);
-    fill("#ba0000");
+    fill("#dadada");
     textSize(50);
     text("framecount:" + frameCount,10,40);
     text("Score:" + frameCount,10,40);
