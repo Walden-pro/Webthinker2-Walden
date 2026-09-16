@@ -106,6 +106,7 @@ function setup(){
     // fruitGroup.w = 30;
     // fruitGroup.h = 30;
 }
+
 function draw(){
     clear();
     image(background,0,0,width,height);
@@ -143,6 +144,7 @@ function draw(){
 
     
 }
+
 function spawnsFruit(){
   let fruitData = random(fruitTypes);
   let randomX = random(300,500);
@@ -156,6 +158,7 @@ function spawnsFruit(){
   fruit.layer = 2;
   fruit.scale = fruitData.scaleMod;
 }
+
 function sliceFruit(){
     for (let fruit of fruitGroup){
         if (fruit.sliced){
