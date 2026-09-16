@@ -12,14 +12,14 @@ function preload(){
         whole : loadImage("assets/peachwhole.png"),
         half1: loadImage("assets/peachhalf.png"),
         half2: loadImage("assets/peachhalf2.png"),
-        scaleMod:2,
+        scaleMod:1,
 
     };
     let watermelon = { 
         whole : loadImage("assets/watermelonwhole.png"),
         half1: loadImage("assets/watermelonhalf.png"),
         half2: loadImage("assets/watermelonhalf.png"),
-        scaleMod:2,
+        scaleMod:1,
 
     };
     let tomato = {
