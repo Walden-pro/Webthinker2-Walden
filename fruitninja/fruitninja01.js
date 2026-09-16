@@ -113,7 +113,7 @@ function draw(){
         return;
     }else if (gamestate === "playing"){
         // Gameplay
-        
+
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
         // text("framecount:" + frameCount,10,10);
