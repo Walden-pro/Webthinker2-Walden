@@ -108,9 +108,9 @@ function draw(){
     image(background,0,0,width,height);
     fill("#dadada");
     textSize(50);
-    // text("framecount:" + frameCount,10,100);
+    // text("framecount:" + frameCount,10,10);
     text("Score:" + score,10,40);
-    text("Missed:" + score,10,40);
+    text("Missed:" + missed,10,100);
 
 
     if (frameCount % 1 == 0){
