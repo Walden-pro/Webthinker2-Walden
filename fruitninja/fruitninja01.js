@@ -64,6 +64,7 @@ function preload(){
         whole : loadImage("assets/starfruit1.png"),
         half1: loadImage("assets/starfruit2.png"),
         half2: loadImage("assets/starfruit2.png"),
+        
     }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,
