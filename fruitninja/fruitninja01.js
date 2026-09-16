@@ -107,7 +107,7 @@ function setup(){
 }
 function draw(){
     image(background,0,0,width,height);
-    fill("rgba(136,9,");
+    fill("rgba(136,9,9,0.74");
     textSize(30);
     // text("framecount:" + frameCount,10,10);
     text("Score:" + score,10,40);
