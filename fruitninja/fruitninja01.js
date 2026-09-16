@@ -183,6 +183,8 @@ function splitFruit(x,y,fruitData){
 
 }
 function missedFruit(){
-    
+    for (let fruit of fruitGroup){
+        
+    }
 }
 
