@@ -110,7 +110,7 @@ function draw(){
     clear();
     image(background,0,0,width,height);
     if (gameState === "start") {
-        
+        return;
     }else if (gamestate === "playing"){
         
     }else if (gamestate === "gameOver"){
