@@ -114,7 +114,7 @@ function draw(){
     text("Missed:" + missed,10,100);
 
 
-    if (frameCount % 1 == 0){
+    if (frameCount % 120 == 0){
         spawnsFruit();                                              // this is where the framecount is
     }
     if (mouse.pressing()){
