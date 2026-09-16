@@ -117,8 +117,8 @@ function preload(){
     }
     let peargreen = {
         whole : loadImage("assets/peargreen1.png"),
-        half1: loadImage("assets/peargreen3.png"),
-        half2: loadImage("assets/peargreen3.png"),
+        half1: loadImage("assets/peargreen4.png"),
+        half2: loadImage("assets/peargreen4.png"),
         scaleMod:2.5,
     }
     let pear = {
