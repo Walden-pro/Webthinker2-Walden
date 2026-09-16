@@ -177,6 +177,7 @@ function sliceFruit(){
     }
 
 }
+
 function splitFruit(x,y,fruitData){
     let left = new fruitHalves.Sprite(x - 10,y,40 , 40);
     left.img = fruitData.half1;
@@ -202,6 +203,7 @@ function splitFruit(x,y,fruitData){
 
 
 }
+
 function missedFruit(){
     for (let fruit of fruitGroup){
         //check if fruit fell below canvas
