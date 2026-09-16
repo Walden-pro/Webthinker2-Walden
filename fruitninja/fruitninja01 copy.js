@@ -117,6 +117,7 @@ function draw(){
         return;
     }else if (gameState === "playing"){
         // Gameplay
+        
 
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
@@ -140,7 +141,7 @@ function draw(){
 
         return;
 
-    }else if (gamestate === "gameOver"){
+    }else if (gameState === "gameOver"){
 
         return;
     }
