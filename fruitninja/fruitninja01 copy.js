@@ -110,6 +110,7 @@ function setup(){
 function draw(){
     clear();
     image(background,0,0,width,height);
+    console.log(gameState);
     if (gameState === "start") {
         // start menu
 
@@ -117,7 +118,6 @@ function draw(){
         return;
     }else if (gameState === "playing"){
         // Gameplay
-        console.log(gameState);
 
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
