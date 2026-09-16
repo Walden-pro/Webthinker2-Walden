@@ -110,7 +110,6 @@ function setup(){
 function draw(){
     clear();
     image(background,0,0,width,height);
-    console.log(gameState);
     if (gameState === "start") {
         // start menu
 
