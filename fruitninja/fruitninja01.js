@@ -108,7 +108,7 @@ function draw(){
     fill("#ba0000");
     textSize(50);
     text("framecount:" + frameCount,10,40);
-    if (frameCount % 1 == 0){
+    if (frameCount % 120 == 0){
         spawnsFruit();
     }
     if (mouse.pressing()){
