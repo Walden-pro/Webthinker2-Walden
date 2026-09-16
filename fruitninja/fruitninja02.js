@@ -98,7 +98,7 @@ function preload(){
         scaleMod:2.5,
     }
     let tomatogreen = {
-        whole : loadImage("assets/coconutold3.png"),
+        whole : loadImage("assets/tomatogreen1.png"),
         half1: loadImage("assets/coconutold4.png"),
         half2: loadImage("assets/coconutold4.png"),
         scaleMod:2.5,
