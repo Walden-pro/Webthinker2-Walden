@@ -152,9 +152,9 @@ function preload(){
         scaleMod:2.5,
     }
     let onion = {
-        whole : loadImage("assets/onion.png"),
-        half1: loadImage("assets/onion.png"),
-        half2: loadImage("assets/onion.png"),
+        whole : loadImage("assets/onion2.png"),
+        half1: loadImage("assets/onion3.png"),
+        half2: loadImage("assets/onion3.png"),
         scaleMod:2.5,
     }
     //added into fruits
