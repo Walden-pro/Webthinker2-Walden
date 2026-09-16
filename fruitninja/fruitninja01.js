@@ -44,19 +44,19 @@ function preload(){
         whole : loadImage("assets/red_onion2.png"),
         half1: loadImage("assets/red_onion3.png"),
         half2: loadImage("assets/red_onion3.png"),
-        scaleMod: 2,
+        scaleMod: 2.5,
     }
     let kiwi = {
         whole : loadImage("assets/kiwi1.png"),
         half1: loadImage("assets/kiwi3.png"),
         half2: loadImage("assets/kiwi4.png"),
-        scaleMod: 2,
+        scaleMod: 2.5,
     }
     let garlic = {
         whole : loadImage("assets/garlic1.png"),
         half1: loadImage("assets/garlic2.png"),
         half2: loadImage("assets/garlic2.png"),
-        scaleMod: 2,
+        scaleMod: 2.5,
     }
     let papaya = {
         whole : loadImage("assets/papaya1.png"),
