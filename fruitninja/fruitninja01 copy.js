@@ -111,6 +111,9 @@ function draw(){
     clear();
     image(background,0,0,width,height);
     if (gameState === "start") {
+        // start menu
+
+        
         return;
     }else if (gamestate === "playing"){
         // Gameplay
