@@ -109,7 +109,7 @@ function draw(){
     fill("#dadada");
     textSize(50);
     text("framecount:" + frameCount,10,40);
-    text("Score:" + frameCount,10,40);
+    text("Score:" + frameCount,10,100);
     if (frameCount % 120 == 0){
         spawnsFruit();
     }
