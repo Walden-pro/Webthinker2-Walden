@@ -124,7 +124,7 @@ function draw(){
         trail.life = 10;
         sliceFruit();
     }
-
+    missedFruit();
 }
 function spawnsFruit(){
   let fruitData = random(fruitTypes);
