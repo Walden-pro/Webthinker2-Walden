@@ -110,10 +110,13 @@ function draw(){
     clear();
     image(background,0,0,width,height);
     if (gameState === "start") {
-
+        
     }else if (gamestate === "playing"){
         
-    }else if (gamestate === "gameOver")
+    }else if (gamestate === "gameOver"){
+
+    }
+
     fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
     textSize(30);
     // text("framecount:" + frameCount,10,10);
