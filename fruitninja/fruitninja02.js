@@ -141,8 +141,8 @@ function preload(){
     }
     let paprika = {
         whole : loadImage("assets/paprika1.png"),
-        half1: loadImage("assets/paprika.png"),
-        half2: loadImage("assets/paprika.png"),
+        half1: loadImage("assets/paprika3.png"),
+        half2: loadImage("assets/paprika3.png"),
         scaleMod:2.5,
     }
     let coconutold = {
