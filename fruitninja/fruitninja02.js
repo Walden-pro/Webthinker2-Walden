@@ -177,7 +177,7 @@ function draw(){
         fill("rgba(60, 240, 24, 0.99)");
         textSize(100);
         textAlign(CENTER, CENTER);
-        text("Fruit Ninja", width/2, height/2 )
+        text("Fruit Ninja", width/2, height/2);
         if(kb.presses(" ")||mouse.presses()){
             gameState = "playing";
         }
