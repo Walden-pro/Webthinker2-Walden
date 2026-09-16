@@ -112,6 +112,7 @@ function draw(){
     textSize(30);
     // text("framecount:" + frameCount,10,10);
     text("Score:" + score,10,40);
+    fill("rgba(209, 221, 206, 0.99)");
     text("Missed:" + missed,10,100);
 
 
