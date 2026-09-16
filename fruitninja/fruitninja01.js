@@ -110,7 +110,7 @@ function draw(){
     textSize(50);
     // text("framecount:" + frameCount,10,100);
     text("Score:" + score,10,40);
-    text("Score:" + score,10,40);
+    text("Missed:" + score,10,40);
 
 
     if (frameCount % 1 == 0){
