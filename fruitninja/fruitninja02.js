@@ -128,8 +128,8 @@ function preload(){
         scaleMod:2.5,
     }
     //added into fruits
-    fruitTypes =[peach,watermelon,tomato,
-        dragonfruit,strawberry,onion,kiwi,
+    fruitTypes =[peach,watermelon,tomato,dragonfruit,
+        strawberry,onion,kiwi,
         papaya,garlic,potato,starfruit,coconut,coconutold,fig,pumpkin,tomatogreen,pineapple];
 
 }
