@@ -107,6 +107,7 @@ function setup(){
 }
 function draw(){
     image(background,0,0,width,height);
+    color: #00ccff
     fill("rgba(136,9,9,0.74"); // a for alpha means transparency
     textSize(30);
     // text("framecount:" + frameCount,10,10);
