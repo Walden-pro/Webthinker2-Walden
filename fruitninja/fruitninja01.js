@@ -118,6 +118,7 @@ function spawnsFruit(){
   fruit.friction = 0;
   fruit.overlaps(allSprites);
   fruit.layer = 2;
+  fruit.scale = scaleMod;
 }
 function sliceFruit(){
     for (let fruit of fruitGroup){
