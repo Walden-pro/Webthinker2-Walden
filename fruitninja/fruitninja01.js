@@ -113,24 +113,24 @@ function draw(){
         return;
     }else if (gamestate === "playing"){
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
-    textSize(30);
-    // text("framecount:" + frameCount,10,10);
-    text("Score:" + score,10,40);
-    fill("rgba(209, 221, 206, 0.99)");
-    text("Missed:" + missed,10,100);
+        textSize(30);
+        // text("framecount:" + frameCount,10,10);
+        text("Score:" + score,10,40);
+        fill("rgba(209, 221, 206, 0.99)");
+        text("Missed:" + missed,10,100);
 
 
-    if (frameCount % 120 == 0){
-        spawnsFruit();                                              // this is where the framecount is
-    }
-    if (mouse.pressing()){
-        trail = new Sprite(mouse.x, mouse.y , 7);
-        trail.collider = 'none';
-        trail.color = "blue";
-        trail.life = 10;
-        sliceFruit();
-    }
-    missedFruit();
+        if (frameCount % 120 == 0){
+            spawnsFruit();                                              // this is where the framecount is
+        }
+        if (mouse.pressing()){
+            trail = new Sprite(mouse.x, mouse.y , 7);
+            trail.collider = 'none';
+            trail.color = "blue";
+            trail.life = 10;
+            sliceFruit();
+        }
+        missedFruit();
         return;
     }else if (gamestate === "gameOver"){
         return;
