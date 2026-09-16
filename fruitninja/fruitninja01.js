@@ -62,31 +62,31 @@ function preload(){
         whole : loadImage("assets/papaya1.png"),
         half1: loadImage("assets/papaya2.png"),
         half2: loadImage("assets/papaya3.png"),
-        scaleMod: 2,
+        scaleMod: 2.5,
     }
     let potato = {
         whole : loadImage("assets/potato1.png"),
         half1: loadImage("assets/potato2.png"),
         half2: loadImage("assets/potato2.png"),
-        scaleMod:2,
+        scaleMod:2.5,
     }
     let starfruit = {
         whole : loadImage("assets/starfruit1.png"),
         half1: loadImage("assets/starfruit2.png"),
         half2: loadImage("assets/starfruit2.png"),
-        scaleMod:2,
+        scaleMod:2.5,
     }
     let coconut = {
         whole : loadImage("assets/coconut1.png"),
         half1: loadImage("assets/coconut3.png"),
         half2: loadImage("assets/coconut3.png"),
-        scaleMod:2,
+        scaleMod:2.5,
     }
     let coconutold = {
         whole : loadImage("assets/coconutold3.png"),
         half1: loadImage("assets/coconutold4.png"),
         half2: loadImage("assets/coconutold4.png"),
-        scaleMod:2,
+        scaleMod:2.5,
     }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,
