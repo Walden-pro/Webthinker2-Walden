@@ -148,7 +148,7 @@ function draw(){
     image(background,0,0,width,height);
     if (gameState === "start") {
         // start menu
-        
+        if(kb.pressing)
 
         return;
     }else if (gameState === "playing"){
