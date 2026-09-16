@@ -176,7 +176,7 @@ function draw(){
         // start menu
         fill("rgba(60, 240, 24, 0.99)");
         textSize(100);
-        textAlign()
+        textAlign(CENTER, CENTER);
         if(kb.presses(" ")||mouse.presses()){
             gameState = "playing";
         }
