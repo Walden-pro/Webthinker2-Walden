@@ -156,7 +156,8 @@ function preload(){
         strawberry,onion,kiwi,papaya,
         garlic,potato,starfruit,coconut,
         coconutold,fig,pumpkin,tomatogreen,
-        pineapple,peargreen,pear,paprika];
+        pineapple,peargreen,pear,paprikayellow,
+        ];
 
 }
 
