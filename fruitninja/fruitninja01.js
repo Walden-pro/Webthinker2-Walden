@@ -109,7 +109,7 @@ function setup(){
 function draw(){
     clear();
     image(background,0,0,width,height);
-    fi (gameState)
+    fi (gameState === 'start")
     fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
     textSize(30);
     // text("framecount:" + frameCount,10,10);
