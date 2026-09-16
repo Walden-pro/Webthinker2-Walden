@@ -186,7 +186,8 @@ function missedFruit(){
     for (let fruit of fruitGroup){
         //check if fruit fell below canvas
         if (fruit.y > height + 50){
-            fruit.remove()
+            fruit.remove();
+            missed += 1;
         }
     }
 }
