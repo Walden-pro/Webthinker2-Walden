@@ -4,7 +4,7 @@ let background;
 let fruitGroup;
 let fruitHalves;
 let fruitTypes = [];
-let score;
+let score = 0;
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
