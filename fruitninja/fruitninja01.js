@@ -109,6 +109,7 @@ function draw(){
     fill("#ba0000");
     textSize(50);
     text("framecount:" + frameCount,10,40);
+    text("framecount:" + frameCount,10,40);
     if (frameCount % 120 == 0){
         spawnsFruit();
     }
@@ -119,7 +120,7 @@ function draw(){
         trail.life = 10;
         sliceFruit();
     }
-    
+
 }
 function spawnsFruit(){
   let fruitData = random(fruitTypes);
