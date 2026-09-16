@@ -131,7 +131,8 @@ function preload(){
     fruitTypes =[peach,watermelon,tomato,dragonfruit,
         strawberry,onion,kiwi,papaya,
         garlic,potato,starfruit,coconut,
-        coconutold,fig,pumpkin,tomatogreen,pineapple];
+        coconutold,fig,pumpkin,tomatogreen,
+        pineapple];
 
 }
 
