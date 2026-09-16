@@ -174,7 +174,9 @@ function draw(){
     image(background,0,0,width,height);
     if (gameState === "start") {
         // start menu
-        if(kb.presses(" ")||mouse.presses)
+        if(kb.presses(" ")||mouse.presses){
+            gameState = "playing";
+        }
 
         return;
     }else if (gameState === "playing"){
