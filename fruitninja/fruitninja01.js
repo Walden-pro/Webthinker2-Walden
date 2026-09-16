@@ -110,8 +110,8 @@ function draw(){
     textSize(50);
     // text("framecount:" + frameCount,10,100);
     text("Score:" + score,10,40);
-    if (frameCount % 120 == 0){
-        spawnsFruit();
+    if (frameCount % 0.1 == 0){
+        spawnsFruit();                                              // this is where the framecount is
     }
     if (mouse.pressing()){
         trail = new Sprite(mouse.x, mouse.y , 7);
