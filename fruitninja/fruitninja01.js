@@ -129,10 +129,13 @@ function draw(){
             trail.life = 10;
             sliceFruit();
         }
+
         missedFruit();
+
         return;
-        
+
     }else if (gamestate === "gameOver"){
+        
         return;
     }
 
