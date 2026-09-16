@@ -152,7 +152,7 @@ function sliceFruit(){
 function splitFruit(x,y,fruitData){
     let left = new fruitHalves.Sprite(x - 10,y,40 , 40);
     left.img = fruitData.half1;
-    left.scale = fruitData.scaelMOd
+    left.scale = fruitData.scaelMod;
     left.vel.x = -3;
     left.vel.y = random(-5 , -2);
     left.rotationSpeed = -5;
@@ -163,6 +163,7 @@ function splitFruit(x,y,fruitData){
 
     let right = new fruitHalves.Sprite(x + 10, y, 40, 40);
     right.img = fruitData.half2;
+    right.scale = fruitData.scaelMod;
     right.vel.x = 3;
     right.vel.y = random(-5 , -2);
     right.rotationSpeed = -5;
