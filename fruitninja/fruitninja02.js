@@ -104,9 +104,9 @@ function preload(){
         scaleMod:2.5,
     }
     let pumpkin = {
-        whole : loadImage("assets/pumpkin.png"),
-        half1: loadImage("assets/pumpkin.png"),
-        half2: loadImage("assets/pumpkin.png"),
+        whole : loadImage("assets/pumpkin1.png"),
+        half1: loadImage("assets/pumpkin3.png"),
+        half2: loadImage("assets/pumpkin3.png"),
         scaleMod:2.5,
     }
     let coconutold = {
