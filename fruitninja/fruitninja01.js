@@ -83,9 +83,9 @@ function preload(){
         scaleMod:2,
     }
     let coconutold = {
-        whole : loadImage("assets/starfruit1.png"),
-        half1: loadImage("assets/starfruit2.png"),
-        half2: loadImage("assets/starfruit2.png"),
+        whole : loadImage("assets/coconutold1.png"),
+        half1: loadImage("assets/coconutold2.png"),
+        half2: loadImage("assets/coconutold2.png"),
         scaleMod:2,
     }
     //added into fruits
