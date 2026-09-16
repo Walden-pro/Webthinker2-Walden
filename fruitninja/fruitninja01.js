@@ -143,6 +143,7 @@ function sliceFruit(){
         let d = dist(mouse.x, mouse.y, fruit.x , fruit.y);
         if (d< ((fruit.d / 2 )+ 5)) {
             fruit.sliced = true;
+            
             const fx = fruit.x;
             const fy = fruit.y;
             fruit.remove();
@@ -150,7 +151,7 @@ function sliceFruit(){
             break;
         }
     }
-    
+
 }
 function splitFruit(x,y,fruitData){
     let left = new fruitHalves.Sprite(x - 10,y,40 , 40);
