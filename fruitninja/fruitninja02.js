@@ -157,7 +157,7 @@ function preload(){
         garlic,potato,starfruit,coconut,
         coconutold,fig,pumpkin,tomatogreen,
         pineapple,peargreen,pear,paprikayellow,
-        paprikagreen,paprika,];
+        paprikagreen,paprika,orange];
 
 }
 
