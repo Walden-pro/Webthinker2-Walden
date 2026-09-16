@@ -178,10 +178,9 @@ function splitFruit(x,y,fruitData){
     right.life = 60;
     right.collider = 'dynamic';
     right.overlaps(allSprites);
-    left.layer = 1;
+    right.layer = 1;
 
-    
-    
+
 }
 
 
