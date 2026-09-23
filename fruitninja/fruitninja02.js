@@ -197,7 +197,7 @@ function draw(){
 
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
-        strokeWeight()
+        strokeWeight(3)
         stroke("rgba(10, 13, 9, 0.99)");
         // text("framecount:" + frameCount,10,10);
 
