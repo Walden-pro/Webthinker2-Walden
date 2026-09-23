@@ -220,13 +220,30 @@ function draw(){
 
         missedFruit();
         //win or lose condition
-        if (score === 1 || missed === 5){
-            gameState = "gameOver";
+        if (score === 1){
+            gameState = "gameOverwin";
+        }
+        if (missed === 5){
+            gameState = "gameOverlose";
         }
 
         return;
 
-    }else if (gameState === "gameOver"){
+    }else if (gameState === "gameOverwin"){
+        fill("rgba(60, 240, 24, 0.99)"); 
+        textSize(30);
+        strokeWeight(3)
+        stroke("rgba(10, 13, 9, 0.99)");
+        text("Score:" + score,55,50);
+        fill("rgba(209, 221, 206, 0.99)");
+        text("Missed:" + missed,65,100);
+        fill("rgba(211, 240, 24, 0.99)");
+        textSize(100);
+        textAlign(CENTER, CENTER);
+        text("Game Over!", width/2, height/2);
+        text("You won!", width/2+100, height/2);
+        return;
+    }else if (gameState === "gameOverlose"){
         fill("rgba(60, 240, 24, 0.99)"); 
         textSize(30);
         strokeWeight(3)
@@ -238,6 +255,7 @@ function draw(){
         textSize(100);
         textAlign(CENTER, CENTER);
         text("Game Over!", width/2, height/2);
+        text("You lost!", width/2+100, height/2);
         return;
     }
 
