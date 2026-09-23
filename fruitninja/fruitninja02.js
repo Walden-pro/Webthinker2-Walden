@@ -235,9 +235,9 @@ function draw(){
         strokeWeight(3)
         stroke("rgba(10, 13, 9, 0.99)");
         textAlign(LEFT, LEFT);
-        text("Score:" + score,55,50);
+        text("Score:" + score,10,50);
         fill("rgba(209, 221, 206, 0.99)");
-        text("Missed:" + missed,65,100);
+        text("Missed:" + missed,10,100);
         fill("rgba(211, 240, 24, 0.99)");
         textSize(100);
         textAlign(CENTER, CENTER);
@@ -250,7 +250,7 @@ function draw(){
         strokeWeight(3)
         stroke("rgba(10, 13, 9, 0.99)");
         textAlign(LEFT, LEFT);
-        text("Score:" + score,55,50);
+        text("Score:" + score,10,50);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,65,100);
         fill("rgba(240, 24, 24, 0.99)");
