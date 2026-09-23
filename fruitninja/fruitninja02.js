@@ -195,6 +195,8 @@ function preload(){
         pineapple,peargreen,pear,paprikayellow,
         paprikagreen,paprika,orange,red_onion];
 
+    let 
+
 }
 
 function setup(){
