@@ -215,7 +215,7 @@ function draw(){
 
         if(kb.presses(" ")||mouse.presses()){
             gameState = "playing";
-            gameStart
+            gameStartTime = millis(;)
         }
     
 
