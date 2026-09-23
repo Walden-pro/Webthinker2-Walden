@@ -165,7 +165,7 @@ function preload(){
         pineapple,peargreen,pear,paprikayellow,
         paprikagreen,paprika,orange,red_onion];
 
-}paprikagreen
+}
 
 function setup(){
     new Canvas(800, 600);
