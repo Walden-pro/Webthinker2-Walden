@@ -259,6 +259,7 @@ function draw(){
         text("Time: " + (gameDuration - gameTimer) , width / 2, 60);
 
         //win or lose condition
+        if ((ga))
         if (score === 50){
             gameState = "gameOverwin";
         }
