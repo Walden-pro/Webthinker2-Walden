@@ -12,6 +12,7 @@ let gameTimer = 0;
 let gameDuration = 90;
 
 let bgMusic;
+let sliceSound;
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
