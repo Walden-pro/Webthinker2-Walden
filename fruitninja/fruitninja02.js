@@ -220,7 +220,7 @@ function draw(){
 
         missedFruit();
         //win or lose condition
-        if (score === 100 || missed === 5){
+        if (score === 1 || missed === 5){
             gameState = "gameOver";
         }
 
@@ -237,7 +237,7 @@ function draw(){
         fill("rgba(240, 24, 24, 0.99)");
         textSize(100);
         textAlign(CENTER, CENTER);
-        text("Game Over!☑️", width/2, height/2);
+        text("Game Over!☑️☑️☑️☑️☑️", width/2, height/2);
         return;
     }
 
