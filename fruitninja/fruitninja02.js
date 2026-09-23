@@ -223,7 +223,7 @@ function draw(){
         if (score === 100){
             gameState = "gameOverwin";
         }
-        if (missed === 5){
+        if (missed === 10){
             gameState = "gameOverlose";
         }
 
