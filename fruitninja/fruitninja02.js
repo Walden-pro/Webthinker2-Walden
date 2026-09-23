@@ -172,7 +172,7 @@ function preload(){
     let mango = {
         whole : loadImage("assets/mango1.png"),
         half1: loadImage("assets/mango3.png"),
-        half2: loadImage("assets/mangogreen3.png"),
+        half2: loadImage("assets/mango3.png"),
         scaleMod:2.5,
     }
     //added into fruits
