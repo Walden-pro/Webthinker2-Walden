@@ -234,7 +234,7 @@ function draw(){
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,10,100);
 
-        if (frameCount % 30 == 0){
+        if (frameCount % 120 == 0){
             spawnsFruit();                                              // this is where the framecount is
         }
         if (mouse.pressing()){
@@ -266,7 +266,7 @@ function draw(){
             if (missed >= 10){
                 gameState = "gameOverlose";
             }
-        }
+        }else
         return;
 
     }else if (gameState === "gameOverwin"){
