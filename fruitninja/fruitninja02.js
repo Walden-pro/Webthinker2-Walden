@@ -260,10 +260,10 @@ function draw(){
 
         //win or lose condition
         if ((gameDuration - gameTimer) <= 0){
-            if (score === 50){
+            if (score => 50){
                 gameState = "gameOverwin";
             }
-            if (missed === 10){
+            if (missed = 10){
                 gameState = "gameOverlose";
             }
         }
