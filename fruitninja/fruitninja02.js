@@ -220,7 +220,7 @@ function draw(){
 
         missedFruit();
         //win or lose condition
-        if (score === 100){
+        if (score === 50){
             gameState = "gameOverwin";
         }
         if (missed === 10){
