@@ -227,7 +227,15 @@ function draw(){
         return;
 
     }else if (gameState === "gameOver"){
+        fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
+        textSize(30);
+        strokeWeight(3)
+        stroke("rgba(10, 13, 9, 0.99)");
+        // text("framecount:" + frameCount,10,10);
 
+        text("Score:" + score,55,50);
+        fill("rgba(209, 221, 206, 0.99)");
+        text("Missed:" + missed,65,100);
         return;
     }
 
