@@ -348,7 +348,7 @@ function sliceFruit(){
 
             splitFruit(fx, fy, fruit.type);
 
-            sliceSound.play();
+            slicesound.play();
             break;
         }
     }
