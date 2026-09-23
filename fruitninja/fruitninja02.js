@@ -246,9 +246,10 @@ function draw(){
             //noStroke()
             sliceFruit();
         }
-        gameTimer
+        
 
         missedFruit();
+        gameTimer = millis() - game
         //win or lose condition
         if (score === 50){
             gameState = "gameOverwin";
