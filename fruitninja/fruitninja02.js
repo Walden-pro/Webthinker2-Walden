@@ -212,7 +212,7 @@ function draw(){
             trail.collider = 'none';
             trail.color = "blue";
             trail.life = 10;
-            StrokeWeight(0);
+            strokeWeight(0);
             //noStroke()
             sliceFruit();
         }
