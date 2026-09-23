@@ -221,6 +221,7 @@ function draw(){
         missedFruit();
         //win or lose condition
         
+
         return;
 
     }else if (gameState === "gameOver"){
