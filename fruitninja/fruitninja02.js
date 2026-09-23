@@ -9,7 +9,7 @@ let missed = 0;
 let gameState = 'start';//start,playing , gameover
 let gameStartTime = 0;
 let gameTimer = 0;
-let gameDuration;
+let gameDuration = 60;
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
