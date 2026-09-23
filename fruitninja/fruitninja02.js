@@ -213,7 +213,7 @@ function draw(){
             trail.color = "blue";
             trail.life = 10;
             StrokeWeight(0);
-            noStroke()
+            //noStroke()
             sliceFruit();
         }
 
