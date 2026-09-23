@@ -249,7 +249,7 @@ function draw(){
         
 
         missedFruit();
-        gameTimer = millis() - game
+        gameTimer = millis() - gameStartTime / 1000;
         //win or lose condition
         if (score === 50){
             gameState = "gameOverwin";
