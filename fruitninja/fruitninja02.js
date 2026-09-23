@@ -194,7 +194,7 @@ function draw(){
         return;
     }else if (gameState === "playing"){
         // Gameplay
-        textAlign(CENTER, CENTER);
+        textAlign(RIGHT, RIGHT);
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
         strokeWeight(3)
