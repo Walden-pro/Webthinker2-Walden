@@ -10,6 +10,7 @@ let gameState = 'start';//start,playing , gameover
 let gameStartTime = 0;// time when game starts
 let gameTimer = 0;
 let gameDuration = 90;
+let bgMusic
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
