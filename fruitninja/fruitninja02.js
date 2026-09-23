@@ -266,7 +266,9 @@ function draw(){
             if (missed >= 10){
                 gameState = "gameOverlose";
             }
-        }else
+        }else{
+            
+        }
         return;
 
     }else if (gameState === "gameOverwin"){
