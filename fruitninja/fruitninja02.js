@@ -259,14 +259,14 @@ function draw(){
         text("Time: " + (gameDuration - gameTimer) , width / 2, 60);
 
         //win or lose condition
-        if ((gameDuration - gameTimer) <= 0){}
+        if ((gameDuration - gameTimer) <= 0){
         if (score === 50){
             gameState = "gameOverwin";
         }
         if (missed === 10){
             gameState = "gameOverlose";
         }
-
+        }
         return;
 
     }else if (gameState === "gameOverwin"){
