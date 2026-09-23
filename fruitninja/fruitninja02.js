@@ -248,6 +248,7 @@ function draw(){
         textSize(30);
         strokeWeight(3)
         stroke("rgba(10, 13, 9, 0.99)");
+        textAlign(LEFT, CENTER);
         text("Score:" + score,55,50);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,65,100);
