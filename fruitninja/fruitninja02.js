@@ -195,8 +195,8 @@ function preload(){
         pineapple,peargreen,pear,paprikayellow,
         paprikagreen,paprika,orange,red_onion];
 
-    let bgMusic = loadSound("fruitninja/assets/fruit-ninja-bgtrack.mp3");
-    let slicesound = loadSound("");
+    let bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
+    let slicesound = loadSound("assets/fruit-ninja-combo.mp3");
 
 }
 
