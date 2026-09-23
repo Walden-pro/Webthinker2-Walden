@@ -157,8 +157,8 @@ function preload(){
         half2: loadImage("assets/red_onion3.png"),
         scaleMod:2.5,
     }
-    let red_onion = {
-        whole : loadImage("assets/red_onion2.png"),
+    let mangosteen = {
+        whole : loadImage("assets/mangosteen.png"),
         half1: loadImage("assets/red_onion3.png"),
         half2: loadImage("assets/red_onion3.png"),
         scaleMod:2.5,
