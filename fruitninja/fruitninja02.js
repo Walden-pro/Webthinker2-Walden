@@ -225,7 +225,7 @@ function draw(){
             gameStartTime = millis();// returns time in ms since program started
             gameTimer = 0;
             
-            if (bgMusic.isPlaying() === "false){
+            if (bgMusic.isPlaying() === "false"){
                 bgMusic.loop();
             }
         }
