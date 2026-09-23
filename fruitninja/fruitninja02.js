@@ -234,6 +234,10 @@ function draw(){
         text("Score:" + score,55,50);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,65,100);
+        fill("rgba(240, 24, 24, 0.99)");
+        textSize(100);
+        textAlign(CENTER, CENTER);
+        text("Fruit Ninja", width/2, height/2);
         return;
     }
 
