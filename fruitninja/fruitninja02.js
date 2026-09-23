@@ -253,7 +253,7 @@ function draw(){
         strokeWeight(3)
         stroke("rgba(10, 13, 9, 0.99)");
         fill("rgba(240, 214, 21, 0.99)");
-        text("Time: " + gameTimer, width / 2, 60);
+        text("Time: " + gameDuration - gameTimer , width / 2, 60);
 
         //win or lose condition
         if (score === 50){
