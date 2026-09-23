@@ -201,9 +201,9 @@ function draw(){
         stroke("rgba(10, 13, 9, 0.99)");
         // text("framecount:" + frameCount,10,10);
         textAlign(LEFT, LEFT);
-        text("Score:" + score,55,50);
+        text("Score:" + score,10,50);
         fill("rgba(209, 221, 206, 0.99)");
-        text("Missed:" + missed,65,100);
+        text("Missed:" + missed,10,100);
 
         if (frameCount % 12 == 0){
             spawnsFruit();                                              // this is where the framecount is
