@@ -232,7 +232,7 @@ function draw(){
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,10,100);
 
-        if (frameCount % 1 == 0){
+        if (frameCount % 10 == 0){
             spawnsFruit();                                              // this is where the framecount is
         }
         if (mouse.pressing()){
