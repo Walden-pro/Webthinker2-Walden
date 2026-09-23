@@ -219,7 +219,7 @@ function draw(){
         }
 
         missedFruit();
-
+        
         return;
 
     }else if (gameState === "gameOver"){
