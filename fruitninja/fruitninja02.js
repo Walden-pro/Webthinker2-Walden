@@ -201,7 +201,7 @@ function draw(){
         stroke("rgba(10, 13, 9, 0.99)");
         // text("framecount:" + frameCount,10,10);
 
-        text("Score:" + score,55,40);
+        text("Score:" + score,55,50);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,65,100);
 
