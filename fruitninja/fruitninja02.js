@@ -250,6 +250,8 @@ function draw(){
 
         missedFruit();
         gameTimer = floor((millis() - gameStartTime) / 1000);
+        strokeWeight(3)
+        stroke("rgba(10, 13, 9, 0.99)");
         fill("rgba(240, 214, 21, 0.99)");
         text("Time: " + gameTimer, width / 2, 60);
 
