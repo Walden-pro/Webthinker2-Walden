@@ -223,6 +223,7 @@ function draw(){
             gameState = "playing";
             gameStartTime = millis();// returns time in ms since program started
             gameTimer = 0;
+            
         }
     
 
@@ -342,7 +343,7 @@ function sliceFruit(){
             fruit.remove();
 
             splitFruit(fx, fy, fruit.type);
-            
+
             sliceSound.play();
             break;
         }
