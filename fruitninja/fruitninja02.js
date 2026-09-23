@@ -249,8 +249,9 @@ function draw(){
         
 
         missedFruit();
-        gameTimer = floor((millis() - gameStartTime) / 1000)
-        text("Time: " + gameTimer, width / 2, 60)
+        gameTimer = floor((millis() - gameStartTime) / 1000);
+        fill("rgba(209, 221, 206, 0.99)");
+        text("Time: " + gameTimer, width / 2, 60);
 
         //win or lose condition
         if (score === 50){
