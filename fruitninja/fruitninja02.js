@@ -157,6 +157,12 @@ function preload(){
         half2: loadImage("assets/red_onion3.png"),
         scaleMod:2.5,
     }
+    let red_onion = {
+        whole : loadImage("assets/red_onion2.png"),
+        half1: loadImage("assets/red_onion3.png"),
+        half2: loadImage("assets/red_onion3.png"),
+        scaleMod:2.5,
+    }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,dragonfruit,
         strawberry,onion,kiwi,papaya,
