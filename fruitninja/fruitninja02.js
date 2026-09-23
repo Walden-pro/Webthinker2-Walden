@@ -238,11 +238,12 @@ function draw(){
             spawnsFruit();                                              // this is where the framecount is
         }
         if (mouse.pressing()){
+            strokeWeight(0);
             trail = new Sprite(mouse.x, mouse.y , 7);
             trail.collider = 'none';
             trail.color = "blue";
             trail.life = 10;
-            strokeWeight(0);
+            
             //noStroke()
             sliceFruit();
         }
