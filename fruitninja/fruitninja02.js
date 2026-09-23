@@ -219,6 +219,7 @@ function draw(){
         }
 
         missedFruit();
+        //win or lose condition
         
         return;
 
