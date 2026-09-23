@@ -241,7 +241,7 @@ function draw(){
         textSize(100);
         textAlign(CENTER, CENTER);
         text("Game Over!", width/2, height/2);
-        text("You won!", width/2+100, height/2);
+        text("You won!", width/2, height/2);
         return;
     }else if (gameState === "gameOverlose"){
         fill("rgba(60, 240, 24, 0.99)"); 
@@ -255,7 +255,7 @@ function draw(){
         textSize(100);
         textAlign(CENTER, CENTER);
         text("Game Over!", width/2, height/2);
-        text("You lost!", width/2+100, height/2);
+        text("You lost!", width/2, height/2+100);
         return;
     }
 
