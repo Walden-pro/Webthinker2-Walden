@@ -185,7 +185,7 @@ function draw(){
         textSize(100);
         textAlign(CENTER, CENTER);
         text("Fruit Ninja", width/2, height/2);
-        
+
         if(kb.presses(" ")||mouse.presses()){
             gameState = "playing";
         }
@@ -212,6 +212,7 @@ function draw(){
             trail.collider = 'none';
             trail.color = "blue";
             trail.life = 10;
+            St
             noStroke()
             sliceFruit();
         }
