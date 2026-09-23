@@ -196,7 +196,7 @@ function preload(){
         paprikagreen,paprika,orange,red_onion];
 
     let bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
-    bgMusic.volume = 0.5
+    bgMusic.volume = 0.5;
     let slicesound = loadSound("assets/fruit-ninja-combo.mp3");
 
 }
@@ -225,7 +225,7 @@ function draw(){
             gameStartTime = millis();// returns time in ms since program started
             gameTimer = 0;
             
-            if (bgMusic.isPlaying() === false){
+            if (bgMusic.isPlaying() === "false){
                 bgMusic.loop();
             }
         }
