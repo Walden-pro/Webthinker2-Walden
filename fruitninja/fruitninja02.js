@@ -246,6 +246,7 @@ function draw(){
             //noStroke()
             sliceFruit();
         }
+        gameTimer
 
         missedFruit();
         //win or lose condition
