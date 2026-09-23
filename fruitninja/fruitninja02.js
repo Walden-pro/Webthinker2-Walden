@@ -262,12 +262,14 @@ function draw(){
         if ((gameDuration - gameTimer) <= 0){
             if (score >= 50){
                 gameState = "gameOverwin";
+            }else{
+            gameState = "gameOverlose"
             }
             if (missed >= 10){
                 gameState = "gameOverlose";
-            }
-        }else{
+            }else{
             gameState = "gameOverlose"
+        }
         }
         return;
 
