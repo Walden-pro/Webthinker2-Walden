@@ -220,7 +220,7 @@ function draw(){
 
         missedFruit();
         //win or lose condition
-        
+        if (score === 400)
 
         return;
 
