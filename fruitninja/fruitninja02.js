@@ -237,7 +237,7 @@ function draw(){
         fill("rgba(240, 24, 24, 0.99)");
         textSize(100);
         textAlign(CENTER, CENTER);
-        text("Game Over!", width/2, height/2);
+        text("Game Over!☑️", width/2, height/2);
         return;
     }
 
