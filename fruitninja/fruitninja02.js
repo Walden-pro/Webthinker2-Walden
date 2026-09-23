@@ -196,7 +196,7 @@ function preload(){
         paprikagreen,paprika,orange,red_onion];
 
     let bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
-    bgMusic.volume = 0.5;
+    // bgMusic.volume = 0.5;
     let slicesound = loadSound("assets/fruit-ninja-combo.mp3");
 
 }
