@@ -224,6 +224,9 @@ function draw(){
             gameStartTime = millis();// returns time in ms since program started
             gameTimer = 0;
             
+            if (bgMusic.isPlaying() === false){
+                
+            }
         }
     
 
