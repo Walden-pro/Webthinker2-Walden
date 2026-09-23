@@ -269,7 +269,7 @@ function draw(){
                 gameState = "gameOverlose";
             }else{
             gameState = "gameOverlose"
-        }
+            }
         }
         return;
 
