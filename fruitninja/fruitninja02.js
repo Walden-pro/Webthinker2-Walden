@@ -250,7 +250,7 @@ function draw(){
 
         missedFruit();
         gameTimer = (millis() - gameStartTime) / 1000
-        text()
+        text("Time: ")
 
         //win or lose condition
         if (score === 50){
