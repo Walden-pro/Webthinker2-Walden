@@ -225,7 +225,7 @@ function draw(){
             gameTimer = 0;
             
             if (bgMusic.isPlaying() === false){
-                
+                bgMusic.loop();
             }
         }
     
