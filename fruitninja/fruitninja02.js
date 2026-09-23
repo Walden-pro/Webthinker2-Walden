@@ -169,9 +169,9 @@ function preload(){
         half2: loadImage("assets/mangogreen3.png"),
         scaleMod:2.5,
     }
-    let mangogreen = {
-        whole : loadImage("assets/mangogreen1.png"),
-        half1: loadImage("assets/mangogreen3.png"),
+    let mango = {
+        whole : loadImage("assets/mango1.png"),
+        half1: loadImage("assets/mango3.png"),
         half2: loadImage("assets/mangogreen3.png"),
         scaleMod:2.5,
     }
