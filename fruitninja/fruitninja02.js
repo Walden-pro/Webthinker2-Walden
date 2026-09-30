@@ -220,7 +220,7 @@ function preload(){
     let corn = {
         whole : loadImage("assets/corn2.png"),
         half1: loadImage("assets/corn5.png"),
-        half2: loadImage("assets/dragonfruityellow2.png"),
+        half2: loadImage("assets/corn5.png"),
         scaleMod:2.5,
     }
     //added into fruits
