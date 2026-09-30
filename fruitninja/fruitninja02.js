@@ -281,7 +281,7 @@ function draw(){
         text("Score:" + score,10,50);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,10,100);
-        if (frameCount % 120 === 0){                                                              // this is where the framecount is
+        if (frameCount % 60 === 0){                                                              // this is where the framecount is
             for (let i = 0; i < difficultyLevel; i++){
                 spawnsFruit();
             }                                                                                              
