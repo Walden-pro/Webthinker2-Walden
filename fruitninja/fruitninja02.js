@@ -209,9 +209,9 @@ function preload(){
         mangosteen,mangogreen,mango,lime,
         lemon,kiwigreen];
 
-    let bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
+    bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
     // bgMusic.volume = 0.5;
-    let slicesound = loadSound("assets/fruit-ninja-combo.mp3");
+    slicesound = loadSound("assets/fruit-ninja-combo.mp3");
 
 }
 
