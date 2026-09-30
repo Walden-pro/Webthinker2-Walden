@@ -354,9 +354,8 @@ function draw(){
         if(bgMusic.isPlaying() === true){
             bgMusic.stop();
         }
-        if (vb.isPlaying() === false){
-            vb.play();
-        }
+        vb.play();
+        
         return;
     }
 
