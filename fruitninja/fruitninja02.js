@@ -355,6 +355,7 @@ function draw(){
             bgMusic.stop();
         }
         vb.play();
+        break;
         
         return;
     }
