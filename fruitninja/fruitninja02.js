@@ -250,7 +250,8 @@ function preload(){
         pineapple,peargreen,pear,paprikayellow,
         paprikagreen,paprika,orange,red_onion,
         mangosteen,mangogreen,mango,lime,
-        lemon,kiwigreen,frggreen,];
+        lemon,kiwigreen,figgreen,dragonfruityellow,
+        ];
 
     bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
     bgMusic.volume = 0.5;
