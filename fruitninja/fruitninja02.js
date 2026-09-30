@@ -318,7 +318,7 @@ function draw(){
           
         if (missed >= 10){
             gameState = "gameOverlose";
-            vb.play();
+            
          }
         return;
 
