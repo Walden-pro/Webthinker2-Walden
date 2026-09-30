@@ -310,7 +310,7 @@ function draw(){
         text("You won!☑️", width/2, height/2+100);
         return;
     }else if (gameState === "gameOverlose"){
-        allSprites.removeAll();
+        
         fill("rgba(60, 240, 24, 0.99)"); 
         textSize(30);
         strokeWeight(3)
@@ -324,6 +324,8 @@ function draw(){
         textAlign(CENTER, CENTER);
         text("Game Over!", width/2, height/2);
         text("You lost!", width/2, height/2+100);
+        allSprites.removeAll();
+        
         return;
     }
 
