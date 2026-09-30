@@ -237,9 +237,9 @@ function preload(){
         scaleMod:2.5,
     }
      let apple = {
-        whole : loadImage("assets/apple1.png"),
-        half1: loadImage("assets/apple2.png"),
-        half2: loadImage("assets/apple2.png"),
+        whole : loadImage("assets/applegreen1.png"),
+        half1: loadImage("assets/applegreen2.png"),
+        half2: loadImage("assets/applegreen2.png"),
         scaleMod:2.5,
     }
     //added into fruits
