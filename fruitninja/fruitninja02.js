@@ -357,8 +357,9 @@ function draw(){
         text("You lost!", width/2, height/2+100);
         allSprites.removeAll();
         if(bgMusic.isPlaying() === true){
-            vb.play()
-            bgMusic.stop()
+            
+            bgMusic.stop();
+            vb.play();
         }
         
         
