@@ -311,7 +311,7 @@ function draw(){
             difficultyIncrease = true;
             difficultyLevel += 1;
         } else {
-            
+            difficultyIncrease = false;
         }
         if (score >= 50){
             gameState = "gameOverwin";
