@@ -236,7 +236,7 @@ function preload(){
         half2: loadImage("assets/apple2.png"),
         scaleMod:2.5,
     }
-     let apple = {
+     let applegreen = {
         whole : loadImage("assets/applegreen1.png"),
         half1: loadImage("assets/applegreen2.png"),
         half2: loadImage("assets/applegreen2.png"),
@@ -250,7 +250,7 @@ function preload(){
         pineapple,peargreen,pear,paprikayellow,
         paprikagreen,paprika,orange,red_onion,
         mangosteen,mangogreen,mango,lime,
-        lemon,kiwigreen];
+        lemon,kiwigreen,];
 
     bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
     bgMusic.volume = 0.5;
