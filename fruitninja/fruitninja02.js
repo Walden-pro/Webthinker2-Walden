@@ -187,13 +187,27 @@ function preload(){
         half2: loadImage("assets/lime2.png"),
         scaleMod:2.5,
     }
+    let lemon = {
+        whole : loadImage("assets/lemon1.png"),
+        half1: loadImage("assets/lemon2.png"),
+        half2: loadImage("assets/lemon2.png"),
+        scaleMod:2.5,
+    }
+    let kiwigreen = {
+        whole : loadImage("assets/kiwi5.png"),
+        half1: loadImage("assets/kiwi6.png"),
+        half2: loadImage("assets/kiwi6.png"),
+        scaleMod:2.5,
+    }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,dragonfruit,
         strawberry,onion,kiwi,papaya,
         garlic,potato,starfruit,coconut,
         coconutold,fig,pumpkin,tomatogreen,
         pineapple,peargreen,pear,paprikayellow,
-        paprikagreen,paprika,orange,red_onion];
+        paprikagreen,paprika,orange,red_onion,
+        mangosteen,mangogreen,mango,lime,
+        lemon,kiwigreen];
 
     let bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
     // bgMusic.volume = 0.5;
