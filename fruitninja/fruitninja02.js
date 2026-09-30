@@ -13,6 +13,7 @@ let gameDuration = 90;
 
 let bgMusic;
 let sliceSound;
+let vb;
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
