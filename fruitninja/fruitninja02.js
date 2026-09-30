@@ -353,8 +353,8 @@ function draw(){
         allSprites.removeAll();
         if(bgMusic.isPlaying() === true){
             bgMusic.stop();
+            vb.play();
         }
-        vb.play();
         
         
         return;
