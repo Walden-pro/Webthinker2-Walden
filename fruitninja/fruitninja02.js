@@ -355,7 +355,7 @@ function draw(){
             bgMusic.stop();
         }
         if (vb.isPlaying() === false){
-            vb.loop();
+            vb.play();
         }
         return;
     }
