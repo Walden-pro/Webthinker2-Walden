@@ -339,6 +339,10 @@ function draw(){
         textAlign(CENTER, CENTER);
         text("Game Over!", width/2, height/2);
         text("You won!☑️", width/2, height/2+100);
+        if(bgMusic.isPlaying() === true){
+            bgMusic.stop();
+            vb.play();
+        }
         
         return;
     }else if (gameState === "gameOverlose"){
@@ -358,12 +362,9 @@ function draw(){
         text("You lost!", width/2, height/2+100);
         allSprites.removeAll();
         if(bgMusic.isPlaying() === true){
-            
             bgMusic.stop();
             vb.play();
         }
-        
-        
         return;
     }
 
