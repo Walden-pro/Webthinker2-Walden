@@ -360,6 +360,9 @@ function draw(){
         if(bgMusic.isPlaying() === true){
             bgMusic.stop();
         }
+        if (bgMusic.isPlaying() === false){
+            bgMusic.loop();
+        }
         return;
     }
 
