@@ -360,8 +360,8 @@ function draw(){
         if(bgMusic.isPlaying() === true){
             bgMusic.stop();
         }
-        if (bgMusic.isPlaying() === false){
-            bgMusic.loop();
+        if (vb.isPlaying() === false){
+            vb.loop();
         }
         return;
     }
