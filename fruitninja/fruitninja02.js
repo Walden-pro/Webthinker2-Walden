@@ -14,7 +14,7 @@ let gameDuration = 90;
 let bgMusic;
 let sliceSound;
 let vb;
-let difficulty;
+let difficultyLevel;
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
