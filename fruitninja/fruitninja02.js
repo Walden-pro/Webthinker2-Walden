@@ -298,12 +298,8 @@ function draw(){
             trail.collider = 'none';
             trail.color = "blue";
             trail.life = 10;
-            
-            //noStroke()
             sliceFruit();
         }
-        
-
         missedFruit();
         gameTimer = floor((millis() - gameStartTime) / 1000);
         strokeWeight(3)
