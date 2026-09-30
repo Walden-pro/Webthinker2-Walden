@@ -8,7 +8,7 @@ let missed = 0;
 let gameState = 'start';
 let gameStartTime = 0;
 let gameTimer = 0;
-let gameDuration = 90;
+let gameDuration = 60;
 let bgMusic;
 let sliceSound;
 let vb;
