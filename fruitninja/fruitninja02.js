@@ -231,9 +231,9 @@ function preload(){
         scaleMod:2.5,
     }
     let apple = {
-        whole : loadImage("assets/avocado1.png"),
-        half1: loadImage("assets/avocado2.png"),
-        half2: loadImage("assets/avocado3.png"),
+        whole : loadImage("assets/apple1.png"),
+        half1: loadImage("assets/2.png"),
+        half2: loadImage("assets/3.png"),
         scaleMod:2.5,
     }
     let avocado = {
