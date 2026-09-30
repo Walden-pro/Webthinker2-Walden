@@ -13,6 +13,7 @@ let bgMusic;
 let sliceSound;
 let vb;
 let difficultyLevel = 1;
+let difficultyIncrease;
 
 function preload(){
     background = loadImage("assets/dojobackground.png")
