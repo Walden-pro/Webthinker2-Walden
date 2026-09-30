@@ -206,9 +206,15 @@ function preload(){
         scaleMod:2.5,
     }
     let dragonfruityellow = {
-        whole : loadImage("assets/dragonfruityellow.png"),
-        half1: loadImage("assets/dragonfruityellow.png"),
-        half2: loadImage("assets/dragonfruityellow.png"),
+        whole : loadImage("assets/dragonfruityellow1.png"),
+        half1: loadImage("assets/dragonfruityellow2.png"),
+        half2: loadImage("assets/dragonfruityellow2.png"),
+        scaleMod:2.5,
+    }
+    let dragonfruityellow = {
+        whole : loadImage("assets/dragonfruityellow1.png"),
+        half1: loadImage("assets/dragonfruityellow2.png"),
+        half2: loadImage("assets/dragonfruityellow2.png"),
         scaleMod:2.5,
     }
     //added into fruits
