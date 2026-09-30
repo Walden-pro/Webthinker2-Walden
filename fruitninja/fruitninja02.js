@@ -273,7 +273,6 @@ function draw(){
         return;
     }else if (gameState === "playing"){
         // Gameplay
-        
         fill("rgba(60, 240, 24, 0.99)"); // a for alpha means transparency
         textSize(30);
         strokeWeight(3)
@@ -283,12 +282,10 @@ function draw(){
         text("Score:" + score,10,50);
         fill("rgba(209, 221, 206, 0.99)");
         text("Missed:" + missed,10,100);
-
         if (frameCount % 50 == 0){                                                              // this is where the framecount is
             for (let i = 0; i < difficultyLevel; i++){
                 spawnsFruit();
-            }                                                
-                                                          
+            }                                                                                              
         }
         if (mouse.pressing()){
             fill("blue")
