@@ -277,7 +277,6 @@ function draw(){
         textSize(30);
         strokeWeight(3)
         stroke("rgba(10, 13, 9, 0.99)");
-        // text("framecount:" + frameCount,10,10);
         textAlign(LEFT, LEFT);
         text("Score:" + score,10,50);
         fill("rgba(209, 221, 206, 0.99)");
