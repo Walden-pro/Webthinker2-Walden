@@ -287,7 +287,7 @@ function draw(){
         text("Missed:" + missed,10,100);
 
         if (frameCount % 50 == 0){       
-            for (let i = 0; i < difficultyLevel;)                                                       // this is where the framecount is
+            for (let i = 0; i < difficultyLevel; i++)       {}                                                // this is where the framecount is
             spawnsFruit();                                              
         }
         if (mouse.pressing()){
