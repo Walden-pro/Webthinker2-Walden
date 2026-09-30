@@ -325,7 +325,9 @@ function draw(){
         text("Game Over!", width/2, height/2);
         text("You lost!", width/2, height/2+100);
         allSprites.removeAll();
-        if(bgMusic.isPlaying() === true)
+        if(bgMusic.isPlaying() === true){
+            bgMusic.stop()
+        }
         return;
     }
 
