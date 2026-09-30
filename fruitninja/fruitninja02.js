@@ -243,7 +243,7 @@ function preload(){
     bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
     bgMusic.volume = 0.5;
     slicesound = loadSound("assets/fruit-ninja-combo.mp3");
-    vb = load
+    vb = loadSound("assets/bithuh-vine-boom-392646.mp3")
 
 }
 
