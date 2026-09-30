@@ -210,7 +210,7 @@ function preload(){
         lemon,kiwigreen];
 
     bgMusic = loadSound("assets/fruit-ninja-bgtrack.mp3");
-    // bgMusic.volume = 0.5;
+    bgMusic.volume = 0.5;
     slicesound = loadSound("assets/fruit-ninja-combo.mp3");
 
 }
