@@ -5,7 +5,7 @@ let fruitHalves;
 let fruitTypes = [];
 let score = 0;
 let missed = 0;
-let gameState = 'start';//start,playing , gameover
+let gameState = 'start';
 let gameStartTime = 0;
 let gameTimer = 0;
 let gameDuration = 90;
