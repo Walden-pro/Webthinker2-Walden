@@ -310,7 +310,7 @@ function draw(){
         text("You won!☑️", width/2, height/2+100);
         return;
     }else if (gameState === "gameOverlose"){
-        allSprites.removeAll()
+        allSprites.removeAll();
         fill("rgba(60, 240, 24, 0.99)"); 
         textSize(30);
         strokeWeight(3)
