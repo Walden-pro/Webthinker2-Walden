@@ -317,6 +317,7 @@ function draw(){
           
         if (missed >= 10){
             gameState = "gameOverlose";
+            bgMusic.stop();
          }
         return;
 
