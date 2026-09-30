@@ -307,10 +307,12 @@ function draw(){
 
         //win or lose condition
         if (gameTimer > 0 && gameTimer % 5 === 0){
-            if (difficulty)
-            difficultyLevel += 1;
+            if (difficultyIncrease === false){
+   difficultyLevel += 1;
             difficultyIncrease = true;
             difficultyLevel += 1;
+            }
+         
         } else {
             difficultyIncrease = false;
         }
