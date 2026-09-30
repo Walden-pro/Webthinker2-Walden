@@ -307,6 +307,8 @@ function draw(){
         //win or lose condition
         if (gameTimer > 0 && gameTimer % 5 === 0 && difficultyIncrease === false){
             difficultyLevel += 1;
+            difficultyIncrease = true;
+            
         }
         if (score >= 50){
             gameState = "gameOverwin";
