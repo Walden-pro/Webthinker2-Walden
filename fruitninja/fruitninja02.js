@@ -202,7 +202,7 @@ function preload(){
     let figgreen = {
         whole : loadImage("assets/figgreen3.png"),
         half1: loadImage("assets/figgreen2.png"),
-        half2: loadImage("assets/kiwi6.png"),
+        half2: loadImage("assets/figgreen2.png"),
         scaleMod:2.5,
     }
     //added into fruits
