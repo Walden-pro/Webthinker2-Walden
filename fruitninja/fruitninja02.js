@@ -305,7 +305,7 @@ function draw(){
         text("Time: " + (gameDuration - gameTimer) , width / 2, 60);
 
         //win or lose condition
-        if (gameTimer > 0% 10 === 0){
+        if (gameTimer > 0 && % 10 === 0){
             difficultyLevel += 1;
         }
         if (score >= 50){
