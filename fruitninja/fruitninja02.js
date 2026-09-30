@@ -212,12 +212,6 @@ function preload(){
         half2: loadImage("assets/dragonfruityellow2.png"),
         scaleMod:2.5,
     }
-    let dragonfruityellow = {
-        whole : loadImage("assets/dragonfruityellow1.png"),
-        half1: loadImage("assets/dragonfruityellow2.png"),
-        half2: loadImage("assets/dragonfruityellow2.png"),
-        scaleMod:2.5,
-    }
     let corn = {
         whole : loadImage("assets/corn2.png"),
         half1: loadImage("assets/corn5.png"),
