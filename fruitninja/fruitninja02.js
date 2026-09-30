@@ -232,8 +232,8 @@ function preload(){
     }
     let apple = {
         whole : loadImage("assets/apple1.png"),
-        half1: loadImage("assets/2.png"),
-        half2: loadImage("assets/3.png"),
+        half1: loadImage("assets/apple2.png"),
+        half2: loadImage("assets/apple2.png"),
         scaleMod:2.5,
     }
     let avocado = {
