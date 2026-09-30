@@ -205,6 +205,12 @@ function preload(){
         half2: loadImage("assets/figgreen2.png"),
         scaleMod:2.5,
     }
+    let dragon = {
+        whole : loadImage("assets/figgreen3.png"),
+        half1: loadImage("assets/figgreen2.png"),
+        half2: loadImage("assets/figgreen2.png"),
+        scaleMod:2.5,
+    }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,dragonfruit,
         strawberry,onion,kiwi,papaya,
