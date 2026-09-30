@@ -285,16 +285,13 @@ function draw(){
 
         //win or lose condition
         
-            if (score >= 50){
-                gameState = "gameOverwin";
-            }else{
-          
-            if (missed >= 10){
-                gameState = "gameOverlose";
-            }else{
-            gameState = "gameOverlose"
-            }
+        if (score >= 50){
+            gameState = "gameOverwin";
         }
+          
+        if (missed >= 10){
+            gameState = "gameOverlose";
+         }
         return;
 
     }else if (gameState === "gameOverwin"){
