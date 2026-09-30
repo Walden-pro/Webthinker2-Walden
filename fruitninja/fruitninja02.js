@@ -230,6 +230,18 @@ function preload(){
         half2: loadImage("assets/avocado3.png"),
         scaleMod:2.5,
     }
+    let apple = {
+        whole : loadImage("assets/avocado1.png"),
+        half1: loadImage("assets/avocado2.png"),
+        half2: loadImage("assets/avocado3.png"),
+        scaleMod:2.5,
+    }
+    let avocado = {
+        whole : loadImage("assets/avocado1.png"),
+        half1: loadImage("assets/avocado2.png"),
+        half2: loadImage("assets/avocado3.png"),
+        scaleMod:2.5,
+    }
     //added into fruits
     fruitTypes =[peach,watermelon,tomato,dragonfruit,
         strawberry,onion,kiwi,papaya,
