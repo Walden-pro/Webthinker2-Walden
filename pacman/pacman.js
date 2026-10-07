@@ -63,5 +63,10 @@ function draw(){
     //Pacman movement
     if (kb.presses("right")){
         pacman.vel.x += 1;
-    }
+    }else if (kb.presses("right")){
+        pacman.vel.x += 1;
+    }else if (kb.presses("right")){
+        pacman.vel.x += 1;
+    }else
+        pacman.vel.x += 1;
 }
