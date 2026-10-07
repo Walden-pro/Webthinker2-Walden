@@ -18,7 +18,7 @@ function setup(){
     walls.h = 20;
     walls.tile = "w";
     walls.color = "blue";
-    
+    walls.collider = ""
 }
 
 function draw(){
