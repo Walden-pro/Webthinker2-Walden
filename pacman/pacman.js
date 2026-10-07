@@ -84,12 +84,12 @@ function setup(){
     pinky.color = "red";
     pinky.bounciness = 0;
 
-    blinky = new Sprite();
-    blinky.x = 70;
-    blinky.y = 70;
-    blinky.diameter = 18;
-    blinky.color = "red";
-    blinky.bounciness = 0;
+    clyde = new Sprite();
+    clyde.x = 70;
+    clyde.y = 70;
+    clyde.diameter = 18;
+    clyde.color = "red";
+    clyde.bounciness = 0;
 }
 
 function draw(){
