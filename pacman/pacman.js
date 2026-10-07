@@ -14,7 +14,7 @@ function preload(){
 }
 
 function setup(){
-    new Canvas(400, 400);
+    new Canvas(200, 200);
     background(100);
 
     //Create groups for tilemap
