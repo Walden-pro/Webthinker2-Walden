@@ -81,11 +81,11 @@ function setup(){
     pinky.x = 90;
     pinky.y = 30;
     pinky.diameter = 18;
-    pinky.color = "red";
+    pinky.color = "pink";
     pinky.bounciness = 0;
 
     clyde = new Sprite();
-    clyde.x = 70;
+    clyde.x = 110;
     clyde.y = 30;
     clyde.diameter = 18;
     clyde.color = "orange";
