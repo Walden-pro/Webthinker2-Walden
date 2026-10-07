@@ -2,7 +2,7 @@
 let walls;
 let dots;
 let powerups;
-
+let Pa
 // Tile map layout
 let tilemap = [
     "wwwwwwwwww",
