@@ -13,6 +13,7 @@ function setup(){
     background(100);
 
     //Create groups for tilemap
+    walls = new Group();
 }
 function draw(){
 
