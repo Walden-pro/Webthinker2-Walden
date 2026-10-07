@@ -120,3 +120,7 @@ function draw(){
         }
     }
 }
+// function for ghosts to move in random directions
+function ghostDirection(ghost){
+    
+}
