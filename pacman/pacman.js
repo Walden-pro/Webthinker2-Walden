@@ -74,7 +74,7 @@ function setup(){
     inky.x = 70;
     inky.y = 30;
     inky.diameter = 18;
-    inky.color = "red";
+    inky.color = "cyan";
     inky.bounciness = 0;
 
     pinky = new Sprite();
