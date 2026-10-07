@@ -20,8 +20,8 @@ function setup(){
     walls.color = "blue";
     walls.collider = "static";
 
-    walls = new Group();
-    walls.w = 20;
+    dots = new Group();
+    dots.w = 20;
     walls.h = 20;
     walls.tile = "w";
     walls.color = "blue";
