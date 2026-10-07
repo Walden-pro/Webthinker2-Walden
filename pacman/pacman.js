@@ -85,7 +85,7 @@ function draw(){
         if (pacman.overlaps(dot)){
             dot.remove();
             score += 10;
-            console.log("score increase by 1")
+            console.log(score)
         }
     }
 }
