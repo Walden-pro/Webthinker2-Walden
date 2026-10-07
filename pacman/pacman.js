@@ -69,4 +69,5 @@ function draw(){
         pacman.vel.x += 1;
     }else
         pacman.vel.x += 1;
+    
 }
