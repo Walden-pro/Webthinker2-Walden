@@ -78,4 +78,6 @@ function draw(){
         pacman.vel.y = 1;
         pacman.vel.x = 0;
     }
+
+    //
 }
