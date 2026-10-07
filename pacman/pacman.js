@@ -4,7 +4,8 @@ let dots;
 let powerups;
 
 //Game variables
-let 
+let pacman;
+
 // Tile map layout
 let tilemap = [
     "wwwwwwwwww",
