@@ -4,7 +4,7 @@ let dots;
 let powerups;
 
 // Tile map layout
-let tilemap = []
+let tilemap = [""]
 
 function preload(){
 
