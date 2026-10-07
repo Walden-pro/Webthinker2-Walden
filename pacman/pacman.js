@@ -17,7 +17,7 @@ function setup(){
     walls.w = 20;
     walls.h = 20;
     walls.tile = "w";
-    walls.color
+    walls.color = ""
 }
 
 function draw(){
