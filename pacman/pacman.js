@@ -26,12 +26,12 @@ function setup(){
     dots.color = "white";
     dots.collider = "none";
 
-    walls = new Group();
-    walls.w = 20;
-    walls.h = 20;
-    walls.tile = "w";
-    walls.color = "blue";
-    walls.collider = "static";
+    powerups = new Group();
+    powerups.w = 20;
+    powerups.h = 20;
+    powerups.tile = "w";
+    powerups.color = "blue";
+    powerups.collider = "static";
 
     walls = new Group();
     walls.w = 20;
