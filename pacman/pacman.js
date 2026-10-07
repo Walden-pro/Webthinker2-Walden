@@ -8,7 +8,12 @@ let tilemap = [
     "wwwwwwwwww",
     "w        w",
     "w  dddd  w",
-    ""
+    "w  dddd  w",
+    "w  dddd  w",
+    "w  dddd  w",
+    "w  dddd  w",
+    "w  dddd  w",
+    "wwwwwwwwww",
 ]
 
 function preload(){
