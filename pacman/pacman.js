@@ -5,6 +5,7 @@ let powerups;
 
 //Game variables
 let pacman;
+let blinky, inky, pinky, clyde
 let score = 0;
 
 // Tile map layout
