@@ -22,10 +22,10 @@ function setup(){
 
     dots = new Group();
     dots.w = 20;
-    walls.h = 20;
-    walls.tile = "w";
-    walls.color = "blue";
-    walls.collider = "static";
+    dots.h = 20;
+    dots.tile = "w";
+    dots.color = "blue";
+    dots.collider = "static";
 
     walls = new Group();
     walls.w = 20;
