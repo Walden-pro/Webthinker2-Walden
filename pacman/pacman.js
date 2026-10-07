@@ -60,5 +60,8 @@ function setup(){
 }
 
 function draw(){
-    
+    //Pacman movement
+    if (kb.presses("left_arrow")){
+        
+    }
 }
