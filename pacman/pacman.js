@@ -55,8 +55,8 @@ function setup(){
     pacman = new Sprite();
     pacman.x = 30;
     pacman.y = 30;
-    pacman.diameter = 15;
-    
+    pacman.diameter = 18;
+    pacman.color = "yellow";
 }
 
 function draw(){
