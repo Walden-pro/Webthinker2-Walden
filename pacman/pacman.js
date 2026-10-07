@@ -79,5 +79,5 @@ function draw(){
         pacman.vel.x = 0;
     }
 
-    //
+    // Check dot collision
 }
