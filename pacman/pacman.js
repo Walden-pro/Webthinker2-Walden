@@ -81,6 +81,8 @@ function draw(){
 
     // Check dot collision
     for (let dot of dots){
-        
+        if (pacman.overlaps(dot)){
+            
+        }
     }
 }
