@@ -33,6 +33,7 @@ function setup(){
     powerups.collider = "none";
 
     // Create tilemap
+    new Tiles()
 
 
 }
