@@ -64,10 +64,10 @@ function setup(){
 
     //Ghost sprites
     blinky = new Sprite();
-    inky.x = 30;
-    inky.y = 30;
-    inky.diameter = 18;
-    inky.color = "yellow";
+    blinky.x = 30;
+    blinky.y = 30;
+    blinky.diameter = 18;
+    blinky.color = "yellow";
     blinky.bounciness = 0;
 }
 
