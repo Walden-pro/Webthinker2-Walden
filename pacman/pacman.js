@@ -64,7 +64,7 @@ function setup(){
 
     //Ghost sprites
     blinky = new Sprite();
-    blinky.x = 70;
+    blinky.x = 50;
     blinky.y = 30;
     blinky.diameter = 18;
     blinky.color = "red";
@@ -78,7 +78,7 @@ function setup(){
     inky.bounciness = 0;
 
     pinky = new Sprite();
-    pinky.x = 70;
+    pinky.x = 90;
     pinky.y = 30;
     pinky.diameter = 18;
     pinky.color = "red";
@@ -86,7 +86,7 @@ function setup(){
 
     clyde = new Sprite();
     clyde.x = 70;
-    clyde.y = 70;
+    clyde.y = 30;
     clyde.diameter = 18;
     clyde.color = "orange";
     clyde.bounciness = 0;
