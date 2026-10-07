@@ -68,21 +68,21 @@ function setup(){
     blinky.y = 30;
     blinky.diameter = 18;
     blinky.color = "red";
-    blinky.bounciness = 0;
+    blinky.collider = "none";
 
     inky = new Sprite();
     inky.x = 70;
     inky.y = 30;
     inky.diameter = 18;
     inky.color = "cyan";
-    inky.bounciness = 0;
+    inky.collider = "none";
 
     pinky = new Sprite();
     pinky.x = 90;
     pinky.y = 30;
     pinky.diameter = 18;
     pinky.color = "pink";
-    pinky.bounciness = 0;
+    pinky.collider = "none";
 
     clyde = new Sprite();
     clyde.x = 110;
