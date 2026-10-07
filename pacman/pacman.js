@@ -70,11 +70,11 @@ function setup(){
     blinky.color = "red";
     blinky.bounciness = 0;
 
-    blinky = new Sprite();
-    blinky.x = 70;
-    blinky.y = 70;
-    blinky.diameter = 18;
-    blinky.color = "red";
+    inky = new Sprite();
+    inky.x = 70;
+    inky.y = 70;
+    inky.diameter = 18;
+    inky.color = "red";
     inky.bounciness = 0;
 
     blinky = new Sprite();
