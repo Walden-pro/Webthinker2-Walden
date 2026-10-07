@@ -88,7 +88,7 @@ function setup(){
     clyde.x = 70;
     clyde.y = 70;
     clyde.diameter = 18;
-    clyde.color = "red";
+    clyde.color = "orange";
     clyde.bounciness = 0;
 }
 
