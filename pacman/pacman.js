@@ -118,7 +118,7 @@ function draw(){
             console.log(score)
         }
     }
-    for (let ghost of dots){
+    for (let ghost of ghost){
         if (pacman.overlaps(dot)){
             dot.remove();
             score += 10;
