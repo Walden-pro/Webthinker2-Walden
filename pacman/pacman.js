@@ -14,7 +14,8 @@ function setup(){
 
     //Create groups for tilemap
     walls = new Group();
-    walls.
+    walls.w = 20;
+    walls.h = 20;
 }
 
 function draw(){
