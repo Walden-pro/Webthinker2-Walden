@@ -90,6 +90,7 @@ function setup(){
     clyde.diameter = 18;
     clyde.color = "orange";
     clyde.bounciness = 0;
+    
 }
 
 function draw(){
@@ -112,13 +113,6 @@ function draw(){
 
     // Check dot collision
     for (let dot of dots){
-        if (pacman.overlaps(dot)){
-            dot.remove();
-            score += 10;
-            console.log(score)
-        }
-    }
-    for (let ghost of ghost){
         if (pacman.overlaps(dot)){
             dot.remove();
             score += 10;
