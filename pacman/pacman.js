@@ -62,6 +62,7 @@ function setup(){
 }
 
 function draw(){
+    // Clear canvas
     background(0);
     //Pacman movement
     if (kb.presses("right")){
