@@ -2,7 +2,9 @@
 let walls;
 let dots;
 let powerups;
-let Pa
+
+//Game variables
+let 
 // Tile map layout
 let tilemap = [
     "wwwwwwwwww",
