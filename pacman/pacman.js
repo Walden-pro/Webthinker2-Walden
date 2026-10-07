@@ -89,8 +89,8 @@ function setup(){
     clyde.y = 30;
     clyde.diameter = 18;
     clyde.color = "orange";
-    clyde.bounciness = 0;
-    
+    clyde.collider = "none";
+
 }
 
 function draw(){
