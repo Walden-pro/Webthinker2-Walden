@@ -54,7 +54,9 @@ function setup(){
     // Pac-Man sprite
     pacman = new Sprite();
     pacman.x = 30;
-    pacman
+    pacman.y = 30;
+    pacman.diameter = 15;
+    
 }
 
 function draw(){
