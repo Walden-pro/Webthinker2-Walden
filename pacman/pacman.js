@@ -32,7 +32,7 @@ function setup(){
     powerups.color = "white";
     powerups.collider = "none";
 
-    //Use groups
+    // Create tilemap
 
 
 }
