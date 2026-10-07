@@ -124,5 +124,5 @@ function draw(){
 function ghostDirection(ghost){
     //random number to choose direction
     let direction = random(1, 4);
-    console.log(direction);
+    
 }
