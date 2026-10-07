@@ -55,12 +55,12 @@ function setup(){
     pacman = new Sprite();
     pacman.x = 30;
     pacman.y = 30;
-    pacman.diameter = 18;
+    pacman.diameter = 18;w
     pacman.color = "yellow";
 }
 
 function draw(){
-
+    background(0);
     //Pacman movement
     if (kb.presses("right")){
         pacman.vel.x += 1;
