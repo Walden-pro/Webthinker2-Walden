@@ -62,6 +62,6 @@ function setup(){
 function draw(){
     //Pacman movement
     if (kb.presses("right")){
-        pacman.vel.y += 1;
+        pacman.vel.x += 1;
     }
 }
