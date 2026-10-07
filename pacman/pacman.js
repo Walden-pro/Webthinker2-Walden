@@ -24,7 +24,7 @@ function setup(){
     dots.diameter = 5;
     dots.tile = "w";
     dots.color = "white";
-    dots.collider = "static";
+    dots.collider = "none";
 
     walls = new Group();
     walls.w = 20;
