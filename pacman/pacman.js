@@ -67,7 +67,7 @@ function setup(){
     blinky.x = 30;
     blinky.y = 30;
     blinky.diameter = 18;
-    blinky.color = "yellow";
+    blinky.color = "red";
     blinky.bounciness = 0;
 }
 
