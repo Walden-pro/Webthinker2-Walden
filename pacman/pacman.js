@@ -13,7 +13,7 @@ let tilemap = [
     "w  dddd  w",
     "w  dddd  w",
     "w  dddd  w",
-    "wp       w",
+    "wp      pw",
     "wwwwwwwwww",
 ]
 
