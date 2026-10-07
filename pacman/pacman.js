@@ -5,7 +5,7 @@ let powerups;
 
 // Tile map layout
 let tilemap = [
-    "wwwwwwwwwwwwwwwwwwww",
+    "wwwwwwwwww",
     ""
 ]
 
