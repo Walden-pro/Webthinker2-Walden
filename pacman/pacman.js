@@ -67,7 +67,7 @@ function draw(){
         pacman.vel.x -= 1;
     }else if (kb.presses("up")){
         pacman.vel.y -= 1;
-    }else if(kb.presses("down"))
+    }else if(kb.presses("down")){
         pacman.vel.y += 1;
-    
+    }
 }
