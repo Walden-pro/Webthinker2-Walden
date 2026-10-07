@@ -31,8 +31,6 @@ function setup(){
     powerups.tile = "w";
     powerups.color = "white";
     powerups.collider = "none";
-
-
 }
 
 function draw(){
