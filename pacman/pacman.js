@@ -1,4 +1,4 @@
-//S
+//Sprite groups
 function preload(){
 
 }
