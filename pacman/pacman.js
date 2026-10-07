@@ -5,6 +5,7 @@ let powerups;
 
 //Game variables
 let pacman;
+let score;
 
 // Tile map layout
 let tilemap = [
@@ -83,6 +84,7 @@ function draw(){
     for (let dot of dots){
         if (pacman.overlaps(dot)){
             dot.remove();
+            score += 1;
         }
     }
 }
