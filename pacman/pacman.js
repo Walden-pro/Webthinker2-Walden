@@ -52,7 +52,9 @@ function setup(){
     new Tiles(tilemap, 10, 10, 20, 20);// (array, x pos, y pos, tile width, tile height)
 
     // Pac-Man sprite
-    pacman = new Sprite(30, 30)
+    pacman = new Sprite();
+    pcaman.x = 30;
+    
 }
 
 function draw(){
