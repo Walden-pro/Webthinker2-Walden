@@ -3,7 +3,7 @@ let walls;
 let dots;
 let powerups;
 
-
+// Tile map
 function preload(){
 
 }
