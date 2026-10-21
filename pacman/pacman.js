@@ -163,3 +163,7 @@ function ghostDirection(ghost){
     }
     
 }
+
+function setMovement(){
+    
+}
