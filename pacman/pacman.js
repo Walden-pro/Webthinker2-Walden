@@ -38,7 +38,8 @@ function setup(){
     walls.color = "blue";
     walls.collider = "static";
     walls.bounciness = 0;
-    walls.strokeWeight
+    walls.strokeWeight = 0;
+    
     dots = new Group();
     dots.diameter = 5;
     dots.tile = "d";
