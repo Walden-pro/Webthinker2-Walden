@@ -130,7 +130,7 @@ function ghostDirection(ghost){
     //random number to choose direction
     let direction = floor(random(1, 5));
 
-    //Pacman movement
+    //Ghost movement
     if (direction === 1){
         ghost.vel.x = 1;
         ghost.vel.y = 0
