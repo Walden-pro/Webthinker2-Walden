@@ -142,6 +142,7 @@ function draw(){
         }
     }
 }
+
 // function for ghosts to move in random directions
 function ghostDirection(ghost){
     //random number to choose direction
