@@ -94,6 +94,8 @@ function setup(){
     clyde.color = "orange";
     clyde.collider = "none";
 
+    ghosts = []
+
 }
 
 function draw(){
