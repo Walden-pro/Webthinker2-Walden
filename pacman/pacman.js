@@ -175,8 +175,8 @@ function setMovement(character){
     character.savedVY = character.vel.y;
     if (character.savedVX !== 0){
         
+
     }
-    character.x = round((character.x - 10) / 20) * 20 + 10;
-    character.y = round((character.y - 10) / 20) * 20 + 10;
+    
     
 }
