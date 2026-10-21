@@ -145,6 +145,8 @@ function draw(){
             ghostDirection(ghost);
         }
     }
+
+    //Fix sprite movement
 }
 
 // function for ghosts to move in random directions
