@@ -156,6 +156,7 @@ function draw(){
         }else{
             character.x = character.lane;
         }
+        chara
     }
 }
 
