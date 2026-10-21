@@ -174,7 +174,7 @@ function setMovement(character){
     character.savedVX = character.vel.x;
     character.savedVY = character.vel.y;
     if (character.savedVX !== 0){
-        character.lane = round
+        character.lane = round((character.y - 10))
 
     }
     
