@@ -165,6 +165,6 @@ function ghostDirection(ghost){
     
 }
 
-function setMovement(sprite, dx, d){
+function setMovement(sprite, dx, dy, speed){
 
 }
