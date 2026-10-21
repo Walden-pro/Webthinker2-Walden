@@ -153,7 +153,9 @@ function draw(){
 
         if (character.savedVX !== 0){
             character.y = character.lane;
-        }else
+        }else{
+            character.x = character.lane
+        }
     }
 }
 
