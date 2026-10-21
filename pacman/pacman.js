@@ -71,14 +71,12 @@ function setup(){
     blinky.y = 30;
     blinky.diameter = 18;
     blinky.color = "red";
-    blinky.collider = "kinematic";
 
     inky = new Sprite();
     inky.x = 70;
     inky.y = 30;
-    inky.diameter = 18;
     inky.color = "cyan";
-    inky.collider = "none";
+
 
     pinky = new Sprite();
     pinky.x = 90;
