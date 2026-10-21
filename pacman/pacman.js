@@ -138,8 +138,8 @@ function ghostDirection(ghost){
         ghost.vel.y = -1;
         ghost.vel.x = 0;
     }else if(kb.presses("down")){
-        ghosn.vel.y = 1;
-        pacman.vel.x = 0;
+        ghost.vel.y = 1;
+        ghost.vel.x = 0;
     }
     
 }
