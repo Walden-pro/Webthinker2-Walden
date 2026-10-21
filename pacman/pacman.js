@@ -157,7 +157,7 @@ function draw(){
             character.x = character.lane;
         }
         character.vel.x = character.savedVX;
-        
+        character.vel.y = character.savedVY
     }
 }
 
