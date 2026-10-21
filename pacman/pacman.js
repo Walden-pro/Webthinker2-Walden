@@ -131,13 +131,13 @@ function ghostDirection(ghost){
     if (direction === 1){
         ghost.vel.x = 1;
         ghost.vel.y = 0
-    }else if (kb.presses("left")){
+    }else if (direction === 1){
         ghost.vel.x = -1;
         ghost.vel.y = 0
-    }else if (kb.presses("up")){
+    }else if (direction === 1){
         ghost.vel.y = -1;
         ghost.vel.x = 0;
-    }else if(kb.presses("down")){
+    }else if(direction === 1){
         ghost.vel.y = 1;
         ghost.vel.x = 0;
     }
