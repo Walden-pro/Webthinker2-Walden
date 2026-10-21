@@ -69,7 +69,6 @@ function setup(){
     blinky = new Sprite();
     blinky.x = 50;
     blinky.y = 30;
-    blinky.diameter = 18;
     blinky.color = "red";
 
     inky = new Sprite();
@@ -81,16 +80,12 @@ function setup(){
     pinky = new Sprite();
     pinky.x = 90;
     pinky.y = 30;
-    pinky.diameter = 18;
     pinky.color = "pink";
-    pinky.collider = "none";
 
     clyde = new Sprite();
     clyde.x = 110;
     clyde.y = 30;
-    clyde.diameter = 18;
     clyde.color = "orange";
-    clyde.collider = "none";
 
     ghosts = [blinky, pinky, inky, clyde];
 
