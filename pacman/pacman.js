@@ -89,6 +89,10 @@ function setup(){
 
     ghosts = [blinky, pinky, inky, clyde];
 
+    for (let ghost of ghosts){
+        
+    }
+
 }
 
 function draw(){
