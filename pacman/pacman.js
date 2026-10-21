@@ -122,7 +122,7 @@ function draw(){
     }
 
     //call ghost movement
-    ghostDirection()
+    ghostDirection(blinky);
     
 }
 // function for ghosts to move in random directions
