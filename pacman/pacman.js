@@ -120,6 +120,9 @@ function draw(){
             console.log(score)
         }
     }
+
+    //call ghost movement
+    
     
 }
 // function for ghosts to move in random directions
