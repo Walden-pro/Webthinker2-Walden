@@ -130,12 +130,12 @@ function ghostDirection(ghost){
     //Pacman movement
     if (kb.presses("right")){
         ghost.vel.x = 1;
-        pacman.vel.y = 0
+        ghost.vel.y = 0
     }else if (kb.presses("left")){
-        pacman.vel.x = -1;
-        pacman.vel.y = 0
+        ghost.vel.x = -1;
+        ghost.vel.y = 0
     }else if (kb.presses("up")){
-        pacman.vel.y = -1;
+        ghost.vel.y = -1;
         pacman.vel.x = 0;
     }else if(kb.presses("down")){
         pacman.vel.y = 1;
