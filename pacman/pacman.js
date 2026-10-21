@@ -96,6 +96,8 @@ function setup(){
         ghost.friction = 0;
     }
 
+    for (let i = 0; i < ghosts.length; i++)
+
 }
 
 function draw(){
