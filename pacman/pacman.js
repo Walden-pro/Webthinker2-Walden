@@ -192,10 +192,10 @@ function setMovement(character){
     character.savedVY = character.vel.y;
     if (character.savedVX !== 0){
         character.lane = round((character.x - 10) / 20) * 20 + 10;
-        character.lane = round((character.y - 10) / 20) * 20 + 10;
+        
 
     }else{
-        
+        character.lane = round((character.y - 10) / 20) * 20 + 10;
     }
     
 }
