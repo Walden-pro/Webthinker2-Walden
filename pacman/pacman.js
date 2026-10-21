@@ -181,6 +181,8 @@ function ghostDirection(ghost){
         ghost.vel.y = 1;
         ghost.vel.x = 0;
     }
+
+    setMovement(ghost);
     
 }
 
