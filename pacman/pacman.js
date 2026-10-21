@@ -113,7 +113,7 @@ function draw(){
     background(0);
     //Pacman movement
     if (kb.presses("right")){
-        pacman.vel.x = 2;
+        pacman.vel.x = 1.25;
         pacman.vel.y = 0
         setMovement(pacman);
     }else if (kb.presses("left")){
