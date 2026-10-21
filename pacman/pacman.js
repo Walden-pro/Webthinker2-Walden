@@ -156,7 +156,8 @@ function draw(){
         }else{
             character.x = character.lane;
         }
-        chara
+        character.vel.x = character.savedVX;
+        
     }
 }
 
