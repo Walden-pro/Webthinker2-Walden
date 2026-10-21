@@ -122,7 +122,7 @@ function draw(){
         pacman.vel.y = -2;
         pacman.vel.x = 0;
     }else if(kb.presses("down")){
-        pacman.vel.y = 1;
+        pacman.vel.y = 2;
         pacman.vel.x = 0;
     }
 
