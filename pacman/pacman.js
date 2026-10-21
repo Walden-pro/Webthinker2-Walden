@@ -129,7 +129,7 @@ function ghostDirection(ghost){
 
     //Pacman movement
     if (kb.presses("right")){
-        pacman.vel.x = 1;
+        ghost.vel.x = 1;
         pacman.vel.y = 0
     }else if (kb.presses("left")){
         pacman.vel.x = -1;
