@@ -117,15 +117,15 @@ function draw(){
         pacman.vel.y = 0
         setMovement(pacman);
     }else if (kb.presses("left")){
-        pacman.vel.x = -2;
+        pacman.vel.x = -1.25;
         pacman.vel.y = 0
         setMovement(pacman);
     }else if (kb.presses("up")){
-        pacman.vel.y = -2;
+        pacman.vel.y = -1.25;
         pacman.vel.x = 0;
         setMovement(pacman);
     }else if(kb.presses("down")){
-        pacman.vel.y = 2;
+        pacman.vel.y = 1.25;
         pacman.vel.x = 0;
         setMovement(pacman);
     }
