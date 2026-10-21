@@ -141,6 +141,7 @@ function draw(){
 
     //call ghost movement
     for (let ghost of ghosts){
+        //change direction every second 
         if (frameCount % 60 === 0 || ghost.collides(wall)){
             ghostDirection(ghost);
         }
