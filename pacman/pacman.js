@@ -136,9 +136,9 @@ function ghostDirection(ghost){
         ghost.vel.y = 0
     }else if (kb.presses("up")){
         ghost.vel.y = -1;
-        pacman.vel.x = 0;
+        ghost.vel.x = 0;
     }else if(kb.presses("down")){
-        pacman.vel.y = 1;
+        ghosn.vel.y = 1;
         pacman.vel.x = 0;
     }
     
