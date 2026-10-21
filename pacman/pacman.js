@@ -165,6 +165,6 @@ function ghostDirection(ghost){
     
 }
 
-function setMovement(character, dx, dy){
+function setMovement(character){
 
 }
