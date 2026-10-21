@@ -181,7 +181,6 @@ function ghostDirection(ghost){
         ghost.vel.y = 1;
         ghost.vel.x = 0;
     }
-
     setMovement(ghost);
     
 }
@@ -195,5 +194,4 @@ function setMovement(character){
     }else{
         character.lane = round((character.x - 10) / 20) * 20 + 10;
     }
-    
 }
