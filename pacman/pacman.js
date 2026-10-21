@@ -94,7 +94,7 @@ function setup(){
     clyde.color = "orange";
     clyde.collider = "none";
 
-    ghosts = [blinky, inky, pinky, ]
+    ghosts = [blinky, pinky, inky, clyde];
 
 }
 
