@@ -131,13 +131,13 @@ function ghostDirection(ghost){
     if (direction === 1){
         ghost.vel.x = 1;
         ghost.vel.y = 0
-    }else if (direction === 1){
+    }else if (direction === 2){
         ghost.vel.x = -1;
         ghost.vel.y = 0
-    }else if (direction === 1){
+    }else if (direction === 3){
         ghost.vel.y = -1;
         ghost.vel.x = 0;
-    }else if(direction === 1){
+    }else if(direction === 4){
         ghost.vel.y = 1;
         ghost.vel.x = 0;
     }
