@@ -34,7 +34,7 @@ function setup() {
     imageMode(CENTER);
 
     loadImage('../../flappybird/assets/pixel-mario-character-vector-22605730.avif', image => marioSprite = image);
-    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/images.jpg', image => pikachuSprite = image);
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/pikachu.png', image => pikachuSprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Hero.png', image => heroSprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Enemies.png', image => enemySprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/World-Tiles.png', image => worldTiles = image);
