@@ -33,8 +33,14 @@ function setup() {
     textFont('Trebuchet MS');
     imageMode(CENTER);
 
-    loadImage('../../flappybird/assets/pixel-mario-character-vector-22605730.avif', image => marioSprite = image);
-    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/pikachu.png', image => pikachuSprite = image);
+    loadImage('../../flappybird/assets/pixel-mario-character-vector-22605730.avif', image => {
+        marioSprite = image;
+        removeBackground(marioSprite, 48);
+    });
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/pikachu.png', image => {
+        pikachuSprite = image;
+        removeBackground(pikachuSprite, 38);
+    });
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Hero.png', image => heroSprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Enemies.png', image => enemySprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/World-Tiles.png', image => worldTiles = image);
@@ -416,6 +422,40 @@ class Fighter {
             rect(this.hitbox.x, this.hitbox.y, this.hitbox.width, this.hitbox.height);
         }
     }
+}
+
+function removeBackground(image, tolerance) {
+    image.loadPixels();
+    const cornerX = [0, image.width - 1, 0, image.width - 1];
+    const cornerY = [0, 0, image.height - 1, image.height - 1];
+    let red = 0;
+    let green = 0;
+    let blue = 0;
+
+    for (let i = 0; i < cornerX.length; i++) {
+        const index = (cornerY[i] * image.width + cornerX[i]) * 4;
+        red += image.pixels[index];
+        green += image.pixels[index + 1];
+        blue += image.pixels[index + 2];
+    }
+
+    red = red / cornerX.length;
+    green = green / cornerX.length;
+    blue = blue / cornerX.length;
+
+    for (let y = 0; y < image.height; y++) {
+        for (let x = 0; x < image.width; x++) {
+            const index = (y * image.width + x) * 4;
+            const distance = sqrt(
+                pow(image.pixels[index] - red, 2) +
+                pow(image.pixels[index + 1] - green, 2) +
+                pow(image.pixels[index + 2] - blue, 2)
+            );
+            if (distance < tolerance) image.pixels[index + 3] = 0;
+        }
+    }
+
+    image.updatePixels();
 }
 
 function drawCharacter(centerX, centerY, fighter, facing, showBody) {
