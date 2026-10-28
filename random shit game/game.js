@@ -2,7 +2,14 @@ let p1, p2;
 let gameState = 'select';
 let winner = '';
 let projectiles = [];
+let selectedDifficulty = 'Normal';
 const keys = {};
+
+const difficulties = {
+    Easy: { speed: 0.55, reaction: 0.08, jump: 0.002, special: 0.004 },
+    Normal: { speed: 0.75, reaction: 0.12, jump: 0.004, special: 0.008 },
+    Hard: { speed: 0.95, reaction: 0.18, jump: 0.006, special: 0.014 }
+};
 
 const roster = [
     { name: 'Mario', color: '#e74c3c', accent: '#f1c40f', speed: 4, jumpForce: -12, special: 'Fireball' },
@@ -112,6 +119,23 @@ function drawSelectScreen() {
         textSize(12);
         text(`Speed ${fighter.speed.toFixed(1)} | Jump ${abs(fighter.jumpForce).toFixed(1)}`, x + cardWidth / 2, y + 203);
     });
+
+    const buttonWidth = 150;
+    const buttonGap = 14;
+    const buttonStart = (800 - (buttonWidth * 3 + buttonGap * 2)) / 2;
+    ['Easy', 'Normal', 'Hard'].forEach((difficulty, index) => {
+        const x = buttonStart + index * (buttonWidth + buttonGap);
+        const selected = difficulty === selectedDifficulty;
+        fill(selected ? difficulties[difficulty].color || '#4a90a4' : '#303440');
+        stroke(selected ? '#ffffff' : '#667080');
+        strokeWeight(2);
+        rect(x, 390, buttonWidth, 38, 6);
+        noStroke();
+        fill(255);
+        textStyle(BOLD);
+        textSize(16);
+        text(difficulty, x + buttonWidth / 2, 409);
+    });
 }
 
 function drawGameOver() {
@@ -136,6 +160,16 @@ function mousePressed() {
         return;
     }
     if (gameState !== 'select') return;
+
+    const buttonWidth = 150;
+    const buttonGap = 14;
+    const buttonStart = (800 - (buttonWidth * 3 + buttonGap * 2)) / 2;
+    ['Easy', 'Normal', 'Hard'].forEach((difficulty, index) => {
+        const x = buttonStart + index * (buttonWidth + buttonGap);
+        if (mouseX >= x && mouseX <= x + buttonWidth && mouseY >= 390 && mouseY <= 428) {
+            selectedDifficulty = difficulty;
+        }
+    });
 
     const cardWidth = 170;
     const gap = 12;
@@ -192,35 +226,45 @@ class Fighter {
         this.hitbox = null;
         this.specialCooldown = 0;
         this.dashTimer = 0;
+        this.cpuJumpCooldown = 0;
     }
 
     update() {
         if (this.specialCooldown > 0) this.specialCooldown--;
         if (this.dashTimer > 0) this.dashTimer--;
+        if (this.cpuJumpCooldown > 0) this.cpuJumpCooldown--;
         if (this.isCPU) {
             // Simple CPU AI Logic: Track Player 1's position
+            const cpuSettings = difficulties[selectedDifficulty];
             if (p1.x < this.x - 15) {
-                this.vx = -this.speed * 0.8;
+                this.vx = -this.speed * cpuSettings.speed;
                 this.facing = -1;
             } else if (p1.x > this.x + 15) {
-                this.vx = this.speed * 0.8;
+                this.vx = this.speed * cpuSettings.speed;
                 this.facing = 1;
             } else {
                 this.vx *= 0.8;
             }
 
-            // CPU Jump behavior if player is higher up or randomly
-            if ((p1.y < this.y - 40 || random() < 0.015) && this.grounded) {
+            // Jump only to chase a clearly higher player or occasionally recover; never every frame.
+            const shouldJump = cpuJumpCooldown <= 0 && this.grounded && (
+                (p1.y < this.y - 55) ||
+                (this.x < 70 && this.vx < 0) ||
+                (this.x > width - 70 && this.vx > 0)
+            );
+            const rareJump = cpuJumpCooldown <= 0 && this.grounded && random() < cpuSettings.jump * 0.15;
+            if (shouldJump || rareJump) {
                 this.vy = this.jumpForce;
                 this.grounded = false;
+                this.cpuJumpCooldown = selectedDifficulty === 'Easy' ? 100 : selectedDifficulty === 'Normal' ? 75 : 55;
             }
 
             // CPU Attack behavior when close to player
             let distToPlayer = abs(this.x - p1.x);
-            if (distToPlayer < 55 && abs(this.y - p1.y) < 40 && !this.isAttacking && random() < 0.15) {
+            if (distToPlayer < 55 && abs(this.y - p1.y) < 40 && !this.isAttacking && random() < cpuSettings.reaction) {
                 this.triggerAttack();
             }
-            if ((distToPlayer < 260 || random() < 0.01) && this.specialCooldown <= 0 && random() < 0.012) {
+            if ((distToPlayer < 260 || random() < cpuSettings.jump) && this.specialCooldown <= 0 && random() < cpuSettings.special) {
                 this.triggerSpecial();
             }
         } else {
