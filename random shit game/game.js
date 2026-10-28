@@ -8,9 +8,9 @@ const keys = {};
 
 const difficulties = {
     Idle: { speed: 0, reaction: 0, jump: 0, special: 0, color: '#95a5a6' },
-    Easy: { speed: 0.55, reaction: 0.08, jump: 0.002, special: 0.004, color: '#27ae60' },
-    Normal: { speed: 0.75, reaction: 0.12, jump: 0.004, special: 0.008, color: '#4a90a4' },
-    Hard: { speed: 0.95, reaction: 0.18, jump: 0.006, special: 0.014, color: '#c0392b' }
+    Easy: { speed: 0.45, reaction: 0.055, jump: 0.0015, special: 0.003, color: '#27ae60' },
+    Normal: { speed: 0.62, reaction: 0.09, jump: 0.003, special: 0.006, color: '#4a90a4' },
+    Hard: { speed: 0.85, reaction: 0.15, jump: 0.005, special: 0.011, color: '#c0392b' }
 };
 
 const roster = [
@@ -312,7 +312,7 @@ class Fighter {
             if (shouldJump || rareJump) {
                 this.vy = this.jumpForce;
                 this.grounded = false;
-                this.cpuJumpCooldown = selectedDifficulty === 'Easy' ? 100 : selectedDifficulty === 'Normal' ? 75 : 55;
+                this.cpuJumpCooldown = selectedDifficulty === 'Easy' ? 120 : selectedDifficulty === 'Normal' ? 90 : 65;
             }
 
             // CPU Attack behavior when close to player
