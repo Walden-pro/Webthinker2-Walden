@@ -7,6 +7,7 @@ let marioSprite, heroSprite, enemySprite, worldTiles;
 const keys = {};
 
 const difficulties = {
+    Idle: { speed: 0, reaction: 0, jump: 0, special: 0, color: '#95a5a6' },
     Easy: { speed: 0.55, reaction: 0.08, jump: 0.002, special: 0.004, color: '#27ae60' },
     Normal: { speed: 0.75, reaction: 0.12, jump: 0.004, special: 0.008, color: '#4a90a4' },
     Hard: { speed: 0.95, reaction: 0.18, jump: 0.006, special: 0.014, color: '#c0392b' }
@@ -258,7 +259,9 @@ class Fighter {
         if (this.isCPU) {
             // Simple CPU AI Logic: Track Player 1's position
             const cpuSettings = difficulties[selectedDifficulty];
-            if (p1.x < this.x - 15) {
+            if (selectedDifficulty === 'Idle') {
+                this.vx *= 0.75;
+            } else if (p1.x < this.x - 15) {
                 this.vx = -this.speed * cpuSettings.speed;
                 this.facing = -1;
             } else if (p1.x > this.x + 15) {
@@ -269,6 +272,7 @@ class Fighter {
             }
 
             // Jump only to chase a clearly higher player or occasionally recover; never every frame.
+            if (selectedDifficulty === 'Idle') returnToIdlePosition(this);
             const shouldJump = this.cpuJumpCooldown <= 0 && this.grounded && (
                 (p1.y < this.y - 55) ||
                 (this.x < 70 && this.vx < 0) ||
@@ -283,11 +287,13 @@ class Fighter {
 
             // CPU Attack behavior when close to player
             let distToPlayer = abs(this.x - p1.x);
-            if (distToPlayer < 55 && abs(this.y - p1.y) < 40 && !this.isAttacking && random() < cpuSettings.reaction) {
-                this.triggerAttack();
-            }
-            if ((distToPlayer < 260 || random() < cpuSettings.jump) && this.specialCooldown <= 0 && random() < cpuSettings.special) {
-                this.triggerSpecial();
+            if (selectedDifficulty !== 'Idle') {
+                if (distToPlayer < 55 && abs(this.y - p1.y) < 40 && !this.isAttacking && random() < cpuSettings.reaction) {
+                    this.triggerAttack();
+                }
+                if ((distToPlayer < 260 || random() < cpuSettings.jump) && this.specialCooldown <= 0 && random() < cpuSettings.special) {
+                    this.triggerSpecial();
+                }
             }
         } else {
             // Player Controls
