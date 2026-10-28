@@ -143,10 +143,10 @@ function drawSelectScreen() {
         text(`Speed ${fighter.speed.toFixed(1)} | Jump ${abs(fighter.jumpForce).toFixed(1)}`, x + cardWidth / 2, y + 203);
     });
 
-    const buttonWidth = 150;
-    const buttonGap = 14;
-    const buttonStart = (800 - (buttonWidth * 3 + buttonGap * 2)) / 2;
-    ['Easy', 'Normal', 'Hard'].forEach((difficulty, index) => {
+    const buttonWidth = 142;
+    const buttonGap = 10;
+    const buttonStart = (800 - (buttonWidth * 4 + buttonGap * 3)) / 2;
+    ['Idle', 'Easy', 'Normal', 'Hard'].forEach((difficulty, index) => {
         const x = buttonStart + index * (buttonWidth + buttonGap);
         const selected = difficulty === selectedDifficulty;
         fill(selected ? difficulties[difficulty].color || '#4a90a4' : '#303440');
@@ -184,10 +184,10 @@ function mousePressed() {
     }
     if (gameState !== 'select') return;
 
-    const buttonWidth = 150;
-    const buttonGap = 14;
-    const buttonStart = (800 - (buttonWidth * 3 + buttonGap * 2)) / 2;
-    ['Easy', 'Normal', 'Hard'].forEach((difficulty, index) => {
+    const buttonWidth = 142;
+    const buttonGap = 10;
+    const buttonStart = (800 - (buttonWidth * 4 + buttonGap * 3)) / 2;
+    ['Idle', 'Easy', 'Normal', 'Hard'].forEach((difficulty, index) => {
         const x = buttonStart + index * (buttonWidth + buttonGap);
         if (mouseX >= x && mouseX <= x + buttonWidth && mouseY >= 390 && mouseY <= 428) {
             selectedDifficulty = difficulty;
@@ -272,8 +272,7 @@ class Fighter {
             }
 
             // Jump only to chase a clearly higher player or occasionally recover; never every frame.
-            if (selectedDifficulty === 'Idle') returnToIdlePosition(this);
-            const shouldJump = this.cpuJumpCooldown <= 0 && this.grounded && (
+            const shouldJump = selectedDifficulty !== 'Idle' && this.cpuJumpCooldown <= 0 && this.grounded && (
                 (p1.y < this.y - 55) ||
                 (this.x < 70 && this.vx < 0) ||
                 (this.x > width - 70 && this.vx > 0)
