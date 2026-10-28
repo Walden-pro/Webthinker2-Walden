@@ -278,6 +278,7 @@ class Fighter {
         this.specialType = null;
         this.specialTimer = 0;
         this.electricStrikeCooldown = 0;
+        this.marioSmashX = null;
     }
 
     update() {
@@ -375,7 +376,6 @@ class Fighter {
         }
 
         if (this.specialType === 'mario-smash' && this.specialTimer === 32) {
-            this.vx = 0;
             this.vy = 18;
         }
         if (this.specialType === 'mario-smash') {
@@ -385,6 +385,7 @@ class Fighter {
         }
         if (this.specialTimer === 0 && this.specialType) {
             this.specialType = null;
+            this.marioSmashX = null;
             this.isAttacking = false;
             this.hitbox = null;
         }
@@ -403,7 +404,8 @@ class Fighter {
         }
 
         // Screen Boundaries (Blast zones)
-        if (this.x < -100 || this.x > width + 100 || this.y > height + 100 || this.y < -200) {
+        const marioControlledFlight = this.specialType === 'mario-smash';
+        if (!marioControlledFlight && (this.x < -100 || this.x > width + 100 || this.y > height + 100 || this.y < -200)) {
             this.respawn();
         }
     }
@@ -438,7 +440,7 @@ class Fighter {
         } else if (this.fighter.name === 'Mario') {
             this.specialType = 'mario-smash';
             this.specialTimer = 64;
-            this.vx = 0;
+            this.marioSmashX = this.x;
             this.vy = -18;
             this.hitbox = { x: this.x - 20, y: this.y + 20, width: 80, height: 50 };
         }
