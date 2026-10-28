@@ -3,6 +3,7 @@ let gameState = 'select';
 let winner = '';
 let projectiles = [];
 let selectedDifficulty = 'Normal';
+let marioSprite, heroSprite, enemySprite, worldTiles;
 const keys = {};
 
 const difficulties = {
@@ -12,10 +13,10 @@ const difficulties = {
 };
 
 const roster = [
-    { name: 'Mario', color: '#e74c3c', accent: '#f1c40f', speed: 4, jumpForce: -12, special: 'Fireball' },
-    { name: 'Pikachu', color: '#f1c40f', accent: '#3498db', speed: 5, jumpForce: -13, special: 'Thunder Dash' },
-    { name: 'Link', color: '#27ae60', accent: '#ecf0f1', speed: 4, jumpForce: -12.5, special: 'Sword Spin' },
-    { name: 'Samus', color: '#f39c12', accent: '#1abc9c', speed: 3.8, jumpForce: -11, special: 'Charge Shot' }
+    { name: 'Mario', color: '#e74c3c', accent: '#f1c40f', speed: 4, jumpForce: -12, special: 'Fireball', sprite: 'mario' },
+    { name: 'Pikachu', color: '#f1c40f', accent: '#3498db', speed: 5, jumpForce: -13, special: 'Thunder Dash', sprite: 'enemy', sx: 64, sy: 16 },
+    { name: 'Link', color: '#27ae60', accent: '#ecf0f1', speed: 4, jumpForce: -12.5, special: 'Sword Spin', sprite: 'hero', sx: 16, sy: 16 },
+    { name: 'Samus', color: '#f39c12', accent: '#1abc9c', speed: 3.8, jumpForce: -11, special: 'Charge Shot', sprite: 'enemy', sx: 112, sy: 16 }
 ];
 
 // Platforms layout
@@ -29,6 +30,12 @@ const platforms = [
 function setup() {
     createCanvas(800, 500);
     textFont('Trebuchet MS');
+    imageMode(CENTER);
+
+    loadImage('../../flappybird/assets/pixel-mario-character-vector-22605730.avif', image => marioSprite = image);
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Hero.png', image => heroSprite = image);
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Enemies.png', image => enemySprite = image);
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/World-Tiles.png', image => worldTiles = image);
 }
 
 function draw() {
@@ -77,9 +84,24 @@ function draw() {
 }
 
 function drawArena() {
-    fill(127, 140, 141);
-    noStroke();
-    platforms.forEach(platform => rect(platform.x, platform.y, platform.width, platform.height));
+    background(43, 43, 48);
+
+    if (worldTiles) {
+        push();
+        noTint();
+        imageMode(CORNER);
+        platforms.forEach(platform => {
+            for (let x = platform.x; x < platform.x + platform.width; x += 16) {
+                image(worldTiles, x, platform.y, 16, platform.height, 16, 16, 16, 16);
+            }
+        });
+        imageMode(CENTER);
+        pop();
+    } else {
+        fill(127, 140, 141);
+        noStroke();
+        platforms.forEach(platform => rect(platform.x, platform.y, platform.width, platform.height));
+    }
 }
 
 function drawSelectScreen() {
@@ -391,6 +413,20 @@ class Fighter {
 }
 
 function drawCharacter(centerX, centerY, fighter, facing, showBody) {
+    const sprite = fighter.sprite === 'mario' ? marioSprite : fighter.sprite === 'hero' ? heroSprite : enemySprite;
+    if (sprite) {
+        push();
+        translate(centerX, centerY);
+        scale(facing, 1);
+        if (fighter.sprite === 'mario') {
+            image(sprite, 0, -6, 54, 66);
+        } else {
+            image(sprite, 0, 0, 52, 62, fighter.sx || 16, fighter.sy || 16, 16, 16);
+        }
+        pop();
+        return;
+    }
+
     push();
     translate(centerX, centerY);
     scale(facing, 1);
