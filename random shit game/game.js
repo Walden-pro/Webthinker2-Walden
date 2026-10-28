@@ -186,12 +186,22 @@ function drawGameOver() {
     text(winner, 400, 210);
     textSize(20);
     fill(210);
-    text('Click to choose again', 400, 270);
+    text('Choose another fighter and difficulty', 400, 270);
+
+    fill('#4a90a4');
+    stroke(255);
+    strokeWeight(2);
+    rect(300, 315, 200, 55, 6);
+    noStroke();
+    fill(255);
+    textStyle(BOLD);
+    textSize(22);
+    text('Play Again', 400, 342);
 }
 
 function mousePressed() {
     if (gameState === 'gameover') {
-        if (mouseY > 390) {
+        if (mouseX >= 300 && mouseX <= 500 && mouseY >= 315 && mouseY <= 370) {
             gameState = 'select';
             projectiles = [];
         }
