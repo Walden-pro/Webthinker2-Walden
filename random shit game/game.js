@@ -275,11 +275,14 @@ class Fighter {
         this.specialCooldown = 0;
         this.dashTimer = 0;
         this.cpuJumpCooldown = 0;
+        this.specialType = null;
+        this.specialTimer = 0;
     }
 
     update() {
         if (this.specialCooldown > 0) this.specialCooldown--;
         if (this.dashTimer > 0) this.dashTimer--;
+        if (this.specialTimer > 0) this.specialTimer--;
         if (this.cpuJumpCooldown > 0) this.cpuJumpCooldown--;
         if (this.isCPU) {
             // Simple CPU AI Logic: Track Player 1's position
@@ -369,6 +372,16 @@ class Fighter {
             }
         }
 
+        if (this.specialType === 'mario-smash' && this.specialTimer === 32) {
+            this.vx = 0;
+            this.vy = 18;
+        }
+        if (this.specialTimer === 0 && this.specialType) {
+            this.specialType = null;
+            this.isAttacking = false;
+            this.hitbox = null;
+        }
+
         // Handle attack active frames
         if (this.isAttacking) {
             this.attackTimer--;
@@ -401,24 +414,26 @@ class Fighter {
 
     triggerSpecial() {
         this.specialCooldown = 150;
+        this.specialTimer = 60;
+        this.isAttacking = true;
+
         if (this.fighter.name === 'Pikachu') {
-            this.dashTimer = 24;
-            this.vx = this.facing * 11;
-            this.isAttacking = true;
-            this.attackTimer = 24;
-            this.hitbox = { x: this.x - 10, y: this.y, width: this.width + 20, height: this.height };
+            this.specialType = 'pikachu-electric';
+            this.hitbox = { x: 0, y: 0, width, height };
         } else if (this.fighter.name === 'Link') {
-            this.isAttacking = true;
-            this.attackTimer = 30;
-            this.hitbox = { x: this.x - 25, y: this.y - 10, width: this.width + 50, height: this.height + 20 };
-        } else {
-            projectiles.push(new Projectile(
-                this.x + (this.facing === 1 ? this.width : 0),
-                this.y + 24,
-                this.facing,
-                this.fighter,
-                this
-            ));
+            this.specialType = 'link-sword';
+            this.attackTimer = 40;
+            this.hitbox = { x: this.x - 65, y: this.y - 35, width: 170, height: 130 };
+        } else if (this.fighter.name === 'Samus') {
+            this.specialType = 'samus-punch';
+            this.attackTimer = 38;
+            this.hitbox = { x: this.x - 75, y: this.y - 45, width: 190, height: 150 };
+        } else if (this.fighter.name === 'Mario') {
+            this.specialType = 'mario-smash';
+            this.specialTimer = 64;
+            this.vx = 0;
+            this.vy = -18;
+            this.hitbox = { x: this.x - 20, y: this.y + 20, width: 80, height: 50 };
         }
     }
 
@@ -434,7 +449,35 @@ class Fighter {
     draw() {
         drawCharacter(this.x + this.width / 2, this.y + this.height / 2, this.fighter, this.facing, true);
 
-        if (this.isAttacking && this.hitbox && this.dashTimer <= 0) {
+        if (this.specialType === 'pikachu-electric' && this.specialTimer > 0) {
+            stroke(255, 255, 120);
+            strokeWeight(5);
+            for (let i = 0; i < 9; i++) {
+                const x = (frameCount * 13 + i * 97) % width;
+                line(x, 0, x + 35 - i * 8, height);
+            }
+            noStroke();
+        } else if (this.specialType === 'link-sword' && this.specialTimer > 0) {
+            push();
+            translate(this.x + this.width / 2, this.y + this.height / 2);
+            rotate(frameCount * 0.35);
+            stroke('#ecf0f1');
+            strokeWeight(12);
+            line(0, 0, 80, 0);
+            noStroke();
+            pop();
+        } else if (this.specialType === 'samus-punch' && this.specialTimer > 0) {
+            fill(255, 140, 40, 150);
+            stroke(255, 220, 120);
+            strokeWeight(4);
+            ellipse(this.x + this.width / 2, this.y + this.height / 2, 170, 150);
+            noStroke();
+        } else if (this.specialType === 'mario-smash' && this.specialTimer > 0) {
+            fill(255, 80, 40, 150);
+            ellipse(this.x + this.width / 2, this.y + this.height - 5, 100, 28);
+        }
+
+        if (this.isAttacking && this.hitbox && this.dashTimer <= 0 && this.specialType === null) {
             fill(255, 255, 255, 85);
             noStroke();
             rect(this.hitbox.x, this.hitbox.y, this.hitbox.width, this.hitbox.height);
