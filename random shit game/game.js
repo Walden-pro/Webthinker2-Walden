@@ -277,12 +277,14 @@ class Fighter {
         this.cpuJumpCooldown = 0;
         this.specialType = null;
         this.specialTimer = 0;
+        this.electricStrikeCooldown = 0;
     }
 
     update() {
         if (this.specialCooldown > 0) this.specialCooldown--;
         if (this.dashTimer > 0) this.dashTimer--;
         if (this.specialTimer > 0) this.specialTimer--;
+        if (this.electricStrikeCooldown > 0) this.electricStrikeCooldown--;
         if (this.cpuJumpCooldown > 0) this.cpuJumpCooldown--;
         if (this.isCPU) {
             // Simple CPU AI Logic: Track Player 1's position
@@ -622,8 +624,14 @@ function checkAttacks(attacker, receiver) {
             hb.y + hb.height > receiver.y
         ) {
             let damage = attacker.dashTimer > 0 ? 14 : 10;
-            if (attacker.specialType === 'pikachu-electric') damage = 18;
-            else if (attacker.specialType === 'samus-punch') damage = 20;
+            if (attacker.specialType === 'pikachu-electric') {
+                if (attacker.electricStrikeCooldown <= 0) {
+                    applyHit(attacker, receiver, 1, 2);
+                    attacker.electricStrikeCooldown = 12;
+                }
+                return;
+            }
+            if (attacker.specialType === 'samus-punch') damage = 20;
             else if (attacker.specialType === 'link-sword') damage = 16;
             else if (attacker.specialType === 'mario-smash') damage = 22;
             applyHit(attacker, receiver, damage, attacker.specialType ? 12 : 8);
