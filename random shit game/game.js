@@ -3,7 +3,7 @@ let gameState = 'select';
 let winner = '';
 let projectiles = [];
 let selectedDifficulty = 'Normal';
-let marioSprite, heroSprite, enemySprite, worldTiles;
+let marioSprite, pikachuSprite, heroSprite, enemySprite, worldTiles;
 const keys = {};
 
 const difficulties = {
@@ -15,7 +15,7 @@ const difficulties = {
 
 const roster = [
     { name: 'Mario', color: '#e74c3c', accent: '#f1c40f', speed: 4, jumpForce: -12, special: 'Fireball', sprite: 'mario' },
-    { name: 'Pikachu', color: '#f1c40f', accent: '#3498db', speed: 5, jumpForce: -13, special: 'Thunder Dash', sprite: 'enemy', sx: 64, sy: 16 },
+    { name: 'Pikachu', color: '#f1c40f', accent: '#3498db', speed: 5, jumpForce: -13, special: 'Thunder Dash', sprite: 'pikachu' },
     { name: 'Link', color: '#27ae60', accent: '#ecf0f1', speed: 4, jumpForce: -12.5, special: 'Sword Spin', sprite: 'hero', sx: 16, sy: 16 },
     { name: 'Samus', color: '#f39c12', accent: '#1abc9c', speed: 3.8, jumpForce: -11, special: 'Charge Shot', sprite: 'enemy', sx: 112, sy: 16 }
 ];
@@ -34,6 +34,7 @@ function setup() {
     imageMode(CENTER);
 
     loadImage('../../flappybird/assets/pixel-mario-character-vector-22605730.avif', image => marioSprite = image);
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/images.jpg', image => pikachuSprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Hero.png', image => heroSprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Enemies.png', image => enemySprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/World-Tiles.png', image => worldTiles = image);
@@ -418,12 +419,17 @@ class Fighter {
 }
 
 function drawCharacter(centerX, centerY, fighter, facing, showBody) {
-    const sprite = fighter.sprite === 'mario' ? marioSprite : fighter.sprite === 'hero' ? heroSprite : enemySprite;
+    let sprite;
+    if (fighter.sprite === 'mario') sprite = marioSprite;
+    else if (fighter.sprite === 'pikachu') sprite = pikachuSprite;
+    else if (fighter.sprite === 'hero') sprite = heroSprite;
+    else sprite = enemySprite;
+
     if (sprite) {
         push();
         translate(centerX, centerY);
         scale(facing, 1);
-        if (fighter.sprite === 'mario') {
+        if (fighter.sprite === 'mario' || fighter.sprite === 'pikachu') {
             image(sprite, 0, -6, 54, 66);
         } else {
             image(sprite, 0, 0, 52, 62, fighter.sx || 16, fighter.sy || 16, 16, 16);
