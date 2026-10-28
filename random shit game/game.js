@@ -376,14 +376,19 @@ class Fighter {
             this.vx = 0;
             this.vy = 18;
         }
+        if (this.specialType === 'mario-smash') {
+            this.hitbox = this.specialTimer <= 32
+                ? { x: this.x - 70, y: this.y + 20, width: 180, height: 80 }
+                : null;
+        }
         if (this.specialTimer === 0 && this.specialType) {
             this.specialType = null;
             this.isAttacking = false;
             this.hitbox = null;
         }
 
-        // Handle attack active frames
-        if (this.isAttacking) {
+        // Handle normal attack timing; special moves use their own timers and hitboxes.
+        if (this.isAttacking && !this.specialType) {
             this.attackTimer--;
             if (this.hitbox) {
                 this.hitbox.x = this.facing === 1 ? this.x + this.width : this.x - 40;
@@ -616,8 +621,12 @@ function checkAttacks(attacker, receiver) {
             hb.y < receiver.y + receiver.height &&
             hb.y + hb.height > receiver.y
         ) {
-            const damage = attacker.dashTimer > 0 ? 14 : attacker.fighter.name === 'Link' && attacker.specialCooldown > 120 ? 12 : 10;
-            applyHit(attacker, receiver, damage, 8);
+            let damage = attacker.dashTimer > 0 ? 14 : 10;
+            if (attacker.specialType === 'pikachu-electric') damage = 18;
+            else if (attacker.specialType === 'samus-punch') damage = 20;
+            else if (attacker.specialType === 'link-sword') damage = 16;
+            else if (attacker.specialType === 'mario-smash') damage = 22;
+            applyHit(attacker, receiver, damage, attacker.specialType ? 12 : 8);
             attacker.isAttacking = false;
             attacker.hitbox = null;
         }
