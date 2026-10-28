@@ -6,9 +6,9 @@ let selectedDifficulty = 'Normal';
 const keys = {};
 
 const difficulties = {
-    Easy: { speed: 0.55, reaction: 0.08, jump: 0.002, special: 0.004 },
-    Normal: { speed: 0.75, reaction: 0.12, jump: 0.004, special: 0.008 },
-    Hard: { speed: 0.95, reaction: 0.18, jump: 0.006, special: 0.014 }
+    Easy: { speed: 0.55, reaction: 0.08, jump: 0.002, special: 0.004, color: '#27ae60' },
+    Normal: { speed: 0.75, reaction: 0.12, jump: 0.004, special: 0.008, color: '#4a90a4' },
+    Hard: { speed: 0.95, reaction: 0.18, jump: 0.006, special: 0.014, color: '#c0392b' }
 };
 
 const roster = [
@@ -247,12 +247,12 @@ class Fighter {
             }
 
             // Jump only to chase a clearly higher player or occasionally recover; never every frame.
-            const shouldJump = cpuJumpCooldown <= 0 && this.grounded && (
+            const shouldJump = this.cpuJumpCooldown <= 0 && this.grounded && (
                 (p1.y < this.y - 55) ||
                 (this.x < 70 && this.vx < 0) ||
                 (this.x > width - 70 && this.vx > 0)
             );
-            const rareJump = cpuJumpCooldown <= 0 && this.grounded && random() < cpuSettings.jump * 0.15;
+            const rareJump = this.cpuJumpCooldown <= 0 && this.grounded && random() < cpuSettings.jump * 0.15;
             if (shouldJump || rareJump) {
                 this.vy = this.jumpForce;
                 this.grounded = false;
