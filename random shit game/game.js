@@ -3,7 +3,7 @@ let gameState = 'select';
 let winner = '';
 let projectiles = [];
 let selectedDifficulty = 'Normal';
-let marioSprite, pikachuSprite, heroSprite, enemySprite, worldTiles;
+let marioSprite, pikachuSprite, linkSprite, samusSprite, heroSprite, enemySprite, worldTiles;
 const keys = {};
 
 const difficulties = {
@@ -16,8 +16,8 @@ const difficulties = {
 const roster = [
     { name: 'Mario', color: '#e74c3c', accent: '#f1c40f', speed: 4, jumpForce: -12, special: 'Fireball', sprite: 'mario' },
     { name: 'Pikachu', color: '#f1c40f', accent: '#3498db', speed: 5, jumpForce: -13, special: 'Thunder Dash', sprite: 'pikachu', imageFacing: -1 },
-    { name: 'Link', color: '#27ae60', accent: '#ecf0f1', speed: 4, jumpForce: -12.5, special: 'Sword Spin', sprite: 'hero', sx: 16, sy: 16 },
-    { name: 'Samus', color: '#f39c12', accent: '#1abc9c', speed: 3.8, jumpForce: -11, special: 'Charge Shot', sprite: 'enemy', sx: 112, sy: 16 }
+    { name: 'Link', color: '#27ae60', accent: '#ecf0f1', speed: 4, jumpForce: -12.5, special: 'Sword Spin', sprite: 'link' },
+    { name: 'Samus', color: '#f39c12', accent: '#1abc9c', speed: 3.8, jumpForce: -11, special: 'Charge Shot', sprite: 'samus' }
 ];
 
 // Platforms layout
@@ -40,6 +40,14 @@ function setup() {
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/pikachu.png', image => {
         pikachuSprite = image;
         removeBackground(pikachuSprite, 38);
+    });
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/link.png', image => {
+        linkSprite = image;
+        removeBackground(linkSprite, 38);
+    });
+    loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/samus.png', image => {
+        samusSprite = image;
+        removeBackground(samusSprite, 38);
     });
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Hero.png', image => heroSprite = image);
     loadImage('assets/Block-Land-v-2.0/Block-Land-16x16/Enemies.png', image => enemySprite = image);
@@ -462,6 +470,8 @@ function drawCharacter(centerX, centerY, fighter, facing, showBody) {
     let sprite;
     if (fighter.sprite === 'mario') sprite = marioSprite;
     else if (fighter.sprite === 'pikachu') sprite = pikachuSprite;
+    else if (fighter.sprite === 'link') sprite = linkSprite;
+    else if (fighter.sprite === 'samus') sprite = samusSprite;
     else if (fighter.sprite === 'hero') sprite = heroSprite;
     else sprite = enemySprite;
 
@@ -469,7 +479,7 @@ function drawCharacter(centerX, centerY, fighter, facing, showBody) {
         push();
         translate(centerX, centerY);
         scale(facing * (fighter.imageFacing || 1), 1);
-        if (fighter.sprite === 'mario' || fighter.sprite === 'pikachu') {
+        if (fighter.sprite === 'mario' || fighter.sprite === 'pikachu' || fighter.sprite === 'link' || fighter.sprite === 'samus') {
             image(sprite, 0, -6, 54, 66);
         } else {
             image(sprite, 0, 0, 52, 62, fighter.sx || 16, fighter.sy || 16, 16, 16);
